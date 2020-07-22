@@ -1,0 +1,410 @@
+@import "./variables";
+@import "./mixin";
+
+$headingtext: 25px;
+
+/*------all trending box and text------*/
+#main {
+	transition: margin-left .5s;
+	margin-top: 5px;
+}
+
+.trendingbox {
+	width: 92%;
+	margin: 55px auto;
+
+	& .trendingheading {
+		/* import from top of this page */
+		font-size: $headingtext;
+		/* import from variables.scss */
+		color: $textcolor;
+		font-weight: bold;
+	}
+
+	& .trendingtext {
+		/* import from variables.scss */
+		font-size: $size15;
+		color: $textcolor;
+
+		& button {
+			/* import from variables.scss */
+			color: $buttonscolor;
+			background-color: white;
+			border: none;
+			outline: none;
+		}
+	}
+}
+
+#dots,
+#indiandots {
+	/* import from variables.scss */
+	color: $buttonscolor;
+}
+
+#more,
+#indianmore {
+	display: none;
+}
+
+.main-slider {
+	width: 100%;
+	height: 300px;
+	margin: 20px 0;
+
+	& .slider-img-main {
+		height: 291px;
+		margin-right: 5px;
+		background-color: black;
+		border-radius: 6px;
+		position: relative;
+
+		& img {
+			height: 100%;
+			position: absolute;
+			border-radius: 6px;
+			opacity: 0.5;
+		}
+
+		& .top-left {
+			/* import from variables.scss */
+			color: $fcolor;
+			position: absolute;
+			top: 12px;
+			left: 19px;
+			font-weight: bold;
+			font-size: 20px;
+		}
+
+		& .bottom-text {
+			/* import from variables.scss */
+			color: $fcolor;
+			position: absolute;
+			bottom: 8px;
+			left: 19px;
+			font-size: 15px;
+
+			& .fa-rupee-sign {
+				font-size: 15px;
+			}
+
+			& .price {
+				font-size: 24px;
+			}
+		}
+	}
+
+	& .owl-prev {
+		/* import from mixin.scss */
+		@include trendingboxesnavigationicon;
+		left: -21px;
+	}
+
+	& .owl-next {
+		/* import from mixin.scss */
+		@include trendingboxesnavigationicon;
+		right: -16px;
+	}
+
+	& .owl-dots {
+		display: none;
+	}
+}
+
+.tour-slide-icon {
+	font-size: 24px;
+	/* import from variable.scss */
+	color: $anglecolor;
+}
+
+/*----------auto slider page banner------*/
+.page-banner {
+	position: relative;
+	width: 92%;
+	height: 256px;
+	margin: 4% auto;
+
+	& .page-banner-slide {
+		width: 100%;
+		height: 100%;
+
+		& a {
+			& img {
+				width: 100%;
+				height: 100%;
+				border-radius: 4px;
+			}
+		}
+
+		.display-left {
+			/* import from mixin.scss */
+			@include autoslidernavigationicon;
+			left: 20px;
+		}
+
+		.display-right {
+			/* import from mixin.scss */
+			@include autoslidernavigationicon;
+			right: 20px;
+		}
+
+		button {
+			outline: none;
+		}
+	}
+}
+
+.mySlides {
+	display: none;
+}
+
+#button-angle-left {
+	position: absolute;
+	top: 6px;
+	right: 12px;
+}
+
+#button-angle-right {
+	position: absolute;
+	top: 6px;
+	right: 10px;
+}
+
+/*---------reading post ------*/
+.readingcorner {
+	height: 350px;
+	width: 92%;
+	margin: 4% auto;
+
+	& .readingtext {
+		/* import from variables.scss */
+		color: $textcolor;
+		font-size: $headingtext;
+		font-weight: bold;
+	}
+}
+
+.inlinereading {
+	padding-top: 10px;
+	display: flex;
+	justify-content: space-between;
+
+	& .readingpost {
+		height: 220px;
+		width: 31%;
+
+		& a {
+			text-decoration: none;
+		}
+
+		& img {
+			height: 100%;
+			width: 100%;
+			border-top-left-radius: 8px;
+			border-top-right-radius: 8px;
+		}
+
+		.alltext {
+			/* import from variables.scss */
+			color: $textcolor;
+			font-size: 18px;
+			font-weight: bold;
+			padding-top: 5px;
+			padding-bottom: 18px;
+			border-bottom: 4px solid #cc5252;
+		}
+
+		.alltextbike {
+			/* import from variables.scss */
+			color: $textcolor;
+			padding-top: 5px;
+			font-size: 18px;
+			font-weight: bold;
+			padding-bottom: 45px;
+			border-bottom: 4px solid #cc5252;
+		}
+	}
+}
+
+/*---------why we all divs------*/
+.whywe {
+	width: 92%;
+	height: 350px;
+	margin: 4% auto;
+
+	& .whywe-heading {
+		/* import from variables.scss */
+		color: $textcolor;
+		font-size: $headingtext;
+		font-weight: 700;
+		padding-bottom: 20px;
+	}
+}
+
+.whywe-box {
+	display: flex;
+	justify-content: space-between;
+
+	& .whywe-inner-box {
+		width: 17%;
+		text-align: center;
+
+		& img {
+			height: 95px;
+			width: 95px;
+		}
+	}
+
+}
+
+.whywe-inner-box-last {
+	width: 16%;
+	text-align: center;
+
+	& img {
+		height: 95px;
+		width: 95px;
+	}
+}
+
+.whywe-heading-text {
+	/* import from variables.scss */
+	color: $textcolor;
+	padding: 10px 0 10px 0;
+	font-size: 17px;
+	text-align: center;
+	font-weight: 700;
+}
+
+.whywe-text-1,
+.whywe-text-2,
+.whywe-text-3,
+.whywe-text-4,
+.whywe-text-5 {
+	/* import from variables.scss */
+	color: $textcolor;
+	font-size: $size14;
+	text-align: left;
+	text-align: justify;
+}
+
+.whywe-text-1 {
+	padding-bottom: 20px;
+	border-bottom: 4px solid #4e76b1;
+}
+
+.whywe-text-2 {
+	padding-bottom: 61px;
+	border-bottom: 4px solid #f1a75e;
+}
+
+.whywe-text-3 {
+	padding-bottom: 82px;
+	border-bottom: 4px solid #35bec4;
+}
+
+.whywe-text-4 {
+	padding-bottom: 60px;
+	border-bottom: 4px solid #898ac3;
+}
+
+.whywe-text-5 {
+	padding-bottom: 60px;
+	border-bottom: 4px solid #e395d7;
+}
+
+/*-----contact form -------*/
+.contactform {
+	position: relative;
+	width: 92%;
+	height: 300px;
+	margin: 2% auto;
+	border-radius: 4px;
+	background: black;
+
+	& img {
+		width: 100%;
+		height: 100%;
+		opacity: .5;
+		border-radius: 4px;
+	}
+
+	& .ineer-contact-form {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+
+		& .planwithus {
+			/* import from variables.scss */
+			color: $fcolor;
+			width: 60%;
+			height: 53%;
+			font-size: 28px;
+			font-weight: bold;
+		}
+
+		& .start {
+			border-top: 2px solid $fcolor;
+		}
+
+		& .yourdetails {
+			font-size: 35px;
+		}
+
+		& .end {
+			border-bottom: 2px solid $fcolor;
+		}
+	}
+
+
+	.submitform {
+		width: 30%;
+
+		& .textfield {
+			height: 33px;
+			margin-bottom: 15px;
+			/* import from variables.scss */
+			color: $textcolor;
+			font-size: $size15;
+		}
+
+		& .checkbox {
+			/* import from variables.scss */
+			color: $fcolor;
+			font-size: $size12;
+
+			& a {
+				/* import from variables.scss */
+				color: $fcolor;
+			}
+
+			& a:hover {
+				/* import from variables.scss */
+				color: $buttonscolor;
+			}
+		}
+	}
+}
+
+#contactbtn {
+	width: 120px;
+	margin-top: 13px;
+	height: 34px;
+	padding-top: 4.5px;
+	/* import from variables.scss */
+	color: $fcolor;
+	font-size: $size15;
+	font-weight: 600;
+	background: linear-gradient(to right, #f85032, #e73827);
+	border-radius: 20px;
+	outline: none;
+
+	&:hover {
+		background: linear-gradient(to left, #f85032, #e73827);
+	}
+}

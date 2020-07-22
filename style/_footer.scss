@@ -1,0 +1,421 @@
+@import "./variables";
+@import "./mixin";
+
+$footertext: #e7e7e7;
+$colormain: #ffd000;
+
+/* footer section of index page */
+.indexfooter {
+     text-align: center;
+     margin-top: 60px;
+     /* import from variables.scss */
+     background: $background;
+     height: 155px;
+     width: 100%;
+}
+
+.foootertext {
+     font-size: 16px;
+     /* import from variables.scss */
+     color: $textcolor;
+     padding: 30px 0 20px 0;
+}
+
+#booknowbtn {
+     background-image: -webkit-gradient(linear, left top, right top, from(#FF3366), to(#BA265D));
+     height: 55px;
+     width: 240px;
+     font-size: 16px;
+     padding-top: 14px;
+     border-radius: 60px;
+     text-decoration: none;
+     transition: all 0.2s ease-in-out 0.2s;
+
+     &:hover {
+          color: antiquewhite;
+          font-size: 18px;
+          background-image: -webkit-gradient(linear, right top, left top, from(#FF3366), to(#BA265D));
+     }
+}
+
+/* footer section of index page */
+
+/* footer secction of flight page */
+#flight-footer {
+     height: 130px;
+     /* import from variable.scss */
+     background-color: $flightmaincolor;
+     // display: flex;
+     // flex-direction: column;
+     // justify-content: center;
+     // align-items: center;
+     position: relative;
+
+     & .flight-footer-icon {
+          width: 100%;
+          height: 70%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          & .flight-follow-icon {
+               display: flex;
+               width: 30%;
+               justify-content: space-evenly;
+
+               & h6 {
+                    color: $fcolor;
+                    padding-top: 5px;
+               }
+
+               & a {
+                    color: $fcolor;
+                    font-size: 19px;
+
+                    & .fa-facebook-square:hover {
+                         color: #3b5998;
+                    }
+
+                    & .fa-instagram:hover {
+                         color: #3f729b;
+                    }
+
+                    & .fa-twitter:hover {
+                         color: #00acee;
+                    }
+
+                    & .fa-linkedin-in:hover {
+                         color: #0e76a8;
+                    }
+
+                    & .fa-pinterest-p:hover {
+                         color: #E60023;
+                    }
+               }
+          }
+
+          & .move-to-top {
+               width: 3.7%;
+               justify-content: center;
+
+               & a {
+                    color: #e2afaf;
+                    font-size: 26px;
+                    &:hover {
+                         color: rgb(131, 112, 112);
+                    }
+               }
+          }
+     }
+
+     & .flight-footer-text {
+          width: 90%;
+          height: 60px;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: #195555;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          border-radius: 4px;
+
+          & .copy-right {
+               color: #f3e4e4;
+          }
+
+          & a {
+               color: #f3e4e4;
+               text-decoration: none;
+               border-bottom: 1px solid #f3e4e4;
+
+               &:hover {
+                    color: #bbb;
+                    border-bottom: 1px solid #bbb;
+               }
+          }
+     }
+}
+
+/* End footer secction of flight page */
+
+/* footer section of car rental page */
+.rental-footer {
+     position: relative;
+     margin-top: 5%;
+     height: 50vh;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     background-color: #1e2228;
+
+     & .getin-touch {
+          width: 30%;
+          height: 260px;
+
+          & h2 {
+               font-size: 22px;
+               font-weight: 700;
+               color: $fcolor;
+          }
+
+          & p {
+               /* import from variables.scss */
+               font-size: $size14;
+               color: $fcolor;
+          }
+
+          & span {
+               /* import from variables.scss */
+               font-size: $size14;
+               color: $fcolor;
+               line-height: 2.2;
+               font-weight: 500;
+          }
+
+          & a {
+               /* import from variables.scss */
+               font-size: $size15;
+               color: $fcolor;
+               line-height: 2.2;
+               font-weight: 500;
+          }
+
+          & button {
+               /* import from mixin.scss */
+               @include rentalbuttons;
+               margin-top: 15px;
+               /* import from variables.scss */
+               font-size: $size14;
+               height: 35px;
+               width: 150px;
+               border-radius: 2px;
+          }
+     }
+
+     & .rental-copyright {
+          /* import from variables.scss */
+          color: $fcolor;
+          font-size: $size14;
+          width: 100%;
+          display: flex;
+          position: absolute;
+          justify-content: center;
+          bottom: 0;
+     }
+
+     & .rental-follow-us {
+          width: 23%;
+
+          & a {
+               text-decoration: none;
+          }
+
+          & .fab {
+               color: $fcolor;
+               /* import from variables.scss */
+               font-size: $size15;
+               padding-right: 20px;
+
+               &:hover {
+                    color: $colormain;
+               }
+          }
+     }
+
+     & .news-letter {
+          position: relative;
+          height: 260px;
+          width: 290px;
+
+          & h2 {
+               color: $fcolor;
+               font-size: 22px;
+               font-weight: 700;
+          }
+
+          & p {
+               padding: 10px 0 12px 0;
+               /* import from variables.scss */
+               font-size: $size15;
+               color: $fcolor;
+          }
+
+          & input {
+               /* import from variables.scss */
+               font-size: $size14;
+               width: 260px;
+               height: 35px;
+               padding: 10px;
+               border: none;
+               outline: none;
+               border-radius: 3px;
+          }
+
+          & button {
+               @include rentalbuttons;
+               position: absolute;
+               width: 40px;
+               height: 35px;
+               right: 30px;
+               /* import from variables.scss */
+               font-size: $size14;
+               border-top-left-radius: 0px;
+               border-top-right-radius: 3px;
+               border-bottom-right-radius: 3px;
+               border-bottom-left-radius: 0px;
+          }
+     }
+}
+
+/* end of footer section of car rental page */
+
+
+/*--------tours and reavels foooter------*/
+
+.toursfooter {
+     height: 201px;
+     position: relative;
+     width: 100%;
+     background-color: #515151;
+}
+
+.footerrow {
+     display: flex;
+     justify-content: space-around;
+}
+
+.helpline {
+     line-height: 27px;
+     /* import from variables.scss */
+     color: $footertext;
+     font-size: 17px;
+     margin-top: 20px;
+     padding-right: 50px;
+     border-right: 1px solid rgb(190, 190, 190);
+
+     & a {
+          /* import from variables.scss */
+          color: $footertext;
+          text-decoration: none;
+     }
+
+     & span {
+          /* import from variables.scss */
+          font-size: $size12;
+     }
+
+     .fa-phone-alt {
+          font-size: 20px;
+          /* import from variables.scss */
+          color: $buttonscolor;
+     }
+}
+
+.subscribe {
+     margin-top: 27px;
+     position: relative;
+     width: 320px;
+
+     & input {
+          height: 40px;
+          /* import from variables.scss */
+          font-size: $size13;
+          border-radius: 20px;
+     }
+
+     .fa-phone-alt {
+          font-size: 20px;
+          /* import from variables.scss */
+          color: $buttonscolor;
+     }
+}
+
+#subsbtn {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     right: 12px;
+     top: 8px;
+     height: 23px;
+     width: 90px;
+     /* import from variables.scss */
+     background: linear-gradient(to right, #f85032, #e73827);
+     color: $fcolor;
+     /* import from variables.scss */
+     font-size: $size13;
+     font-weight: 500;
+     border-radius: 20px;
+     outline: none;
+
+     &:hover {
+          background: linear-gradient(to left, #f85032, #e73827);
+     }
+}
+
+.tourscopyright {
+     position: absolute;
+     /* import from variables.scss */
+     color: $footertext;
+     font-size: $size12;
+     left: 43%;
+     bottom: 0;
+}
+
+.followus {
+     padding-top: 30px;
+     text-align: center;
+
+     & a {
+          text-decoration: none;
+     }
+
+     .fab:hover {
+          opacity: .7;
+     }
+
+     .fa-facebook-f {
+          background: #3B5998;
+          color: white;
+     }
+
+     .fa-youtube {
+          background: #c4302b;
+          color: white;
+     }
+
+     .fa-pinterest {
+          background: #E60023;
+          color: white;
+     }
+
+     .fa-instagram {
+          background: #3f729b;
+          color: white;
+     }
+
+     .fa-linkedin-in {
+          background: #0e76a8;
+          color: white;
+     }
+
+     .fa-twitter {
+          background: #00acee;
+          color: white;
+     }
+}
+
+.sicon {
+     padding: 7px 5px 0px 5px;
+     /* import from variables.scss */
+     font-size: $size15;
+     width: 27px;
+     height: 27px;
+     text-align: center;
+     border-radius: 50%;
+     margin-right: 10px;
+}
+
+/* end of tours footer section */

@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+@import "./variables";
+@import "./mixin";
+
+/* preloader for car rental site */
+#flight-preloader {
+     position: fixed;
+     width: 100%;
+     height: 100vh;
+     background: $fcolor url('../images/preloaderflight.gif') no-repeat center;
+     z-index: 999;
+}
+
+/* home display for flight & booking form */
+
+#flighthome {
+     height: 75vh;
+     width: 100%;
+     background-color: black;
+     position: relative;
+
+     & img {
+          height: 100%;
+          width: 100%;
+          opacity: 0.4;
+     }
+
+     & .flight-Booking-form {
+          position: absolute;
+          width: 70%;
+          height: 275px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 5px;
+          border: 0.01px solid #595f71ab;
+          /* import from variable.scss */
+          background-color: rgba($flightmaincolor, 0.411);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+
+          & h2 {
+               /* import from variable.scss */
+               color: $fcolor;
+               font-size: 27px;
+               padding: 10px 0 0 25px;
+          }
+
+          & .form-1st-row {
+               margin: 0 20px;
+               display: flex;
+               justify-content: space-around;
+
+               & .form-group {
+                    width: 32%;
+
+                    & label {
+                         /* import from variable.scss */
+                         color: $fcolor;
+                    }
+               }
+          }
+
+          & .form-2nd-row {
+               margin: 0 20px;
+               display: flex;
+               justify-content: space-around;
+
+               & .form-group {
+                    width: 32%;
+
+                    & label {
+                         /* import from variable.scss */
+                         color: $fcolor;
+                    }
+               }
+
+          }
+
+          & .form-3rd-row {
+               margin: 0 26px;
+               display: flex;
+               justify-content: space-between;
+
+               & .radio-button {
+                    margin-top: 9px;
+
+                    & label {
+                         /* import from variable.scss */
+                         color: $fcolor;
+                    }
+
+                    & .radio {
+                         margin-right: 50px;
+                         margin-top: 7px;
+                    }
+               }
+
+               & button {
+                    height: 39px;
+                    background-color: #0f3538;
+
+                    &:hover {
+                         background-color: #132627;
+                    }
+               }
+
+          }
+     }
+}
+
+/* end of home display for flight & booking form */
+
+
+/* flight news letter subscription */
+.subscribe-box {
+     position: relative;
+     height: 240px;
+
+     .flight-3news-letter {
+          width: 100%;
+          height: 240px;
+          position: relative;
+          border-bottom-left-radius: 25%;
+          border-bottom-right-radius: 25%;
+          /* import from variable.scss */
+          background-color: $flightmaincolor;
+          z-index: -1;
+
+          & h2 {
+               /* import from variable.scss */
+               color: $fcolor;
+               text-align: center;
+               font-size: 40px;
+               padding: 25px 0 5px 0;
+          }
+
+          & p {
+               /* import from variable.scss */
+               color: $fcolor;
+               text-align: center;
+          }
+
+          &::before {
+               content: "";
+               position: absolute;
+               height: 115px;
+               width: 60%;
+               left: 0;
+               bottom: -23%;
+               /* import from vatiable.scss */
+               background-color: $fcolor;
+               transform: skewy(8deg);
+          }
+
+          &::after {
+               content: "";
+               position: absolute;
+               width: 60%;
+               height: 115px;
+               right: 0;
+               bottom: -23%;
+               /* import from variable.scss */
+               background-color: $fcolor;
+               transform: skewy(-8deg);
+          }
+     }
+
+     & .subs-btn {
+          position: absolute;
+          bottom: 30%;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: transparent;
+          color: $fcolor;
+          font-size: 14px;
+          height: 40px;
+          width: 220px;
+          /* import from variable.scss */
+          border: 1px solid $fcolor;
+          border-radius: 5px;
+          outline: none;
+          transition: all 0.2s ease-in-out 0.1s;
+
+          &:hover {
+               background-color: #132627;
+               font-weight: 500;
+          }
+
+     }
+
+     & .modal-title {
+          text-transform: capitalize;
+          color: $fcolor;
+     }
+
+     & .modal-content {
+          background-color: #213339;
+
+          & .modal-header {
+               border-bottom: 0;
+               position: relative;
+
+               &::after {
+                    content: "";
+                    position: absolute;
+                    width: 92%;
+                    height: 2px;
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: #dee2e6;
+               }
+          }
+
+          & .close {
+               color: $fcolor;
+          }
+
+          & .fli-subs {
+               margin-left: 40%;
+               background-color: #063133;
+               /* import from variable.scss */
+               border: 1px solid $fcolor;
+               margin-bottom: 8px;
+
+               &:hover {
+                    background-color: rgba(19, 38, 39, 0.8);
+               }
+          }
+     }
+}
+
+/* end of flight news letter subscription */
+
+
+
+/* Weather box */
+.main-weather-box {
+     width: 100%;
+     margin-top: 60px;
+
+     & h2 {
+          text-align: center;
+          font-size: 30px;
+          /* import from variable.scss */
+          color: $b3color;
+          font-family: 'Rowdies', cursive;
+     }
+
+     & .weather-container {
+          position: relative;
+          width: 90%;
+          height: 500px;
+          margin: 50px auto;
+          border-radius: 5px;
+          background: url('../images/flight-weather.jpg') no-repeat center center/cover;
+
+          & nav {
+               height: 60px;
+               border-top-left-radius: 5px;
+               border-top-right-radius: 5px;
+               /* import from variable.scss */
+               background-color: rgba($flightmaincolor, 0.623);
+
+               & .nav-tabs {
+                    width: 100%;
+                    height: 60px;
+
+                    & a {
+                         font-size: 18px;
+                         font-weight: 500;
+                         padding: 16px 20px 0 0px;
+                         /* import from variable.scss */
+                         color: $fcolor;
+
+                         &:hover {
+                              border: none;
+                         }
+                    }
+
+                    & .active {
+                         border: none;
+                         height: 58.6px;
+                         background-color: darkkhaki;
+                    }
+               }
+          }
+     }
+
+     & .tab-content {
+
+          & .weather-box-container {
+               display: flex;
+               justify-content: space-evenly;
+               margin-top: 40px;
+
+               & .weather-box {
+                    height: 370px;
+                    width: 28%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border-radius: 5px;
+                    background-color: rgba(132, 148, 138, 0.541);
+
+                    & h5 {
+                         /* import from variable.scss */
+                         color: $fcolor;
+                         padding: 30px;
+                         font-size: 24px;
+                         font-weight: 600;
+                         text-transform: capitalize;
+                    }
+
+                    & h4 {
+                         /* import from variable.scss */
+                         color: $fcolor;
+                         padding: 30px;
+                         font-weight: 24px;
+                         font-weight: 600;
+                    }
+
+                    & .temprature {
+                         width: 80%;
+                         height: 100px;
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: center;
+                         align-items: center;
+                         border-radius: 4px;
+                         background-color: rgba(253, 253, 253, 0.63);
+
+                         & .row {
+                              width: 100%;
+                              display: flex;
+                              justify-content: space-evenly;
+
+                              & p {
+                                   /* import from variable.scss */
+                                   color: $b3color;
+                                   font-weight: 500;
+                              }
+                         }
+
+                         & .row {
+                              & .temp {
+                                   font-weight: 500;
+                                   padding: 1px 6px;
+                                   border-radius: 3px;
+                                   /* import from variable.scss */
+                                   color: $b3color;
+                                   background-color: rgba($flightmaincolor, 0.4);
+                              }
+                         }
+                    }
+               }
+          }
+     }
+}
+
+/* End Weather box */
+
+/* recomended places */
+.rocomended-container {
+     height: 600px;
+     width: 90%;
+     margin: 0px auto;
+
+     & h2 {
+          /* import from variable.scss */
+          color: $b3color;
+          text-align: center;
+          padding: 30px 0 50px 0;
+          text-transform: uppercase;
+          font-family: 'Rowdies', cursive;
+     }
+
+     a.nav-link.active {
+          background-color: #182029ef;
+     }
+
+     .nav {
+          & a {
+               text-transform: uppercase;
+               margin-bottom: 20px;
+               padding: 0 20px;
+               font-weight: 600;
+               /* import from variable.scss */
+               color: $fcolor;
+               background-color: $flightmaincolor;
+
+               &:hover {
+                    background-color: #182029ef;
+               }
+          }
+
+          .nav-link {
+               height: 60px;
+               position: relative;
+               display: flex;
+               align-items: center;
+               border-radius: 5px;
+          }
+
+          i {
+               position: absolute;
+               z-index: 1;
+               right: 0;
+               width: 55px;
+               height: 100%;
+               font-size: 20px;
+               font-weight: 600;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               border-top-right-radius: 5px;
+               border-bottom-right-radius: 5px;
+               background-color: rgba(53, 90, 94, 0.2);
+               box-shadow: -1px 0 15px -6px rgba(0, 0, 0, 0.8);
+          }
+     }
+
+     .place-conteiner {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+
+          .place {
+               height: 380px;
+               width: 45%;
+               border-radius: 5px;
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               box-shadow: 0 8px 20px -6px rgba(0, 0, 0, 0.5);
+
+               & img {
+                    width: 100%;
+                    height: 170px;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+               }
+
+               & h5 {
+                    /* import from variable.scss */
+                    color: $b3color;
+                    font-size: 16px;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    padding: 20px 20px 5px 20px;
+               }
+
+               & p {
+                    /* import from variable.scss */
+                    color: $b3color;
+                    font-size: $size14;
+                    padding: 0 20px 5px 20px;
+               }
+
+               & button {
+                    height: 37px;
+                    width: 210px;
+                    font-size: 14px;
+                    /* import from mixin.scss */
+                    @include flightbutton;
+               }
+          }
+     }
+}
+
+/* End of recomended places */
+
+/* most visited places */
+.most-visited-container {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+
+     & h2 {
+          /* import from variable.scss */
+          color: $b3color;
+          padding: 10px;
+          font-family: 'Rowdies', cursive;
+     }
+
+     & .item-slider {
+          width: 94%;
+          height: 100%;
+          margin-top: 25px;
+
+          & .item {
+               height: 320px;
+               border-radius: 5px;
+               box-shadow: 0 7px 16px -6px rgba(0, 0, 0, 0.5);
+
+               & img {
+                    width: 100%;
+                    height: 220px;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+               }
+
+               & p {
+                    /* import from variable.scss */
+                    color: $b3color;
+                    font-size: 18px;
+                    padding: 15px 20px 0 20px;
+               }
+
+               & h3 {
+                    font-size: 18px;
+                    color: rgb(63, 111, 144);
+                    text-transform: uppercase;
+                    padding: 0 20px;
+               }
+          }
+     }
+
+     .slick-dots {
+          margin-bottom: -25px;
+     }
+
+     .slick-slide {
+          margin: 15px;
+     }
+
+     .slick-dots li button:before {
+          font-size: 12px;
+     }
+}
+
+/* End of most visited places */
+/* contact and message */
+#main-contact {
+     position: relative;
+     width: 100%;
+     height: 600px;
+     margin-top: 90px;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     background: $fcolor url('../images/flight-contact.jpg') no-repeat center center/cover;
+
+     &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 50%;
+          height: 50px;
+          margin-top: -49px;
+          background-color: inherit;
+          transform-origin: 100% 100%;
+          transform: skewY(-3deg);
+     }
+
+     &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 50%;
+          height: 50px;
+          margin-top: -49px;
+          background-color: inherit;
+          transform-origin: 0 100%;
+          transform: skewY(3deg);
+     }
+
+     & .map {
+          height: 450px;
+          width: 600px;
+          margin-top: 35px;
+
+          & iframe {
+               /* import from variable.scss */
+               background-color: rgba($flightmaincolor, 0.411);
+               box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.9);
+               border-radius: 5px;
+          }
+     }
+
+     & .message-box {
+          height: 440px;
+          width: 370px;
+          margin-top: 35px;
+          border-radius: 5px;
+          /* import from variable.scss */
+          background-color: rgba($flightmaincolor, 0.411);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.9);
+
+          & h2 {
+               /* import from variable.scss */
+               color: $fcolor;
+               margin: 22px;
+               font-size: 22px;
+               text-align: center;
+          }
+
+          & .flight-message-form {
+               display: flex;
+               align-items: center;
+               flex-direction: column;
+               justify-content: center;
+
+               & .form-group {
+                    width: 80%;
+                    margin-top: 5px;
+
+                    & label {
+                         font-size: 16px;
+                    }
+
+               }
+
+               & .msg-btn {
+                    /* import from mixin.scss */
+                    @include flightbutton;
+               }
+          }
+     }
+}
+
+/* End contact and message */

@@ -1,0 +1,862 @@
+@import "./variables";
+@import "./mixin";
+
+$colormain: #ffd000;
+
+/* preloader for car rental site */
+#car-loader {
+     position: fixed;
+     width: 100%;
+     height: 120vh;
+     background: #fff url('../images/preloaderrental.gif') no-repeat center;
+     z-index: 999;
+}
+
+/* home display image and its form */
+.home-display {
+     height: 100vh;
+     width: 100%;
+     position: relative;
+     display: flex;
+     background-color: black;
+
+     & img {
+          height: 100%;
+          width: 100%;
+          opacity: .3;
+     }
+}
+
+.booking-form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     position: absolute;
+     top: 4.5%;
+     right: 5%;
+     color: $fcolor;
+     width: 450px;
+     height: 525px;
+     background-color: rgba(32, 46, 69, 0.4);
+     border: 1px solid #4b5263;
+     border-radius: 5px;
+
+     & h4 {
+          font-weight: 700;
+          font-size: 22px;
+          margin-top: 25px;
+     }
+
+     & form {
+          width: 82%;
+
+          & button {
+               /* import from mix in */
+               @include rentalbuttons;
+               margin-top: 20px;
+               font-size: 16px;
+               height: 40px;
+               width: 100%;
+          }
+     }
+
+     & .input {
+          margin-top: 15px;
+          font-size: 14px;
+          height: 40px;
+          width: 100%;
+          border-radius: 6px;
+     }
+}
+
+.date {
+     position: absolute;
+     width: 49%;
+     height: 40px;
+     top: 0;
+     right: 0;
+     border-radius: 6px;
+}
+
+.pick-up {
+     position: relative;
+     width: 100%;
+
+     & p {
+          /* import from mixin.scss */
+          @include date;
+     }
+}
+
+.return {
+     position: relative;
+     width: 100%;
+
+     & p {
+          /* import from mixin.scss */
+          @include date;
+     }
+}
+
+.home-text {
+     position: absolute;
+     top: 45%;
+     transform: translatey(-50%);
+     left: 6%;
+     color: $fcolor;
+
+     & p {
+          font-size: 16px;
+          font-weight: 500;
+     }
+
+     & h2 {
+          font-size: 40px;
+          font-family: 'Coda Caption', sans-serif;
+     }
+
+     & .slogan-text {
+          text-transform: uppercase;
+          font-size: 16px;
+          font-weight: 500;
+     }
+
+     & button {
+          /* import from mix in */
+          @include rentalbuttons;
+          margin-top: 20px;
+          font-size: 15px;
+          height: 45px;
+          width: 200px;
+     }
+}
+
+/* end of home and form section */
+
+/* about us with ad video */
+.about-us {
+     width: 90%;
+     margin: 5% auto;
+
+     & h4 {
+          text-align: center;
+          font-size: 34px;
+          font-weight: 700;
+     }
+
+     & .aboutus-text {
+          margin-top: 8%;
+          font-size: 17px;
+          width: 50%;
+
+          & button {
+               @include rentalbuttons;
+               font-size: 14px;
+               height: 35px;
+               width: 130px;
+               margin: 30px 20px 0 0;
+          }
+     }
+}
+
+/* this one for car icon and and line */
+.car-line {
+     @include carline;
+}
+
+/* end of car icon and line */
+
+.inner-about-us {
+     display: flex;
+     justify-content: space-between;
+
+     & video {
+          margin-top: 4%;
+          height: 320px;
+          width: 45%;
+          border-radius: 4px;
+     }
+}
+
+/* end of about us and ad video */
+
+/* our sevices for our clients */
+.our-services {
+     width: 90%;
+     margin: 5% auto;
+
+     & h4 {
+          text-align: center;
+          font-size: 32px;
+          font-weight: 700;
+     }
+
+     & .serivice-heading-para {
+          display: flex;
+          justify-content: center;
+          margin-top: 10px;
+          font-size: 16px;
+          padding-bottom: 6%;
+     }
+
+     & .box-line {
+          /* import from mixin.scss */
+          @include box-content;
+
+          & h3 {
+               padding: 40px 0 20px 35px;
+          }
+
+          & p {
+               padding: 0 35px 0 35px;
+          }
+     }
+}
+
+/* end of our service for our clients */
+
+/* globally connected image and text */
+.globally-connected {
+     height: 70vh;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+
+     & .globally-image {
+          height: 100%;
+          width: 55%;
+
+          & img {
+               width: 100%;
+               height: 100%;
+               border-top-right-radius: 5px;
+               border-bottom-right-radius: 5px;
+          }
+     }
+
+     .globally-text {
+          width: 55%;
+          padding: 5%;
+
+          & h4 {
+               font-size: 38px;
+               font-weight: 700;
+          }
+
+          & h5 {
+               color: rgb(76, 71, 71);
+               padding-top: 16px;
+               font-size: 16px;
+          }
+
+          & p {
+               padding-top: 20px;
+               font-size: 16px;
+          }
+
+          & button {
+               @include rentalbuttons;
+               font-size: 16px;
+               margin-top: 20px;
+               height: 40px;
+               width: 150px;
+          }
+     }
+}
+
+/* end od globally connected and text */
+
+/* page banner in car rental */
+.car-page-banner {
+     height: 75vh;
+     width: 90%;
+     margin: 5% auto;
+
+     & h2 {
+          text-align: center;
+     }
+
+     & .carousel {
+          margin-top: 6%;
+
+          & .carousel-inner {
+
+               & .carousel-item {
+                    & img {
+                         position: absolute;
+                         width: 40%;
+                         height: 100%;
+                         right: 0;
+                         border-top-left-radius: 4px;
+                         border-bottom-left-radius: 4px;
+                    }
+
+                    & .descrip {
+                         width: 50%;
+                         margin-top: -3px;
+
+                         & .slider-price {
+                              display: flex;
+                              justify-content: space-between;
+
+                              & h5 {
+                                   color: orange;
+                              }
+
+                              & .day-size {
+                                   font-size: 13px;
+                              }
+                         }
+
+                         & .car-desc {
+                              font-size: 14px;
+                              line-height: 0.1;
+                         }
+
+                         & h6 {
+                              font-weight: 400;
+                              padding: 7px 0 3px 0;
+                              font-size: 14px;
+                         }
+
+                         & p {
+                              line-height: .5;
+                              font-size: 14px;
+                         }
+
+                         & button {
+                              @include rentalbuttons;
+                              height: 37px;
+                              width: 200px;
+                         }
+                    }
+               }
+          }
+
+          & .carousel-indicators {
+               bottom: -70px;
+
+               & li {
+                    background-color: grey;
+                    height: 11px;
+                    width: 11px;
+                    border: 0.5px solid orangered;
+                    border-radius: 2px;
+               }
+
+               & .active {
+                    background-color: $colormain;
+               }
+          }
+     }
+}
+
+/* end of page banner in car rental */
+
+/* happy clients offices cars in stock */
+.happy-serivices {
+     position: relative;
+     height: 45vh;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     background-color: black;
+
+     & .clients-bgimg {
+          position: absolute;
+          background-image: url('../images/happyservices.jpg');
+          background-size: cover;
+          background-position: center center;
+          height: 100%;
+          width: 100%;
+          opacity: .3;
+     }
+
+     & .happy-clients {
+          /* import from mixin.scss */
+          @include happy-clients;
+     }
+
+     & .cars-instock {
+          /* import from mixin.scss */
+          @include happy-clients;
+     }
+
+     & .office-incities {
+          /* import from mixin.scss */
+          @include happy-clients;
+
+          & p {
+               right: 20%;
+          }
+     }
+}
+
+/* end of happy clients offices cars in stock */
+
+/* different car model for rent */
+.select-car-model {
+     width: 90%;
+     margin: 5% auto;
+
+     & h2 {
+          text-align: center;
+     }
+
+     & .car-model-container {
+          width: 100%;
+          margin: 3% auto;
+
+          & nav {
+               height: 55px;
+               border-top-left-radius: 5px;
+               border-top-right-radius: 5px;
+               background-color: #ced3d7;
+
+               & .nav-tabs {
+                    width: 100%;
+                    height: 55px;
+                    border: 0.01px solid #80808066;
+                    border-top-left-radius: 4px;
+                    border-top-right-radius: 4px;
+
+                    & a {
+                         font-size: 18px;
+                         font-weight: 500;
+                         padding: 16px 20px 0 0px;
+                         color: black;
+                         border-right: 0.1px solid rgba(128, 128, 128, 0.4);
+
+                         &:hover {
+                              border-top: none;
+                              border-bottom: none;
+                              border-right: 0.1px solid #80808066;
+                              border-left: none;
+                         }
+                    }
+
+                    & .active {
+                         position: relative;
+                         height: 54px;
+                         background-color: #fcba03;
+                         border: none;
+
+                         &::after {
+                              content: "";
+                              position: absolute;
+                              height: 20px;
+                              width: 20px;
+                              bottom: -10px;
+                              left: 45%;
+                              transform: translateX(-50%) rotate(45deg);
+                              background-color: #fcba03;
+                              // z-index: -1;
+                         }
+
+                    }
+               }
+          }
+     }
+
+     & .tab-content {
+          margin-top: 5%;
+          width: 100%;
+
+          & .audi-box {
+               /* import from mixin.scss */
+               @include carmodels;
+          }
+
+          & .bmw-box {
+               /* import from mixin.scss */
+               @include carmodels;
+          }
+
+          & .ferrari-box {
+               /* import from mixin.scss */
+               @include carmodels;
+          }
+
+          & .toyota-box {
+               /* import from mixin.scss */
+               @include carmodels;
+          }
+     }
+}
+
+/* end of different car model */
+
+/* monthly price for clients */
+.monthly-pack {
+     margin-top: 5%;
+     position: relative;
+     background-color: black;
+
+     & .monthly-pack-bgimg {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          opacity: 0.2;
+          background: url('../images/ourmembership.jpg') no-repeat center center/cover;
+     }
+
+     & h2 {
+          position: relative;
+          padding-top: 3%;
+          color: $fcolor;
+          text-align: center;
+          text-transform: capitalize;
+
+     }
+
+     & .car-line {
+          @include carline;
+
+          &::before {
+               background-color: $fcolor;
+          }
+
+          &::after {
+               background-color: $fcolor;
+          }
+     }
+
+     & .price-container {
+          width: 100%;
+          height: 620px;
+          margin-top: 2%;
+          display: flex;
+          justify-content: space-evenly;
+
+          & .price-box {
+               position: relative;
+               width: 29%;
+               border-radius: 4px;
+               margin-bottom: 30px;
+               background-color: rgba(255, 255, 255, 0.12);
+
+
+               & h3 {
+                    text-align: center;
+                    color: $fcolor;
+                    padding: 6% 0 2% 0;
+               }
+
+               & h1 {
+                    color: $colormain;
+                    text-align: center;
+                    padding-bottom: 2%;
+               }
+
+               & p {
+                    color: $fcolor;
+                    text-align: center;
+               }
+
+               & button {
+                    @include rentalbuttons;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    height: 40px;
+                    width: 70%;
+               }
+
+               & hr {
+                    background-color: $fcolor;
+               }
+
+               &:hover {
+                    background-color: rgba(0, 0, 0, 0.3);
+               }
+          }
+     }
+}
+
+/* end of monthly price for clients */
+
+/* testimonials */
+.testimonials {
+     width: 90%;
+     margin: 5% auto;
+
+     & h2 {
+          text-align: center;
+     }
+
+     & h6 {
+          margin-top: 7px;
+          font-weight: 400;
+          text-align: center;
+     }
+
+     /* Slideshow container */
+     .slideshow-container {
+          width: 70%;
+          height: 171px;
+          position: relative;
+          margin: 0 auto;
+          margin-top: 80px;
+          border: .5px solid #bbb;
+          border-radius: 5px;
+
+          & .mySlides {
+               width: 100%;
+               position: absolute;
+               z-index: -1;
+
+               & .testimonial-box {
+                    width: 100%;
+                    background: #1e2228;
+                    display: flex;
+                    height: 170px;
+                    align-items: center;
+                    border-left: none;
+                    border-radius: 5px;
+
+                    &::before {
+                         content: "";
+                         position: absolute;
+                         background-color: $fcolor;
+                         height: 170px;
+                         width: 72px;
+                         transform: skewx(-30deg);
+                         border-right: 4px solid $colormain;
+                         border-bottom-left-radius: 5px;
+                         z-index: 1;
+                    }
+
+                    &::after {
+                         content: "";
+                         position: absolute;
+                         height: 100px;
+                         width: 50px;
+                         top: 0;
+                         background-color: $fcolor;
+                         border-top-left-radius: 5px;
+                    }
+
+                    & img {
+                         height: 100px;
+                         width: 100px;
+                         margin-left: 40px;
+                         border: 4px solid $colormain;
+                         z-index: 10;
+                    }
+
+                    & .review {
+                         display: flex;
+                         flex-direction: column;
+
+                         & p {
+                              color: $fcolor;
+                              padding: 0 30px;
+                         }
+
+                         & .Icon-with-name {
+                              display: flex;
+                              margin-top: 5px;
+
+                              & h5 {
+                                   text-transform: uppercase;
+                                   color: $colormain;
+                                   padding: 0 100px 0 30px;
+                              }
+
+                              & .staricon {
+                                   color: yellow;
+                                   font-size: 20px;
+                                   padding: 3px 3px 0 0;
+                              }
+                         }
+
+                    }
+               }
+          }
+     }
+
+     /* The dots/bullets/indicators */
+     .testimonialdot {
+          cursor: pointer;
+          height: 6px;
+          width: 40px;
+          margin: 0 2px;
+          background-color: gray;
+          border: .1px solid $colormain;
+          border-radius: 10px;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+     }
+
+     .active,
+     .testimonialdot:hover {
+          background-color: $colormain;
+     }
+
+}
+
+/* end of testimonials */
+
+/* support team */
+.support-team {
+     position: relative;
+     height: 50vh;
+     width: 100%;
+     margin-top: 8%;
+     background-color: black;
+     display: flex;
+     justify-content: center;
+
+     & .support-bgimg {
+          position: absolute;
+          background-image: url('../images/oursupportteam.jpg');
+          height: 100%;
+          width: 100%;
+          background-position: center center;
+          opacity: 0.2;
+     }
+
+     & .inner-support {
+          width: 70%;
+          height: 70%;
+          z-index: 1;
+
+          & h2 {
+               padding-top: 25px;
+               font-size: 32px;
+               font-weight: 700;
+               text-align: center;
+               color: $fcolor;
+          }
+
+          & .car-line {
+               @include carline;
+
+               &::before {
+                    background-color: $fcolor;
+                    left: 42%;
+               }
+
+               &::after {
+                    background-color: $fcolor;
+                    right: 42%;
+               }
+          }
+
+          & p {
+               padding: 2% 0 1.3% 0;
+               text-align: center;
+               font-size: 14px;
+               color: $fcolor;
+          }
+
+          & button {
+               @include rentalbuttons;
+               position: relative;
+               font-size: 13px;
+               left: 50%;
+               transform: translateX(-50%);
+               height: 40px;
+               width: 250px;
+          }
+     }
+}
+
+/* end of support team */
+
+/* car-blog */
+.car-blog {
+     height: 88vh;
+     width: 90%;
+     margin: 80px auto;
+
+     & h2 {
+          text-align: center;
+          font-weight: 700;
+          font-size: 32px;
+          color: $b3color;
+     }
+
+     & .blog-box {
+          display: flex;
+          justify-content: space-between;
+
+          & .blog-content {
+               position: relative;
+               margin-top: 5%;
+               width: 23%;
+               height: 380px;
+
+               & figure {
+                    height: 200px;
+                    overflow: hidden;
+                    border-top-left-radius: 6px;
+                    border-top-right-radius: 6px;
+
+                    & img {
+                         width: 100%;
+                         height: 100%;
+                         border-top-left-radius: 6px;
+                         border-top-right-radius: 6px;
+                         transition: all 0.3s linear 0.2s;
+                    }
+               }
+
+               & h6 {
+                    margin-top: 15px;
+                    background-color: $b3color !important;
+                    color: $fcolor !important;
+                    font-size: $size13;
+                    font-weight: 500;
+                    padding: 8px;
+                    width: 90px;
+                    border-radius: 4px;
+               }
+
+               & a {
+                    text-decoration: none;
+               }
+
+               & h3 {
+                    color: $b3color;
+                    font-size: 17px;
+                    font-weight: 800;
+                    margin-top: 15px;
+                    transition: all 0.3s ease-in-out 0.2s;
+               }
+
+               & p {
+                    color: $b3color !important;
+                    font-size: 15px;
+                    margin-top: 10px;
+               }
+
+               & .likes {
+                    position: absolute;
+                    color: #777777 !important;
+                    font-size: 14px;
+               }
+
+               & .comments {
+                    position: absolute;
+                    font-size: 14px;
+                    color: #777777 !important;
+                    right: 6px;
+               }
+
+               &:hover {
+                    img {
+                         transform: scale(1.3);
+                    }
+
+                    h3 {
+                         cursor: pointer;
+                         color: #666666;
+                    }
+               }
+          }
+     }
+}
+
+/* end of car-blog */

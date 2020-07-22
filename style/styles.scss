@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap');
+@import "./navbar";
+@import "./sidenav";
+@import "./toursstyle";
+@import "./flights";
+@import "./rental";
+@import "./mixin";
+@import "./variables";
+@import "./footer";
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+#loader {
+     position: fixed;
+     width: 100%;
+     height: 120vh;
+     background: #fff url('../images/loader.gif') no-repeat center;
+     z-index: 9999;
+}
+
+section {
+     margin-top: -5px;
+}
+
+/*---------image view-------*/
+.image {
+     display: flex;
+     width: 100%;
+
+     & img {
+          margin-left: 0px;
+          height: 225px;
+          width: 33.5%;
+     }
+}
+
+/*---------ratting section-------*/
+.ratting {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     width: 100%;
+     height: 60px;
+     align-items: center;
+     box-shadow: $boxshadow;
+
+     & .hname {
+          color: $anchortag;
+          font-size: 23px;
+          padding: 0 30px 0 30px;
+     }
+
+     & .material-icons {
+          padding-top: 4px;
+          font-size: 19px;
+          color: $stariconcolor;
+          padding-left: 2px;
+     }
+}
+
+.location-right {
+     display: flex;
+     align-items: center;
+     position: absolute;
+     right: 0;
+
+     & .location {
+
+          padding-right: 22px;
+          color: $stariconcolor;
+
+          & a {
+               color: $stariconcolor;
+               text-decoration: none;
+          }
+     }
+}
+
+.areaname {
+     border-bottom: 2px solid $hovercolor;
+     padding-bottom: 1px;
+     font-size: $size14;
+     font-weight: bold;
+
+}
+
+.overallratting {
+     height: 60px;
+     width: 75px;
+     background: $hovercolor;
+
+     & .numberrate {
+          text-align: center;
+          color: white;
+          font-size: $size16;
+          padding-top: 7px;
+     }
+
+     & .allratting {
+          text-align: center;
+          font-size: $size11;
+          color: white;
+     }
+}
+
+/*---------center content-------*/
+
+.main {
+     display: flex;
+     justify-content: space-around;
+
+     & .row {
+          border-bottom: $centercontentborder;
+          padding-bottom: 4%;
+
+          & .float-left {
+               padding: 20px 80px 10px 20px;
+               font-size: $size13;
+          }
+
+          & .float-right {
+
+               font-size: $size13;
+               padding-top: 23px;
+          }
+
+          & .fa-angle-right {
+               padding-top: 10px;
+          }
+
+     }
+}
+
+.center-content {
+     display: flex;
+     box-shadow: $boxshadow;
+     flex-direction: column;
+     height: 420px;
+     width: 700px;
+     padding: 27px 50px 0 50px;
+     margin: 40px 20px 0px 65px;
+
+     & .text {
+          font-size: $size13;
+          padding-bottom: 4%;
+          border-bottom: $centercontentborder;
+     }
+
+     & .second-paragraph {
+          padding-top: 4%;
+     }
+}
+
+
+
+.row1 {
+     display: flex;
+
+     & .recommend {
+          font-size: $size13;
+          padding: 35px 80px 0 5px;
+     }
+
+     & .recommendimage {
+          padding-top: 3.5%;
+
+          & img {
+               height: $profileimagesize;
+               width: $profileimagesize;
+               border-radius: 25px;
+
+          }
+
+          & .img1 {
+               margin-left: -12px;
+          }
+     }
+}
+
+
+/*---------review ratting-------*/
+.profilequotes {
+     box-shadow: $boxshadow;
+     height: 160px;
+     width: 370px;
+     margin: 40px 30px 20px 35px;
+
+     & .profiletext {
+          font-size: $size13;
+          margin-top: -20px;
+          padding: 0px 40px 8% 22px;
+     }
+
+     & .quotesimage {
+          padding-left: 20px;
+
+          & img {
+               height: $profileimagesize;
+               width: $profileimagesize;
+               border-radius: 25px;
+          }
+     }
+}
+
+.fa-quote-left {
+     font-size: 40px;
+     color: #f3e2e2;
+}
+
+.reviewername {
+     font-size: $size13;
+     font-weight: 500;
+     padding-left: 73px;
+     margin-top: -37px;
+}
+
+.reviewdate {
+     font-size: $size11;
+     font-weight: 200;
+     padding-left: 73px;
+}
+
+.ratenumber {
+     font-size: $size20;
+     float: right;
+     margin-top: -35px;
+     padding-right: 30px;
+}
+
+/*---------quotes-------*/
+.quotes {
+     box-shadow: $boxshadow;
+     margin-top: 50px;
+     height: 148px;
+
+     & .quotestext {
+          font-size: $size13;
+          padding: 0px 40px 5% 22px;
+          margin-top: -21px;
+
+     }
+}
+
+/*-----------show all link--------*/
+.showalllink {
+     text-align: center;
+     padding-top: 45px;
+
+     & a {
+          font-size: $size14;
+          color: rgb(46, 36, 36);
+          text-decoration: none;
+          padding-bottom: 1px;
+          border-bottom: 2px solid $hovercolor;
+     }
+}
