@@ -2,9 +2,10 @@
 @import "./mixin";
 
 nav {
-     height: 64px;
+     height: 70px;
      width: 100%;
      display: flex;
+     margin-top: -5px;
 
      & .navbar-conatiner {
           width: 100%;
@@ -12,9 +13,10 @@ nav {
           justify-content: space-between;
 
           & .logo-box {
-               height: 100%;
+               height: 90%;
                display: flex;
                align-items: center;
+               margin-left: 20px;
 
                & .logo {
                     float: left;
@@ -85,14 +87,15 @@ nav {
 
 
 .search {
-     height: 100%;
-     width: 450px;
+     height: 93%;
+     width: 40%;
      display: flex;
      align-items: center;
+     position: relative;
 
      & .searchbox {
           position: absolute;
-          width: 450px;
+          width: 100%;
           height: 31px;
      }
 

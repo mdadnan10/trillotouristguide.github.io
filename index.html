@@ -25,61 +25,48 @@
   <!--------custom css------>
   <link rel="stylesheet" type="text/css" href="style/styles.css">
 
-  <style type="text/css">
-    .sidenav {
-      height: 960px;
-      width: 0;
-      z-index: 1;
-      position: absolute;
-      top: 63px;
-      left: 0;
-      background-color: #333;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 70px;
-    }
-  </style>
-
 </head>
 
 <body onload="loadingfunction()">
 
   <div id="loader"></div>
 
+  <div id="main">
+
   <!--_________________________start of navbar___________________________-->
   <nav>
-    <span class="navicon" style="font-size:28px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <span class="navicon" id="navicon" style="font-size:28px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <div class="navbar-conatiner">
+        <div class="logo-box">
+          <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+        </div>
 
-    <div class="navbar-conatiner"> 
-    <div class="logo-box">
-      <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
-    </div>
+        <!--_________________________search bar___________________________-->
 
-    <!--_________________________search bar___________________________-->
+        <div class="search">
+          <form class="searchbox">
+            <input class="form-control" type="search" placeholder="Search hotels">
+            <a href="#"><i class="fas fa-search"></i></a>
+          </form>
+        </div>
+        <!--_________________________end search bar___________________________-->
 
-    <div class="search">
-      <form class="searchbox">
-        <input class="form-control" type="search" placeholder="Search hotels">
-        <a href="#"><i class="fas fa-search"></i></a>
-      </form>
-    </div>
-    <!--_________________________end search bar___________________________-->
+        <!--_________________________navbar links___________________________-->
+        <div class="profile-noti">
+          <ul>
+            <li><a href="#"><i class="fas fa-bookmark"></i><span class="notification">7</span></a></li>
+            <li><a href="#"><i class="fas fa-comments-alt"></i><span class="notification">13</span></a></li>
+            <li><a href="#" style="text-decoration: none;"><img id="profile-img" src="images/profile.png"
+                  alt="profile">&nbsp
+                Jonas</a></li>
+          </ul>
+        </div>
 
-    <!--_________________________navbar links___________________________-->
-    <div class="profile-noti">
-      <ul>
-        <li><a href="#"><i class="fas fa-bookmark"></i><span class="notification">7</span></a></li>
-        <li><a href="#"><i class="fas fa-comments-alt"></i><span class="notification">13</span></a></li>
-        <li><a href="#" style="text-decoration: none;"><img id="profile-img" src="images/profile.png" alt="profile">&nbsp
-            Jonas</a></li>
-      </ul>
-    </div>
-
-    </div>
+      </div>
   </nav>
   <!--_________________________end of navbar___________________________-->
 
-  <!--_________________________start side nav___________________________-->
+  <!-- _________________________start side nav___________________________-->
 
   <div id="sidenav" class="sidenav">
     <span class="sideclose"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></span>
@@ -88,120 +75,125 @@
     <span class="sidenavlink"><a href="flights.html"><i class="fad fa-plane-departure"></i> &nbsp fLIGHT</a></span>
     <span class="sidenavlink"><a href="rental.html"><i class="fas fa-key"></i> &nbsp CAR RENTAL</a></span>
     <span class="sidenavlink"><a href="tours.html"><i class="far fa-map"></i> &nbsp TOURS</a></span>
-    <div class="index-copy-right">&copy; 2017 by trillo. All rights reserved.</div>
+    <div class="index-copy-right">&copy; 2020 by trillo. All rights reserved.</div>
   </div>
 
-  <!--_________________________end side nav___________________________-->
+  <!--_________________________end side nav___________________________ -->
 
-  
+
   <!--____________________start of main content________________________-->
-  <div id="main">
 
-    <section>
+  <section>
 
-      <!--_________________________image view___________________________-->
+    <!--_________________________image view___________________________-->
 
-      <div class="image">
-        <img src="images/swimmingpool.jpg" alt="poolview">
-        <img style="margin-left: -3px;" src="images/lawn.jpg" alt="lawn view">
-        <img style="margin-left: -3px;" src="images/view.jpg" alt="outside view">
-      </div>
+    <div class="image">
+      <img src="images/swimmingpool.jpg" alt="poolview">
+      <img style="margin-left: -3px;" src="images/lawn.jpg" alt="lawn view">
+      <img style="margin-left: -3px;" src="images/view.jpg" alt="outside view">
+    </div>
 
-      <!--_________________________ratting section___________________________-->
-      <div class="ratting">
-        <div class="hname">HOTEL LAS PALMAS</div>
-        <span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i
-            class="material-icons">star</i><i class="material-icons">star</i> </span>
+    <!--_________________________ratting section___________________________-->
+    <div class="ratting">
+      <div class="hname">HOTEL LAS PALMAS</div>
+      <span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i
+          class="material-icons">star</i><i class="material-icons">star</i> </span>
 
-        <div class="location-right">
-          <div class="location">
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> <span class="areaname">Albufeira,
-                Portugal</span> </a>
-          </div>
-
-          <div class="overallratting">
-            <div class="numberrate">8.6</div>
-            <div class="allratting">429 VOTES</div>
-          </div>
+      <div class="location-right">
+        <div class="location">
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> <span class="areaname">Albufeira,
+              Portugal</span> </a>
         </div>
-        <!--_________________________end of ratting content___________________________-->
+
+        <div class="overallratting">
+          <div class="numberrate">8.6</div>
+          <div class="allratting">429 VOTES</div>
+        </div>
       </div>
+      <!--_________________________end of ratting content___________________________-->
+    </div>
 
-      <!--_________________________start of center content___________________________-->
-      <div class="main">
+    <!--_________________________start of center content___________________________-->
+    <div class="main">
 
-        <div class="center-content">
-          <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, beatae. Harum
-            consequuntur labore, placeat aut explicabo illum necessitatibus temporibus velit aliquid, itaque voluptate
-            id animi ipsam quibusdam eius! Laboriosam tenetur minima sit nam quae?
+      <div class="center-content">
+        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, beatae. Harum
+          consequuntur labore, placeat aut explicabo illum necessitatibus temporibus velit aliquid, itaque voluptate
+          id animi ipsam quibusdam eius! Laboriosam tenetur minima sit nam quae?
 
-            <p class="second-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque minima fuga quam
-              libero nemo blanditiis, necessitatibus officia placeat ea nostrum.</p>
-
-          </div>
-
-          <div class="row">
-            <div class="float-left">
-              <i class="fal fa-angle-right"></i> &nbsp Close to beach <br>
-              <i class="fal fa-angle-right"></i> &nbsp Free airport shuttle <br>
-              <i class="fal fa-angle-right"></i> &nbsp Air conditioning and heating <br>
-              <i class="fal fa-angle-right"></i> &nbsp We speak all languages <br>
-            </div>
-            <div class="float-right">
-              <i class="fal fa-angle-right"></i> &nbsp Breakfast included <br>
-              <i class="fal fa-angle-right"></i> &nbsp Free wifi in all rooms <br>
-              <i class="fal fa-angle-right"></i> &nbsp Pets allowed <br>
-              <i class="fal fa-angle-right"></i> &nbsp Perfect for families <br>
-            </div>
-          </div>
-
-          <div class="row1">
-            <div class="recommend">Lucy and 3 other friends recommend this hotel. </div>
-            <div class="recommendimage">
-              <img src="images/friend2.jpg" alt="f1">
-              <img class="img1" src="images/friend1.png" alt="f2">
-              <img class="img1" src="images/friend3.jpg" alt="f3">
-              <img class="img1" src="images/friend4.jpg" alt="f4">
-            </div>
-          </div>
+          <p class="second-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque minima fuga quam
+            libero nemo blanditiis, necessitatibus officia placeat ea nostrum.</p>
 
         </div>
-        <!--_________________________end of center content___________________________-->
 
-        <!--_________________________rating by Reviewer___________________________-->
+        <div class="row">
+          <div class="float-left">
+            <i class="fal fa-angle-right"></i> &nbsp Close to beach <br>
+            <i class="fal fa-angle-right"></i> &nbsp Free airport shuttle <br>
+            <i class="fal fa-angle-right"></i> &nbsp Air conditioning and heating <br>
+            <i class="fal fa-angle-right"></i> &nbsp We speak all languages <br>
+          </div>
+          <div class="float-right">
+            <i class="fal fa-angle-right"></i> &nbsp Breakfast included <br>
+            <i class="fal fa-angle-right"></i> &nbsp Free wifi in all rooms <br>
+            <i class="fal fa-angle-right"></i> &nbsp Pets allowed <br>
+            <i class="fal fa-angle-right"></i> &nbsp Perfect for families <br>
+          </div>
+        </div>
+
+        <div class="row1">
+          <div class="recommend">Lucy and 3 other friends recommend this hotel. </div>
+          <div class="recommendimage">
+            <img src="images/friend2.jpg" alt="f1">
+            <img class="img1" src="images/friend1.png" alt="f2">
+            <img class="img1" src="images/friend3.jpg" alt="f3">
+            <img class="img1" src="images/friend4.jpg" alt="f4">
+          </div>
+        </div>
+
+      </div>
+      <!--_________________________end of center content___________________________-->
+
+      <!--_________________________rating by Reviewer___________________________-->
+      <div class="right-item">
+
         <div class="profilequotes">
           <i class="fas fa-quote-left"></i>
           <div class="profiletext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia corrupti ex sit sed
             labore esse odit sequi rem laboriosam.</div>
-          <div class="quotesimage"><img src="images/nick.jpg" alt="quotes profile"></div>
-          <div class="reviewername">NICK SMITH</div>
-          <div class="reviewdate">Feb 23rd, 2017</div>
-          <div class="ratenumber">7.8</div>
+          <div class="quotes-inner">
+            <div class="quotesimage"><img src="images/nick.jpg" alt="quotes profile"></div>
+            <div class="reviewername">NICK SMITH</div>
+            <div class="reviewdate">Feb 23rd, 2017</div>
+            <div class="ratenumber">7.8</div>
+          </div>
+        </div>
 
-          <!--_________________________quotes___________________________-->
-          <div class="quotes">
-            <i class="fas fa-quote-left"></i>
-            <div class="quotestext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aspernatur, impedit
-              fugit eum deserunt perspiciatis.</div>
+        <!--_________________________quotes___________________________-->
+        <div class="quotes">
+          <i class="fas fa-quote-left"></i>
+          <div class="quotestext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aspernatur, impedit
+            fugit eum deserunt.</div>
+          <div class="quotes-inner">
             <div class="quotesimage"><img src="images/mary.jpg" alt="quotes profile"></div>
             <div class="reviewername">MARY THOMAS</div>
             <div class="reviewdate">Sep 13th, 2016</div>
             <div class="ratenumber">9.3</div>
-
-            <div class="showalllink"><a href="#">Show all &nbsp <i class="far fa-arrow-right"></i></a></div>
-
           </div>
         </div>
 
+        <div class="showalllink"><a href="#">Show all &nbsp <i class="far fa-arrow-right"></i></a></div>
       </div>
-    </section>
-    <!--__________________end of main content___________________-->
 
-    <!--_____________________Book now button____________________-->
-    <footer class="indexfooter">
-      <div class="foootertext">GOOD NEWS! WE HAVE 4 FREE ROOMS FOR YOUR SELECTED DATES!</div>
-      <a href="#" id="booknowbtn" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">BOOK NOW</a>
-    </footer>
+    </div>
+  </section>
+  <!--__________________end of main content___________________-->
+
+  <!--_____________________Book now button____________________-->
+  <footer class="indexfooter">
+    <div class="foootertext">GOOD NEWS! WE HAVE 4 FREE ROOMS FOR YOUR SELECTED DATES!</div>
+    <a href="#" id="booknowbtn" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">BOOK NOW</a>
+  </footer>
 
   </div>
   <script>

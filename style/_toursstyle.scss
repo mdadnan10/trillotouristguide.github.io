@@ -11,7 +11,7 @@ $headingtext: 25px;
 
 .trendingbox {
 	width: 92%;
-	margin: 55px auto;
+	margin: 25px auto;
 
 	& .trendingheading {
 		/* import from top of this page */
@@ -28,10 +28,10 @@ $headingtext: 25px;
 
 		& button {
 			/* import from variables.scss */
-			color: $buttonscolor;
-			background-color: white;
 			border: none;
 			outline: none;
+			color: $buttonscolor;
+			background-color: transparent;
 		}
 	}
 }

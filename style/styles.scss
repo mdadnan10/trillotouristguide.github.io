@@ -8,6 +8,7 @@
 @import "./mixin";
 @import "./variables";
 @import "./footer";
+@import "./indexmobile";
 
 * {
      margin: 0;
@@ -22,7 +23,8 @@ html {
 #loader {
      position: fixed;
      width: 100%;
-     height: 120vh;
+     height: 100vh;
+     overflow: hidden;
      background: #fff url('../images/loader.gif') no-repeat center;
      z-index: 9999;
 }
@@ -46,8 +48,6 @@ section {
 /*---------ratting section-------*/
 .ratting {
      display: flex;
-     flex-direction: row;
-     flex-wrap: nowrap;
      width: 100%;
      height: 60px;
      align-items: center;
@@ -116,7 +116,7 @@ section {
 
 .main {
      display: flex;
-     justify-content: space-around;
+     justify-content: space-evenly;
 
      & .row {
           border-bottom: $centercontentborder;
@@ -141,13 +141,12 @@ section {
 }
 
 .center-content {
-     display: flex;
-     box-shadow: $boxshadow;
-     flex-direction: column;
-     height: 420px;
      width: 700px;
-     padding: 27px 50px 0 50px;
-     margin: 40px 20px 0px 65px;
+     display: flex;
+     flex-direction: column;
+     box-shadow: $boxshadow;
+     padding: 27px 20px 0 50px;
+     margin: 40px 7px 40px 15px;
 
      & .text {
           font-size: $size13;
@@ -167,11 +166,11 @@ section {
 
      & .recommend {
           font-size: $size13;
-          padding: 35px 80px 0 5px;
+          padding: 35px 30px 30px 0px;
      }
 
      & .recommendimage {
-          padding-top: 3.5%;
+          padding-top: 25px;
 
           & img {
                height: $profileimagesize;
@@ -181,23 +180,26 @@ section {
           }
 
           & .img1 {
-               margin-left: -12px;
+               margin-left: -17px;
           }
      }
 }
 
 
 /*---------review ratting-------*/
+.right-item {
+     margin: 40px 15px 40px 7px;
+     width: 360px;
+}
+
 .profilequotes {
+     width: 100%;
      box-shadow: $boxshadow;
-     height: 160px;
-     width: 370px;
-     margin: 40px 30px 20px 35px;
 
      & .profiletext {
           font-size: $size13;
           margin-top: -20px;
-          padding: 0px 40px 8% 22px;
+          padding: 0px 5px 8% 22px;
      }
 
      & .quotesimage {
@@ -209,6 +211,10 @@ section {
                border-radius: 25px;
           }
      }
+}
+
+.quotes-inner {
+     height: 55px;
 }
 
 .fa-quote-left {
@@ -238,22 +244,32 @@ section {
 
 /*---------quotes-------*/
 .quotes {
-     box-shadow: $boxshadow;
+     width: 100%;
      margin-top: 50px;
-     height: 148px;
+     box-shadow: $boxshadow;
 
      & .quotestext {
           font-size: $size13;
-          padding: 0px 40px 5% 22px;
+          padding: 0px 5px 5% 22px;
           margin-top: -21px;
 
+     }
+
+     & .quotesimage {
+          padding-left: 20px;
+
+          & img {
+               height: $profileimagesize;
+               width: $profileimagesize;
+               border-radius: 25px;
+          }
      }
 }
 
 /*-----------show all link--------*/
 .showalllink {
      text-align: center;
-     padding-top: 45px;
+     padding-top: 30px;
 
      & a {
           font-size: $size14;
