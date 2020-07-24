@@ -54,10 +54,10 @@ $headingtext: 25px;
 
 	& .slider-img-main {
 		height: 291px;
-		margin-right: 5px;
-		background-color: black;
-		border-radius: 6px;
 		position: relative;
+		margin-right: 5px;
+		border-radius: 6px;
+		background-color: black;
 
 		& img {
 			height: 100%;
@@ -122,7 +122,7 @@ $headingtext: 25px;
 	position: relative;
 	width: 92%;
 	height: 256px;
-	margin: 4% auto;
+	margin: 50px auto;
 
 	& .page-banner-slide {
 		width: 100%;
@@ -174,7 +174,7 @@ $headingtext: 25px;
 .readingcorner {
 	height: 350px;
 	width: 92%;
-	margin: 4% auto;
+	margin: 50px auto;
 
 	& .readingtext {
 		/* import from variables.scss */
@@ -190,38 +190,26 @@ $headingtext: 25px;
 	justify-content: space-between;
 
 	& .readingpost {
-		height: 220px;
+		height: 290px;
 		width: 31%;
+		border-bottom: 4px solid #cc5252;
 
 		& a {
 			text-decoration: none;
 		}
 
 		& img {
-			height: 100%;
+			height: 220px;
 			width: 100%;
 			border-top-left-radius: 8px;
 			border-top-right-radius: 8px;
 		}
-
-		.alltext {
-			/* import from variables.scss */
-			color: $textcolor;
-			font-size: 18px;
-			font-weight: bold;
-			padding-top: 5px;
-			padding-bottom: 18px;
-			border-bottom: 4px solid #cc5252;
-		}
-
-		.alltextbike {
+		.reading-text {
 			/* import from variables.scss */
 			color: $textcolor;
 			padding-top: 5px;
 			font-size: 18px;
 			font-weight: bold;
-			padding-bottom: 45px;
-			border-bottom: 4px solid #cc5252;
 		}
 	}
 }
@@ -230,7 +218,7 @@ $headingtext: 25px;
 .whywe {
 	width: 92%;
 	height: 350px;
-	margin: 4% auto;
+	margin: 50px auto;
 
 	& .whywe-heading {
 		/* import from variables.scss */
@@ -248,6 +236,7 @@ $headingtext: 25px;
 	& .whywe-inner-box {
 		width: 17%;
 		text-align: center;
+		height: 285px;
 
 		& img {
 			height: 95px;
@@ -257,14 +246,24 @@ $headingtext: 25px;
 
 }
 
-.whywe-inner-box-last {
-	width: 16%;
-	text-align: center;
+.whywe-item-1 {
+	border-bottom: 4px solid #4e76b1;
+}
 
-	& img {
-		height: 95px;
-		width: 95px;
-	}
+.whywe-item-2 {
+	border-bottom: 4px solid #f1a75e;
+}
+
+.whywe-item-3 {
+	border-bottom: 4px solid #35bec4;
+}
+
+.whywe-item-4 {
+	border-bottom: 4px solid #898ac3;
+}
+
+.whywe-item-5 {
+	border-bottom: 4px solid #e395d7;
 }
 
 .whywe-heading-text {
@@ -276,49 +275,20 @@ $headingtext: 25px;
 	font-weight: 700;
 }
 
-.whywe-text-1,
-.whywe-text-2,
-.whywe-text-3,
-.whywe-text-4,
-.whywe-text-5 {
+.whywe-paragraph {
 	/* import from variables.scss */
 	color: $textcolor;
 	font-size: $size14;
-	text-align: left;
 	text-align: justify;
 }
-
-.whywe-text-1 {
-	padding-bottom: 20px;
-	border-bottom: 4px solid #4e76b1;
-}
-
-.whywe-text-2 {
-	padding-bottom: 61px;
-	border-bottom: 4px solid #f1a75e;
-}
-
-.whywe-text-3 {
-	padding-bottom: 82px;
-	border-bottom: 4px solid #35bec4;
-}
-
-.whywe-text-4 {
-	padding-bottom: 60px;
-	border-bottom: 4px solid #898ac3;
-}
-
-.whywe-text-5 {
-	padding-bottom: 60px;
-	border-bottom: 4px solid #e395d7;
-}
+/*----end of why we all divs----*/
 
 /*-----contact form -------*/
 .contactform {
 	position: relative;
 	width: 92%;
 	height: 300px;
-	margin: 2% auto;
+	margin: 30px auto;
 	border-radius: 4px;
 	background: black;
 
@@ -400,9 +370,9 @@ $headingtext: 25px;
 	color: $fcolor;
 	font-size: $size15;
 	font-weight: 600;
-	background: linear-gradient(to right, #f85032, #e73827);
 	border-radius: 20px;
 	outline: none;
+	background: linear-gradient(to right, #f85032, #e73827);
 
 	&:hover {
 		background: linear-gradient(to left, #f85032, #e73827);

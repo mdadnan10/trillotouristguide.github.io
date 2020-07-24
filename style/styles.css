@@ -318,10 +318,10 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 
 .main-slider .slider-img-main {
   height: 291px;
-  margin-right: 5px;
-  background-color: black;
-  border-radius: 6px;
   position: relative;
+  margin-right: 5px;
+  border-radius: 6px;
+  background-color: black;
 }
 
 .main-slider .slider-img-main img {
@@ -401,7 +401,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
   position: relative;
   width: 92%;
   height: 256px;
-  margin: 4% auto;
+  margin: 50px auto;
 }
 
 .page-banner .page-banner-slide {
@@ -471,7 +471,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 .readingcorner {
   height: 350px;
   width: 92%;
-  margin: 4% auto;
+  margin: 50px auto;
 }
 
 .readingcorner .readingtext {
@@ -492,8 +492,9 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 }
 
 .inlinereading .readingpost {
-  height: 220px;
+  height: 290px;
   width: 31%;
+  border-bottom: 4px solid #cc5252;
 }
 
 .inlinereading .readingpost a {
@@ -501,37 +502,25 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 }
 
 .inlinereading .readingpost img {
-  height: 100%;
+  height: 220px;
   width: 100%;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-.inlinereading .readingpost .alltext {
-  /* import from variables.scss */
-  color: #333;
-  font-size: 18px;
-  font-weight: bold;
-  padding-top: 5px;
-  padding-bottom: 18px;
-  border-bottom: 4px solid #cc5252;
-}
-
-.inlinereading .readingpost .alltextbike {
+.inlinereading .readingpost .reading-text {
   /* import from variables.scss */
   color: #333;
   padding-top: 5px;
   font-size: 18px;
   font-weight: bold;
-  padding-bottom: 45px;
-  border-bottom: 4px solid #cc5252;
 }
 
 /*---------why we all divs------*/
 .whywe {
   width: 92%;
   height: 350px;
-  margin: 4% auto;
+  margin: 50px auto;
 }
 
 .whywe .whywe-heading {
@@ -554,6 +543,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 .whywe-box .whywe-inner-box {
   width: 17%;
   text-align: center;
+  height: 285px;
 }
 
 .whywe-box .whywe-inner-box img {
@@ -561,14 +551,24 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
   width: 95px;
 }
 
-.whywe-inner-box-last {
-  width: 16%;
-  text-align: center;
+.whywe-item-1 {
+  border-bottom: 4px solid #4e76b1;
 }
 
-.whywe-inner-box-last img {
-  height: 95px;
-  width: 95px;
+.whywe-item-2 {
+  border-bottom: 4px solid #f1a75e;
+}
+
+.whywe-item-3 {
+  border-bottom: 4px solid #35bec4;
+}
+
+.whywe-item-4 {
+  border-bottom: 4px solid #898ac3;
+}
+
+.whywe-item-5 {
+  border-bottom: 4px solid #e395d7;
 }
 
 .whywe-heading-text {
@@ -580,49 +580,20 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
   font-weight: 700;
 }
 
-.whywe-text-1,
-.whywe-text-2,
-.whywe-text-3,
-.whywe-text-4,
-.whywe-text-5 {
+.whywe-paragraph {
   /* import from variables.scss */
   color: #333;
   font-size: 14px;
-  text-align: left;
   text-align: justify;
 }
 
-.whywe-text-1 {
-  padding-bottom: 20px;
-  border-bottom: 4px solid #4e76b1;
-}
-
-.whywe-text-2 {
-  padding-bottom: 61px;
-  border-bottom: 4px solid #f1a75e;
-}
-
-.whywe-text-3 {
-  padding-bottom: 82px;
-  border-bottom: 4px solid #35bec4;
-}
-
-.whywe-text-4 {
-  padding-bottom: 60px;
-  border-bottom: 4px solid #898ac3;
-}
-
-.whywe-text-5 {
-  padding-bottom: 60px;
-  border-bottom: 4px solid #e395d7;
-}
-
+/*----end of why we all divs----*/
 /*-----contact form -------*/
 .contactform {
   position: relative;
   width: 92%;
   height: 300px;
-  margin: 2% auto;
+  margin: 30px auto;
   border-radius: 4px;
   background: black;
 }
@@ -709,10 +680,10 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
   color: #ffffff;
   font-size: 15px;
   font-weight: 600;
-  background: -webkit-gradient(linear, left top, right top, from(#f85032), to(#e73827));
-  background: linear-gradient(to right, #f85032, #e73827);
   border-radius: 20px;
   outline: none;
+  background: -webkit-gradient(linear, left top, right top, from(#f85032), to(#e73827));
+  background: linear-gradient(to right, #f85032, #e73827);
 }
 
 #contactbtn:hover {
@@ -1647,7 +1618,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 /* about us with ad video */
 .about-us {
   width: 90%;
-  margin: 5% auto;
+  margin: 40px auto;
 }
 
 .about-us h4 {
@@ -1657,7 +1628,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 }
 
 .about-us .aboutus-text {
-  margin-top: 8%;
+  margin-top: 85px;
   font-size: 17px;
   width: 50%;
 }
@@ -1740,7 +1711,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 }
 
 .inner-about-us video {
-  margin-top: 4%;
+  margin-top: 40px;
   height: 320px;
   width: 45%;
   border-radius: 4px;
@@ -1750,7 +1721,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 /* our sevices for our clients */
 .our-services {
   width: 90%;
-  margin: 5% auto;
+  margin: 50px auto;
 }
 
 .our-services h4 {
@@ -1768,7 +1739,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
           justify-content: center;
   margin-top: 10px;
   font-size: 16px;
-  padding-bottom: 6%;
+  padding-bottom: 50px;
 }
 
 .our-services .box-line {
@@ -1823,7 +1794,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 /* end of our service for our clients */
 /* globally connected image and text */
 .globally-connected {
-  height: 70vh;
+  height: 400px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1847,7 +1818,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 
 .globally-connected .globally-text {
   width: 55%;
-  padding: 5%;
+  padding: 40px;
 }
 
 .globally-connected .globally-text h4 {
@@ -1892,9 +1863,9 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 /* end od globally connected and text */
 /* page banner in car rental */
 .car-page-banner {
-  height: 75vh;
+  height: 400px;
   width: 90%;
-  margin: 5% auto;
+  margin: 50px auto;
 }
 
 .car-page-banner h2 {
@@ -1902,7 +1873,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 }
 
 .car-page-banner .carousel {
-  margin-top: 6%;
+  margin-top: 50px;
 }
 
 .car-page-banner .carousel .carousel-inner .carousel-item img {
@@ -1993,7 +1964,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 /* happy clients offices cars in stock */
 .happy-serivices {
   position: relative;
-  height: 45vh;
+  height: 250px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2133,7 +2104,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 /* different car model for rent */
 .select-car-model {
   width: 90%;
-  margin: 5% auto;
+  margin: 50px auto;
 }
 
 .select-car-model h2 {
@@ -2142,7 +2113,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 
 .select-car-model .car-model-container {
   width: 100%;
-  margin: 3% auto;
+  margin: 30px auto;
 }
 
 .select-car-model .car-model-container nav {
@@ -2195,7 +2166,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 }
 
 .select-car-model .tab-content {
-  margin-top: 5%;
+  margin-top: 50px;
   width: 100%;
 }
 
@@ -2706,7 +2677,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 /* end of different car model */
 /* monthly price for clients */
 .monthly-pack {
-  margin-top: 5%;
+  margin-top: 50px;
   position: relative;
   background-color: black;
 }
@@ -2721,7 +2692,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 
 .monthly-pack h2 {
   position: relative;
-  padding-top: 3%;
+  padding-top: 30px;
   color: #ffffff;
   text-align: center;
   text-transform: capitalize;
@@ -2781,7 +2752,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 .monthly-pack .price-container {
   width: 100%;
   height: 620px;
-  margin-top: 2%;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2801,7 +2772,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 .monthly-pack .price-container .price-box h3 {
   text-align: center;
   color: #ffffff;
-  padding: 6% 0 2% 0;
+  padding: 25px 0 5px 0;
 }
 
 .monthly-pack .price-container .price-box h1 {
@@ -2852,7 +2823,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 /* testimonials */
 .testimonials {
   width: 90%;
-  margin: 5% auto;
+  margin: 50px auto;
   /* Slideshow container */
   /* The dots/bullets/indicators */
 }
@@ -2984,9 +2955,9 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 /* support team */
 .support-team {
   position: relative;
-  height: 50vh;
+  height: 270px;
   width: 100%;
-  margin-top: 8%;
+  margin-top: 60px;
   background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3064,12 +3035,10 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 
 .support-team .inner-support .car-line::before {
   background-color: #ffffff;
-  left: 42%;
 }
 
 .support-team .inner-support .car-line::after {
   background-color: #ffffff;
-  right: 42%;
 }
 
 .support-team .inner-support p {
@@ -3108,9 +3077,9 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 /* end of support team */
 /* car-blog */
 .car-blog {
-  height: 88vh;
+  height: 520px;
   width: 90%;
-  margin: 80px auto;
+  margin: 50px auto;
 }
 
 .car-blog h2 {
@@ -3131,7 +3100,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 
 .car-blog .blog-box .blog-content {
   position: relative;
-  margin-top: 5%;
+  margin-top: 50px;
   width: 23%;
   height: 380px;
 }
@@ -3389,8 +3358,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 /* footer section of car rental page */
 .rental-footer {
   position: relative;
-  margin-top: 5%;
-  height: 50vh;
+  height: 290px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -136,7 +136,7 @@ $colormain: #ffd000;
 /* about us with ad video */
 .about-us {
      width: 90%;
-     margin: 5% auto;
+     margin: 40px auto;
 
      & h4 {
           text-align: center;
@@ -145,7 +145,7 @@ $colormain: #ffd000;
      }
 
      & .aboutus-text {
-          margin-top: 8%;
+          margin-top: 85px;
           font-size: 17px;
           width: 50%;
 
@@ -171,7 +171,7 @@ $colormain: #ffd000;
      justify-content: space-between;
 
      & video {
-          margin-top: 4%;
+          margin-top: 40px;
           height: 320px;
           width: 45%;
           border-radius: 4px;
@@ -183,7 +183,7 @@ $colormain: #ffd000;
 /* our sevices for our clients */
 .our-services {
      width: 90%;
-     margin: 5% auto;
+     margin: 50px auto;
 
      & h4 {
           text-align: center;
@@ -196,7 +196,7 @@ $colormain: #ffd000;
           justify-content: center;
           margin-top: 10px;
           font-size: 16px;
-          padding-bottom: 6%;
+          padding-bottom: 50px;
      }
 
      & .box-line {
@@ -217,7 +217,7 @@ $colormain: #ffd000;
 
 /* globally connected image and text */
 .globally-connected {
-     height: 70vh;
+     height: 400px;
      width: 100%;
      display: flex;
      justify-content: space-between;
@@ -236,7 +236,7 @@ $colormain: #ffd000;
 
      .globally-text {
           width: 55%;
-          padding: 5%;
+          padding: 40px;
 
           & h4 {
                font-size: 38px;
@@ -268,16 +268,16 @@ $colormain: #ffd000;
 
 /* page banner in car rental */
 .car-page-banner {
-     height: 75vh;
+     height: 400px;
      width: 90%;
-     margin: 5% auto;
+     margin: 50px auto;
 
      & h2 {
           text-align: center;
      }
 
      & .carousel {
-          margin-top: 6%;
+          margin-top: 50px;
 
           & .carousel-inner {
 
@@ -356,7 +356,7 @@ $colormain: #ffd000;
 /* happy clients offices cars in stock */
 .happy-serivices {
      position: relative;
-     height: 45vh;
+     height: 250px;
      width: 100%;
      display: flex;
      align-items: center;
@@ -398,7 +398,7 @@ $colormain: #ffd000;
 /* different car model for rent */
 .select-car-model {
      width: 90%;
-     margin: 5% auto;
+     margin: 50px auto;
 
      & h2 {
           text-align: center;
@@ -406,7 +406,7 @@ $colormain: #ffd000;
 
      & .car-model-container {
           width: 100%;
-          margin: 3% auto;
+          margin: 30px auto;
 
           & nav {
                height: 55px;
@@ -460,7 +460,7 @@ $colormain: #ffd000;
      }
 
      & .tab-content {
-          margin-top: 5%;
+          margin-top: 50px;
           width: 100%;
 
           & .audi-box {
@@ -489,7 +489,7 @@ $colormain: #ffd000;
 
 /* monthly price for clients */
 .monthly-pack {
-     margin-top: 5%;
+     margin-top: 50px;
      position: relative;
      background-color: black;
 
@@ -503,7 +503,7 @@ $colormain: #ffd000;
 
      & h2 {
           position: relative;
-          padding-top: 3%;
+          padding-top: 30px;
           color: $fcolor;
           text-align: center;
           text-transform: capitalize;
@@ -525,7 +525,7 @@ $colormain: #ffd000;
      & .price-container {
           width: 100%;
           height: 620px;
-          margin-top: 2%;
+          margin-top: 20px;
           display: flex;
           justify-content: space-evenly;
 
@@ -540,7 +540,7 @@ $colormain: #ffd000;
                & h3 {
                     text-align: center;
                     color: $fcolor;
-                    padding: 6% 0 2% 0;
+                    padding: 25px 0 5px 0;
                }
 
                & h1 {
@@ -579,7 +579,7 @@ $colormain: #ffd000;
 /* testimonials */
 .testimonials {
      width: 90%;
-     margin: 5% auto;
+     margin: 50px auto;
 
      & h2 {
           text-align: center;
@@ -701,9 +701,9 @@ $colormain: #ffd000;
 /* support team */
 .support-team {
      position: relative;
-     height: 50vh;
+     height: 270px;
      width: 100%;
-     margin-top: 8%;
+     margin-top: 60px;
      background-color: black;
      display: flex;
      justify-content: center;
@@ -735,12 +735,10 @@ $colormain: #ffd000;
 
                &::before {
                     background-color: $fcolor;
-                    left: 42%;
                }
 
                &::after {
                     background-color: $fcolor;
-                    right: 42%;
                }
           }
 
@@ -767,9 +765,9 @@ $colormain: #ffd000;
 
 /* car-blog */
 .car-blog {
-     height: 88vh;
+     height: 520px;
      width: 90%;
-     margin: 80px auto;
+     margin: 50px auto;
 
      & h2 {
           text-align: center;
@@ -784,7 +782,7 @@ $colormain: #ffd000;
 
           & .blog-content {
                position: relative;
-               margin-top: 5%;
+               margin-top: 50px;
                width: 23%;
                height: 380px;
 
