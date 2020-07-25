@@ -202,14 +202,6 @@ $colormain: #ffd000;
      & .box-line {
           /* import from mixin.scss */
           @include box-content;
-
-          & h3 {
-               padding: 40px 0 20px 35px;
-          }
-
-          & p {
-               padding: 0 35px 0 35px;
-          }
      }
 }
 
@@ -356,18 +348,15 @@ $colormain: #ffd000;
 /* happy clients offices cars in stock */
 .happy-serivices {
      position: relative;
-     height: 250px;
      width: 100%;
      display: flex;
-     align-items: center;
+     flex-wrap: wrap;
      justify-content: space-evenly;
      background-color: black;
 
      & .clients-bgimg {
           position: absolute;
-          background-image: url('../images/happyservices.jpg');
-          background-size: cover;
-          background-position: center center;
+          background: url('../images/happyservices.jpg') no-repeat center center/cover;
           height: 100%;
           width: 100%;
           opacity: .3;
@@ -386,10 +375,6 @@ $colormain: #ffd000;
      & .office-incities {
           /* import from mixin.scss */
           @include happy-clients;
-
-          & p {
-               right: 20%;
-          }
      }
 }
 
@@ -462,6 +447,11 @@ $colormain: #ffd000;
      & .tab-content {
           margin-top: 50px;
           width: 100%;
+
+          & .all-box {
+               /* import from mixin.scss */
+               @include carmodels;
+          }
 
           & .audi-box {
                /* import from mixin.scss */

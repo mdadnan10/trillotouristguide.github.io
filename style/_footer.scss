@@ -6,8 +6,11 @@ $colormain: #ffd000;
 
 /* footer section of index page */
 .indexfooter {
-     text-align: center;
-     margin-top: 60px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 5px;
      /* import from variables.scss */
      background: $background;
      height: 155px;
@@ -15,10 +18,11 @@ $colormain: #ffd000;
 }
 
 .foootertext {
+     text-align: center;
      font-size: 16px;
      /* import from variables.scss */
      color: $textcolor;
-     padding: 30px 0 20px 0;
+     padding: 0px 0 20px 0;
 }
 
 #booknowbtn {
@@ -26,7 +30,6 @@ $colormain: #ffd000;
      height: 55px;
      width: 240px;
      font-size: 16px;
-     padding-top: 14px;
      border-radius: 60px;
      text-decoration: none;
      transition: all 0.2s ease-in-out 0.2s;

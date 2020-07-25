@@ -12,15 +12,14 @@ nav {
           display: flex;
           justify-content: space-between;
 
-          & .logo-box {
-               height: 90%;
+          & .logo {
+               height: 100%;
                display: flex;
                align-items: center;
                margin-left: 20px;
 
-               & .logo {
-                    float: left;
-                    height: 37px;
+               img {
+                    height: 3.7rem;
                }
           }
 
@@ -42,8 +41,8 @@ nav {
                               position: absolute;
                               width: 19px;
                               height: 19px;
-                              left: 10px;
-                              top: -12px;
+                              left: 11px;
+                              top: -10px;
                               font-size: 10px;
                               color: $fcolor;
                               display: flex;
@@ -55,8 +54,8 @@ nav {
 
                          #profile-img {
                               /* import from variables.scss */
-                              height: $profileimagesize;
-                              width: $profileimagesize;
+                              height: 3.7rem;
+                              width: 3.7rem;
                               border-radius: 25px;
                          }
 
@@ -87,19 +86,20 @@ nav {
 
 
 .search {
-     height: 93%;
+     height: 100%;
      width: 40%;
      display: flex;
      align-items: center;
-     position: relative;
+     // position: relative;
 
      & .searchbox {
-          position: absolute;
+          position: relative;
           width: 100%;
           height: 31px;
      }
 
      & input {
+          position: absolute;
           height: 100%;
           width: 100%;
           /* import from variables.scss */
@@ -112,13 +112,246 @@ nav {
 
      & .fa-search {
           position: absolute;
-          top: 9px;
-          right: 10px;
-          width: 30px;
-          height: 30px;
+          top: 0.9rem;
+          right: 1rem;
+          width: 3rem;
+          height: 3rem;
           text-align: center;
           /* import from variables.scss */
           color: $anchortag;
           font-size: $size15;
      }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+     nav {
+          height: 64px;
+
+          & .navbar-conatiner {
+               & .logo {
+                    margin-left: 1rem;
+
+                    img {
+                         height: 2.7rem;
+                    }
+               }
+
+               & .profile-noti {
+                    & ul {
+
+                         & li {
+
+                              .notification {
+                                   width: 1.8rem;
+                                   height: 1.8rem;
+                                   left: 1.1rem;
+                                   top: -1rem;
+                                   font-size: 0.9rem;
+                              }
+
+                              #profile-img {
+                                   /* import from variables.scss */
+                                   height: 3.5rem;
+                                   width: 3.5rem;
+                              }
+
+                              & a {
+                                   /* import from variables.scss */
+                                   font-size: $size14;
+
+                                   & .fas {
+                                        font-size: 1.9rem;
+                                   }
+                              }
+                         }
+                    }
+
+               }
+
+          }
+     }
+
+     .search {
+          width: 44%;
+
+          & .searchbox {
+               position: relative;
+               height: 28px;
+          }
+
+          & .fa-search {
+               top: 8px;
+               right: 4px;
+               font-size: $size14;
+          }
+     }
+
+}
+
+@media only screen and (min-width: 265px) and (max-width: 600px) {
+     nav {
+          height: auto;
+
+          & .navbar-conatiner {
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: space-between;
+
+               & .logo {
+                    height: 50px;
+                    margin-left: 5px;
+                    margin-left: 1rem;
+                    align-items: flex-end;
+
+                    img {
+                         height: 2.5rem;
+                         margin-bottom: 7px;
+                    }
+               }
+
+               & .profile-noti {
+                    & ul {
+                         height: 40px;
+                         width: 190px;
+                         margin: 10px 0 0 0;
+
+                         & li {
+
+                              .notification {
+                                   width: 1.6rem;
+                                   height: 1.6rem;
+                                   left: 1rem;
+                                   top: -0.9rem;
+                                   font-size: 0.9rem;
+                              }
+
+                              #profile-img {
+                                   /* import from variables.scss */
+                                   height: 3.3rem;
+                                   width: 3.3rem;
+                              }
+
+                              & a {
+                                   /* import from variables.scss */
+                                   font-size: $size14;
+
+                                   & .fas {
+                                        font-size: 1.7rem;
+                                   }
+                              }
+                         }
+                    }
+
+               }
+
+          }
+     }
+
+     .search {
+          // width: 44%;
+          display: flex;
+          order: 1;
+          flex: 0 0 95%;
+          width: 100%;
+          height: 28px;
+          z-index: 1;
+          margin: 3px 0 5px 0;
+          position: relative;
+
+          & .searchbox {
+               position: relative;
+               height: 27px;
+          }
+
+          & .fa-search {
+               top: 7px;
+               right: 4px;
+               font-size: $size14;
+          }
+     }
+
+}
+
+@media only screen and (max-width: 265px) {
+     nav {
+          height: auto;
+
+          & .navbar-conatiner {
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: space-between;
+
+               & .logo {
+                    height: 50px;
+                    margin-left: 5px;
+                    margin-left: 1rem;
+                    align-items: flex-end;
+                    display: none;
+
+                    img {
+                         height: 2.5rem;
+                         margin-bottom: 7px;
+                    }
+               }
+
+               & .profile-noti {
+                    & ul {
+                         height: 40px;
+                         width: 190px;
+                         margin: 10px 0 0 0;
+
+                         & li {
+
+                              .notification {
+                                   width: 1.6rem;
+                                   height: 1.6rem;
+                                   left: 1rem;
+                                   top: -0.9rem;
+                                   font-size: 0.9rem;
+                              }
+
+                              #profile-img {
+                                   /* import from variables.scss */
+                                   height: 3.3rem;
+                                   width: 3.3rem;
+                              }
+
+                              & a {
+                                   /* import from variables.scss */
+                                   font-size: $size14;
+
+                                   & .fas {
+                                        font-size: 1.7rem;
+                                   }
+                              }
+                         }
+                    }
+
+               }
+
+          }
+     }
+
+     .search {
+          display: flex;
+          order: 1;
+          flex: 0 0 90%;
+          width: 100%;
+          height: 28px;
+          z-index: 1;
+          margin: 3px 0 5px 0;
+          position: relative;
+
+          & .searchbox {
+               position: relative;
+               height: 27px;
+          }
+
+          & .fa-search {
+               top: 7px;
+               right: 4px;
+               font-size: $size14;
+          }
+     }
+
 }

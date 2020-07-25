@@ -6,9 +6,9 @@
 /* car line */
 /* end of car line */
 /* car rental form date data */
-/* end car form rental date dat */
-/* box and hover effect of car services and reviewer section */
-/* end od box and hover effect of car services and reviewer section */
+/* end car form rental date data */
+/* box and hover effect of car services section */
+/* end od box and hover effect of car services section */
 /* happy client section */
 /* end happy client section */
 /* different car model box design */
@@ -35,8 +35,8 @@ nav .navbar-conatiner {
           justify-content: space-between;
 }
 
-nav .navbar-conatiner .logo-box {
-  height: 90%;
+nav .navbar-conatiner .logo {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,9 +46,8 @@ nav .navbar-conatiner .logo-box {
   margin-left: 20px;
 }
 
-nav .navbar-conatiner .logo-box .logo {
-  float: left;
-  height: 37px;
+nav .navbar-conatiner .logo img {
+  height: 3.7rem;
 }
 
 nav .navbar-conatiner .profile-noti ul {
@@ -76,8 +75,8 @@ nav .navbar-conatiner .profile-noti ul li .notification {
   position: absolute;
   width: 19px;
   height: 19px;
-  left: 10px;
-  top: -12px;
+  left: 11px;
+  top: -10px;
   font-size: 10px;
   color: #ffffff;
   display: -webkit-box;
@@ -95,8 +94,8 @@ nav .navbar-conatiner .profile-noti ul li .notification {
 
 nav .navbar-conatiner .profile-noti ul li #profile-img {
   /* import from variables.scss */
-  height: 37px;
-  width: 37px;
+  height: 3.7rem;
+  width: 3.7rem;
   border-radius: 25px;
 }
 
@@ -118,7 +117,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 }
 
 .search {
-  height: 93%;
+  height: 100%;
   width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,16 +125,16 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 .search .searchbox {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 31px;
 }
 
 .search input {
+  position: absolute;
   height: 100%;
   width: 100%;
   /* import from variables.scss */
@@ -148,14 +147,212 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 
 .search .fa-search {
   position: absolute;
-  top: 9px;
-  right: 10px;
-  width: 30px;
-  height: 30px;
+  top: 0.9rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
   text-align: center;
   /* import from variables.scss */
   color: #eb2f64;
   font-size: 15px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  nav {
+    height: 64px;
+  }
+  nav .navbar-conatiner .logo {
+    margin-left: 1rem;
+  }
+  nav .navbar-conatiner .logo img {
+    height: 2.7rem;
+  }
+  nav .navbar-conatiner .profile-noti ul li .notification {
+    width: 1.8rem;
+    height: 1.8rem;
+    left: 1.1rem;
+    top: -1rem;
+    font-size: 0.9rem;
+  }
+  nav .navbar-conatiner .profile-noti ul li #profile-img {
+    /* import from variables.scss */
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  nav .navbar-conatiner .profile-noti ul li a {
+    /* import from variables.scss */
+    font-size: 14px;
+  }
+  nav .navbar-conatiner .profile-noti ul li a .fas {
+    font-size: 1.9rem;
+  }
+  .search {
+    width: 44%;
+  }
+  .search .searchbox {
+    position: relative;
+    height: 28px;
+  }
+  .search .fa-search {
+    top: 8px;
+    right: 4px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 265px) and (max-width: 600px) {
+  nav {
+    height: auto;
+  }
+  nav .navbar-conatiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav .navbar-conatiner .logo {
+    height: 50px;
+    margin-left: 5px;
+    margin-left: 1rem;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  nav .navbar-conatiner .logo img {
+    height: 2.5rem;
+    margin-bottom: 7px;
+  }
+  nav .navbar-conatiner .profile-noti ul {
+    height: 40px;
+    width: 190px;
+    margin: 10px 0 0 0;
+  }
+  nav .navbar-conatiner .profile-noti ul li .notification {
+    width: 1.6rem;
+    height: 1.6rem;
+    left: 1rem;
+    top: -0.9rem;
+    font-size: 0.9rem;
+  }
+  nav .navbar-conatiner .profile-noti ul li #profile-img {
+    /* import from variables.scss */
+    height: 3.3rem;
+    width: 3.3rem;
+  }
+  nav .navbar-conatiner .profile-noti ul li a {
+    /* import from variables.scss */
+    font-size: 14px;
+  }
+  nav .navbar-conatiner .profile-noti ul li a .fas {
+    font-size: 1.7rem;
+  }
+  .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 95%;
+            flex: 0 0 95%;
+    width: 100%;
+    height: 28px;
+    z-index: 1;
+    margin: 3px 0 5px 0;
+    position: relative;
+  }
+  .search .searchbox {
+    position: relative;
+    height: 27px;
+  }
+  .search .fa-search {
+    top: 7px;
+    right: 4px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 265px) {
+  nav {
+    height: auto;
+  }
+  nav .navbar-conatiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav .navbar-conatiner .logo {
+    height: 50px;
+    margin-left: 5px;
+    margin-left: 1rem;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    display: none;
+  }
+  nav .navbar-conatiner .logo img {
+    height: 2.5rem;
+    margin-bottom: 7px;
+  }
+  nav .navbar-conatiner .profile-noti ul {
+    height: 40px;
+    width: 190px;
+    margin: 10px 0 0 0;
+  }
+  nav .navbar-conatiner .profile-noti ul li .notification {
+    width: 1.6rem;
+    height: 1.6rem;
+    left: 1rem;
+    top: -0.9rem;
+    font-size: 0.9rem;
+  }
+  nav .navbar-conatiner .profile-noti ul li #profile-img {
+    /* import from variables.scss */
+    height: 3.3rem;
+    width: 3.3rem;
+  }
+  nav .navbar-conatiner .profile-noti ul li a {
+    /* import from variables.scss */
+    font-size: 14px;
+  }
+  nav .navbar-conatiner .profile-noti ul li a .fas {
+    font-size: 1.7rem;
+  }
+  .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 90%;
+            flex: 0 0 90%;
+    width: 100%;
+    height: 28px;
+    z-index: 1;
+    margin: 3px 0 5px 0;
+    position: relative;
+  }
+  .search .searchbox {
+    position: relative;
+    height: 27px;
+  }
+  .search .fa-search {
+    top: 7px;
+    right: 4px;
+    font-size: 14px;
+  }
 }
 
 /* flight booking button design */
@@ -164,9 +361,9 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 /* car line */
 /* end of car line */
 /* car rental form date data */
-/* end car form rental date dat */
-/* box and hover effect of car services and reviewer section */
-/* end od box and hover effect of car services and reviewer section */
+/* end car form rental date data */
+/* box and hover effect of car services section */
+/* end od box and hover effect of car services section */
 /* happy client section */
 /* end happy client section */
 /* different car model box design */
@@ -228,16 +425,18 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 }
 
 .navicon {
-  margin: 10px 5px 0 20px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2.8rem;
+  cursor: pointer;
 }
 
 /*-----index footer-------*/
@@ -250,15 +449,51 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
   bottom: 7px;
 }
 
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .navicon {
+    font-size: 2.4rem;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+  .sidenav .closebtn {
+    font-size: 3rem;
+  }
+  .sideclose a {
+    padding: 12px 0;
+    font-size: 13px;
+  }
+  .sidenavlink a {
+    padding: 13px 13px 13px 30px;
+    font-size: 13px;
+  }
+  .navicon {
+    width: 30px;
+    height: 45px;
+    font-size: 2.2rem;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .index-copy-right {
+    /* import from variables.scss */
+    font-size: 12px;
+    bottom: 7px;
+  }
+}
+
 /* flight booking button design */
 /* end of flight booking button design */
 /* car rental button design */
 /* car line */
 /* end of car line */
 /* car rental form date data */
-/* end car form rental date dat */
-/* box and hover effect of car services and reviewer section */
-/* end od box and hover effect of car services and reviewer section */
+/* end car form rental date data */
+/* box and hover effect of car services section */
+/* end od box and hover effect of car services section */
 /* happy client section */
 /* end happy client section */
 /* different car model box design */
@@ -469,7 +704,6 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 
 /*---------reading post ------*/
 .readingcorner {
-  height: 350px;
   width: 92%;
   margin: 50px auto;
 }
@@ -482,18 +716,16 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 }
 
 .inlinereading {
-  padding-top: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(270px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-gap: 30px;
 }
 
 .inlinereading .readingpost {
   height: 290px;
-  width: 31%;
   border-bottom: 4px solid #cc5252;
 }
 
@@ -519,7 +751,6 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 /*---------why we all divs------*/
 .whywe {
   width: 92%;
-  height: 350px;
   margin: 50px auto;
 }
 
@@ -532,16 +763,14 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 }
 
 .whywe-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: (minmax(190px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
 }
 
 .whywe-box .whywe-inner-box {
-  width: 17%;
   text-align: center;
   height: 285px;
 }
@@ -697,9 +926,9 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 /* car line */
 /* end of car line */
 /* car rental form date data */
-/* end car form rental date dat */
-/* box and hover effect of car services and reviewer section */
-/* end od box and hover effect of car services and reviewer section */
+/* end car form rental date data */
+/* box and hover effect of car services section */
+/* end od box and hover effect of car services section */
 /* happy client section */
 /* end happy client section */
 /* different car model box design */
@@ -1421,9 +1650,9 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 /* car line */
 /* end of car line */
 /* car rental form date data */
-/* end car form rental date dat */
-/* box and hover effect of car services and reviewer section */
-/* end od box and hover effect of car services and reviewer section */
+/* end car form rental date data */
+/* box and hover effect of car services section */
+/* end od box and hover effect of car services section */
 /* happy client section */
 /* end happy client section */
 /* different car model box design */
@@ -1744,18 +1973,14 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 
 .our-services .box-line {
   /* import from mixin.scss */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(290px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-gap: 30px;
 }
 
 .our-services .box-line .box {
-  height: 200px;
-  width: 31.5%;
   border-radius: 6px;
   background-color: #f3f3fb;
   -webkit-transition: all .3s ease-in-out 0.2s;
@@ -1765,6 +1990,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 .our-services .box-line .box h3 {
   font-size: 18px;
   font-weight: 700;
+  padding: 30px 0 15px 35px;
 }
 
 .our-services .box-line .box h3 .fal {
@@ -1773,6 +1999,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 
 .our-services .box-line .box p {
   font-size: 14px;
+  padding: 0 35px 10px 35px;
   color: #333 !important;
 }
 
@@ -1781,14 +2008,6 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
   -webkit-box-shadow: 0 15px 20px rgba(169, 169, 177, 0.658);
           box-shadow: 0 15px 20px rgba(169, 169, 177, 0.658);
   cursor: pointer;
-}
-
-.our-services .box-line h3 {
-  padding: 40px 0 20px 35px;
-}
-
-.our-services .box-line p {
-  padding: 0 35px 0 35px;
 }
 
 /* end of our service for our clients */
@@ -1964,8 +2183,32 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 /* happy clients offices cars in stock */
 .happy-serivices {
   position: relative;
-  height: 250px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: black;
+}
+
+.happy-serivices .clients-bgimg {
+  position: absolute;
+  background: url("../images/happyservices.jpg") no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  opacity: .3;
+}
+
+.happy-serivices .happy-clients {
+  /* import from mixin.scss */
+  position: relative;
+  margin: 30px 0;
+  height: 130px;
+  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1975,129 +2218,136 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-color: black;
-}
-
-.happy-serivices .clients-bgimg {
-  position: absolute;
-  background-image: url("../images/happyservices.jpg");
-  background-size: cover;
-  background-position: center center;
-  height: 100%;
-  width: 100%;
-  opacity: .3;
-}
-
-.happy-serivices .happy-clients {
-  /* import from mixin.scss */
-  position: absolute;
-  position: relative;
-  height: 130px;
-  width: 300px;
-  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .happy-serivices .happy-clients .fal {
   font-size: 52px;
   /* import from top of rental.scss */
   color: #ffd000;
-  position: absolute;
-  top: 34%;
-  left: 10%;
 }
 
-.happy-serivices .happy-clients h4 {
-  position: absolute;
+.happy-serivices .happy-clients .inner-text-hpy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.happy-serivices .happy-clients .inner-text-hpy h4 {
   font-weight: 700;
-  top: 23%;
-  right: 28.5%;
   font-size: 35px;
   color: #ffffff;
 }
 
-.happy-serivices .happy-clients p {
-  position: absolute;
-  top: 60%;
-  right: 27%;
+.happy-serivices .happy-clients .inner-text-hpy p {
   font-size: 15px;
   color: #ffffff;
 }
 
 .happy-serivices .cars-instock {
   /* import from mixin.scss */
-  position: absolute;
   position: relative;
+  margin: 30px 0;
   height: 130px;
   width: 300px;
-  background-color: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .happy-serivices .cars-instock .fal {
   font-size: 52px;
   /* import from top of rental.scss */
   color: #ffd000;
-  position: absolute;
-  top: 34%;
-  left: 10%;
 }
 
-.happy-serivices .cars-instock h4 {
-  position: absolute;
+.happy-serivices .cars-instock .inner-text-hpy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.happy-serivices .cars-instock .inner-text-hpy h4 {
   font-weight: 700;
-  top: 23%;
-  right: 28.5%;
   font-size: 35px;
   color: #ffffff;
 }
 
-.happy-serivices .cars-instock p {
-  position: absolute;
-  top: 60%;
-  right: 27%;
+.happy-serivices .cars-instock .inner-text-hpy p {
   font-size: 15px;
   color: #ffffff;
 }
 
 .happy-serivices .office-incities {
   /* import from mixin.scss */
-  position: absolute;
   position: relative;
+  margin: 30px 0;
   height: 130px;
   width: 300px;
-  background-color: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .happy-serivices .office-incities .fal {
   font-size: 52px;
   /* import from top of rental.scss */
   color: #ffd000;
-  position: absolute;
-  top: 34%;
-  left: 10%;
 }
 
-.happy-serivices .office-incities h4 {
-  position: absolute;
+.happy-serivices .office-incities .inner-text-hpy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.happy-serivices .office-incities .inner-text-hpy h4 {
   font-weight: 700;
-  top: 23%;
-  right: 28.5%;
   font-size: 35px;
   color: #ffffff;
 }
 
-.happy-serivices .office-incities p {
-  position: absolute;
-  top: 60%;
-  right: 27%;
+.happy-serivices .office-incities .inner-text-hpy p {
   font-size: 15px;
   color: #ffffff;
-}
-
-.happy-serivices .office-incities p {
-  right: 20%;
 }
 
 /* end of happy clients offices cars in stock */
@@ -2170,26 +2420,148 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
   width: 100%;
 }
 
-.select-car-model .tab-content .audi-box {
+.select-car-model .tab-content .all-box {
   /* import from mixin.scss */
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 25px;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.select-car-model .tab-content .all-box .car-model-box {
+  height: 350px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.select-car-model .tab-content .all-box .car-model-box figure {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.select-car-model .tab-content .all-box .car-model-box figure img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+}
+
+.select-car-model .tab-content .all-box .car-model-box figure figcaption {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  background: rgba(0, 0, 0, 0);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.select-car-model .tab-content .all-box .car-model-box figure figcaption i {
+  position: absolute;
+  color: #ffffff;
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(1500px);
+          transform: translateX(1500px);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.select-car-model .tab-content .all-box .car-model-box figure:hover figcaption {
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.select-car-model .tab-content .all-box .car-model-box figure:hover i {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
+.select-car-model .tab-content .all-box .car-model-box figure:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.select-car-model .tab-content .all-box .car-model-box .carname-price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 40px;
+  margin: 10px;
+}
+
+.select-car-model .tab-content .all-box .car-model-box .carname-price a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: -4px;
+}
+
+.select-car-model .tab-content .all-box .car-model-box .carname-price h6 {
+  color: yellowgreen;
+  font-size: 14px;
+}
+
+.select-car-model .tab-content .all-box .car-model-box p {
+  color: #333;
+  font-size: 14px;
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.select-car-model .tab-content .all-box .car-model-box .model-links {
+  margin: 10px;
+}
+
+.select-car-model .tab-content .all-box .car-model-box .model-links a {
+  text-decoration: none;
+  color: #333;
+  border: 0.1px solid rgba(122, 98, 98, 0.712);
+  border-radius: 5px;
+  padding: 2px 10px 2px 10px;
+  margin-right: 5px;
+}
+
+.select-car-model .tab-content .all-box .car-model-box .model-links a:hover {
+  background-color: yellowgreen;
+}
+
+.select-car-model .tab-content .audi-box {
+  /* import from mixin.scss */
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 25px;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .select-car-model .tab-content .audi-box .car-model-box {
   height: 350px;
-  width: 31%;
+  border-radius: 5px;
   -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
 }
 
 .select-car-model .tab-content .audi-box .car-model-box figure {
+  width: 100%;
   height: 220px;
   position: relative;
   overflow: hidden;
@@ -2298,24 +2670,22 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 
 .select-car-model .tab-content .bmw-box {
   /* import from mixin.scss */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 40px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 25px;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .select-car-model .tab-content .bmw-box .car-model-box {
   height: 350px;
-  width: 31%;
+  border-radius: 5px;
   -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
 }
 
 .select-car-model .tab-content .bmw-box .car-model-box figure {
+  width: 100%;
   height: 220px;
   position: relative;
   overflow: hidden;
@@ -2424,24 +2794,22 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 
 .select-car-model .tab-content .ferrari-box {
   /* import from mixin.scss */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 40px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 25px;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .select-car-model .tab-content .ferrari-box .car-model-box {
   height: 350px;
-  width: 31%;
+  border-radius: 5px;
   -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
 }
 
 .select-car-model .tab-content .ferrari-box .car-model-box figure {
+  width: 100%;
   height: 220px;
   position: relative;
   overflow: hidden;
@@ -2550,24 +2918,22 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 
 .select-car-model .tab-content .toyota-box {
   /* import from mixin.scss */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 40px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 25px;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .select-car-model .tab-content .toyota-box .car-model-box {
   height: 350px;
-  width: 31%;
+  border-radius: 5px;
   -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
 }
 
 .select-car-model .tab-content .toyota-box .car-model-box figure {
+  width: 100%;
   height: 220px;
   position: relative;
   overflow: hidden;
@@ -3181,9 +3547,9 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 /* car line */
 /* end of car line */
 /* car rental form date data */
-/* end car form rental date dat */
-/* box and hover effect of car services and reviewer section */
-/* end od box and hover effect of car services and reviewer section */
+/* end car form rental date data */
+/* box and hover effect of car services section */
+/* end od box and hover effect of car services section */
 /* happy client section */
 /* end happy client section */
 /* different car model box design */
@@ -3196,9 +3562,9 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 /* car line */
 /* end of car line */
 /* car rental form date data */
-/* end car form rental date dat */
-/* box and hover effect of car services and reviewer section */
-/* end od box and hover effect of car services and reviewer section */
+/* end car form rental date data */
+/* box and hover effect of car services section */
+/* end od box and hover effect of car services section */
 /* happy client section */
 /* end happy client section */
 /* different car model box design */
@@ -3207,8 +3573,20 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 /* page banner in tours.html */
 /* footer section of index page */
 .indexfooter {
-  text-align: center;
-  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
   /* import from variables.scss */
   background: #d9d9d95e;
   height: 155px;
@@ -3216,10 +3594,11 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 }
 
 .foootertext {
+  text-align: center;
   font-size: 16px;
   /* import from variables.scss */
   color: #333;
-  padding: 30px 0 20px 0;
+  padding: 0px 0 20px 0;
 }
 
 #booknowbtn {
@@ -3227,7 +3606,6 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
   height: 55px;
   width: 240px;
   font-size: 16px;
-  padding-top: 14px;
   border-radius: 60px;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out 0.2s;
@@ -3689,6 +4067,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 
 html {
   scroll-behavior: smooth;
+  font-size: 10px;
 }
 
 #loader {
@@ -3700,10 +4079,6 @@ html {
   z-index: 9999;
 }
 
-section {
-  margin-top: -5px;
-}
-
 /*---------image view-------*/
 .image {
   display: -webkit-box;
@@ -3713,57 +4088,79 @@ section {
 }
 
 .image img {
-  margin-left: 0px;
   height: 225px;
-  width: 33.5%;
+  width: 33.33%;
 }
 
 /*---------ratting section-------*/
 .ratting {
+  width: 100%;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  height: 60px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-shadow: 0px 0 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0 15px rgba(0, 0, 0, 0.1);
 }
 
-.ratting .hname {
-  color: #eb2f64;
-  font-size: 23px;
-  padding: 0 30px 0 30px;
-}
-
-.ratting .material-icons {
-  padding-top: 4px;
-  font-size: 19px;
-  color: #eb2f64;
-  padding-left: 2px;
-}
-
-.location-right {
+.ratting .hname-ratting {
+  height: 100%;
+  width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  right: 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.ratting .hname-ratting .hname {
+  color: #eb2f64;
+  font-size: 23px;
+}
+
+.ratting .hname-ratting .material-icons {
+  padding-top: 4px;
+  font-size: 19px;
+  padding-left: 2px;
+  color: #eb2f64;
+}
+
+.location-right {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .location-right .location {
   padding-right: 22px;
+  text-align: center;
   color: #eb2f64;
 }
 
 .location-right .location a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #eb2f64;
   text-decoration: none;
+}
+
+.fa-map-marker-alt {
+  font-size: 1.5rem;
 }
 
 .areaname {
@@ -3800,25 +4197,32 @@ section {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  width: 100%;
 }
 
-.main .row {
-  border-bottom: 1px solid #e8e3e3;
-  padding-bottom: 4%;
+.main .speciality {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.main .row .float-left {
-  padding: 20px 80px 10px 20px;
+.main .speciality .float-left {
+  padding: 15px 80px 20px 0px;
   font-size: 13px;
 }
 
-.main .row .float-right {
+.main .speciality .float-right {
   font-size: 13px;
-  padding-top: 23px;
+  padding-top: 20px;
 }
 
-.main .row .fa-angle-right {
+.main .speciality .fa-angle-right {
   padding-top: 10px;
+}
+
+.main hr {
+  border-radius: 50px;
+  background-color: #e8e3e3;
 }
 
 .center-content {
@@ -3833,17 +4237,15 @@ section {
   -webkit-box-shadow: 0px 0 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0 15px rgba(0, 0, 0, 0.1);
   padding: 27px 20px 0 50px;
-  margin: 40px 7px 40px 15px;
+  margin: 45px 7px 45px 15px;
 }
 
 .center-content .text {
   font-size: 13px;
-  padding-bottom: 4%;
-  border-bottom: 1px solid #e8e3e3;
 }
 
 .center-content .second-paragraph {
-  padding-top: 4%;
+  padding-top: 20px;
 }
 
 .row1 {
@@ -3854,7 +4256,7 @@ section {
 
 .row1 .recommend {
   font-size: 13px;
-  padding: 35px 30px 30px 0px;
+  padding: 35px 80px 30px 0px;
 }
 
 .row1 .recommendimage {
@@ -3864,16 +4266,16 @@ section {
 .row1 .recommendimage img {
   height: 37px;
   width: 37px;
-  border-radius: 25px;
+  border-radius: 2.5rem;
 }
 
 .row1 .recommendimage .img1 {
-  margin-left: -17px;
+  margin-left: -1.6rem;
 }
 
 /*---------review ratting-------*/
 .right-item {
-  margin: 40px 15px 40px 7px;
+  margin: 45px 15px 45px 7px;
   width: 360px;
 }
 
@@ -3886,7 +4288,7 @@ section {
 .profilequotes .profiletext {
   font-size: 13px;
   margin-top: -20px;
-  padding: 0px 5px 8% 22px;
+  padding: 0px 5px 20px 22px;
 }
 
 .profilequotes .quotesimage {
@@ -3938,7 +4340,7 @@ section {
 
 .quotes .quotestext {
   font-size: 13px;
-  padding: 0px 5px 5% 22px;
+  padding: 0px 5px 20px 22px;
   margin-top: -21px;
 }
 
@@ -3964,5 +4366,276 @@ section {
   text-decoration: none;
   padding-bottom: 1px;
   border-bottom: 2px solid #eb2f64;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 950px) {
+  .image img {
+    height: 210px;
+  }
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .main .speciality .float-left {
+    padding: 15px 50px 10px 20px;
+  }
+  .main .speciality .float-right {
+    padding-top: 15px;
+  }
+  .main .speciality .fa-angle-right {
+    padding-top: 8px;
+  }
+  .center-content {
+    width: 600px;
+    height: 420px;
+    margin: 30px;
+    padding: 20px 20px 0px 20px;
+  }
+  .center-content .text {
+    padding-bottom: 15px;
+  }
+  .row1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .row1 .recommend {
+    padding: 25px 10px 20px 0px;
+  }
+  .row1 .recommendimage {
+    padding-top: 15px;
+  }
+  .right-item {
+    margin: 30px 30px 0px 0px;
+    width: 330px;
+  }
+  .right-item .quotes {
+    margin-top: 30px;
+  }
+  .showalllink {
+    padding-top: 15px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .image img {
+    height: 170px;
+  }
+  /*---------ratting section-------*/
+  .ratting .hname-ratting {
+    width: 350px;
+  }
+  .ratting .hname-ratting .hname {
+    color: #eb2f64;
+    font-size: 2.1rem;
+  }
+  .ratting .hname-ratting .material-icons {
+    font-size: 1.8rem;
+  }
+  .location-right .location {
+    padding-right: 1.8rem;
+  }
+  .fa-map-marker-alt {
+    font-size: 1.4rem;
+  }
+  .main {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .center-content {
+    width: 100%;
+    margin: 20px;
+  }
+  .right-item {
+    margin: 10px 20px 35px 20px;
+    width: 100%;
+  }
+  .right-item .quotes {
+    margin-top: 30px;
+  }
+  .right-item .showalllink {
+    padding-top: 20px;
+  }
+  #booknowbtn {
+    height: 40px;
+    width: 200px;
+    font-size: 14px;
+  }
+  #booknowbtn:hover {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .image img {
+    height: 110px;
+  }
+  /*---------ratting section-------*/
+  .ratting {
+    height: 48px;
+  }
+  .ratting .hname-ratting {
+    width: 290px;
+    margin-right: 20px;
+  }
+  .ratting .hname-ratting .hname {
+    width: 52%;
+    font-size: 1.7rem;
+  }
+  .ratting .hname-ratting span {
+    width: 75px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .ratting .hname-ratting span .material-icons {
+    padding-top: 0;
+    padding-left: 0px;
+    font-size: 1.4rem;
+  }
+  .location-right {
+    height: 100%;
+  }
+  .location-right .location {
+    padding-right: 0.7rem;
+  }
+  .fa-map-marker-alt {
+    font-size: 1.3rem;
+    margin-right: 1px;
+  }
+  .areaname {
+    width: 48px;
+    height: 100%;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #eb2f64;
+  }
+  .overallratting {
+    width: 55px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .overallratting .numberrate {
+    padding-top: 4px;
+    font-size: 14px;
+  }
+  .overallratting .allratting {
+    font-size: 1rem;
+  }
+  /*---------center content-------*/
+  .main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main .speciality {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main .speciality .float-left {
+    padding: 1rem 0 9px 0;
+  }
+  .main .speciality .float-right {
+    padding-top: 0rem;
+  }
+  .center-content {
+    width: 700px;
+    margin: 15px;
+    padding: 10px 5px 10px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .row1 {
+    height: 70px;
+    margin-bottom: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .row1 .recommend {
+    font-size: 13px;
+    padding: 0;
+  }
+  .row1 .recommendimage {
+    padding-top: 0;
+  }
+  .row1 .recommendimage .img1 {
+    margin-left: -1rem;
+  }
+  /*---------review ratting-------*/
+  .right-item {
+    margin: 15px 15px 30px 15px;
+    width: 100%;
+  }
+  /*---------quotes-------*/
+  .quotes {
+    margin-top: 30px;
+  }
+  /*-----------show all link--------*/
+  .showalllink {
+    padding-top: 20px;
+  }
+  .foootertext {
+    text-align: center;
+    font-size: 14px;
+    padding: 0px 5px 20px 5px;
+  }
+  #booknowbtn {
+    height: 33px;
+    width: 150px;
+    font-size: 12px;
+  }
+  #booknowbtn:hover {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

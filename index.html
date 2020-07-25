@@ -31,38 +31,36 @@
 
   <div id="loader"></div>
 
-  <div id="main">
-
   <!--_________________________start of navbar___________________________-->
   <nav>
-    <span class="navicon" id="navicon" style="font-size:28px;cursor:pointer" onclick="openNav()">&#9776;</span>
-      <div class="navbar-conatiner">
-        <div class="logo-box">
-          <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
-        </div>
-
-        <!--_________________________search bar___________________________-->
-
-        <div class="search">
-          <form class="searchbox">
-            <input class="form-control" type="search" placeholder="Search hotels">
-            <a href="#"><i class="fas fa-search"></i></a>
-          </form>
-        </div>
-        <!--_________________________end search bar___________________________-->
-
-        <!--_________________________navbar links___________________________-->
-        <div class="profile-noti">
-          <ul>
-            <li><a href="#"><i class="fas fa-bookmark"></i><span class="notification">7</span></a></li>
-            <li><a href="#"><i class="fas fa-comments-alt"></i><span class="notification">13</span></a></li>
-            <li><a href="#" style="text-decoration: none;"><img id="profile-img" src="images/profile.png"
-                  alt="profile">&nbsp
-                Jonas</a></li>
-          </ul>
-        </div>
-
+    <span class="navicon" onclick="openNav()">&#9776;</span>
+    <div class="navbar-conatiner">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
       </div>
+
+      <!--_________________________search bar___________________________-->
+
+      <div class="search">
+        <form class="searchbox">
+          <input class="form-control" type="search" placeholder="Search hotels">
+          <a href="#"><i class="fas fa-search"></i></a>
+        </form>
+      </div>
+      <!--_________________________end search bar___________________________-->
+
+      <!--_________________________navbar links___________________________-->
+      <div class="profile-noti">
+        <ul>
+          <li><a href="#"><i class="fas fa-bookmark"></i><span class="notification">7</span></a></li>
+          <li><a href="#"><i class="fas fa-comments-alt"></i><span class="notification">13</span></a></li>
+          <li><a href="#" style="text-decoration: none;"><img id="profile-img" src="images/profile.png"
+                alt="profile">&nbsp
+              Jonas</a></li>
+        </ul>
+      </div>
+
+    </div>
   </nav>
   <!--_________________________end of navbar___________________________-->
 
@@ -88,23 +86,24 @@
     <!--_________________________image view___________________________-->
 
     <div class="image">
-      <img src="images/swimmingpool.jpg" alt="poolview">
-      <img style="margin-left: -3px;" src="images/lawn.jpg" alt="lawn view">
-      <img style="margin-left: -3px;" src="images/view.jpg" alt="outside view">
+      <img src="images/hotel1.jpg" alt="poolview">
+      <img src="images/hotel2.jpg" alt="lawn view">
+      <img src="images/hotel3.jpg" alt="outside view">
     </div>
 
     <!--_________________________ratting section___________________________-->
     <div class="ratting">
+      <div class="hname-ratting">
       <div class="hname">HOTEL LAS PALMAS</div>
-      <span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i
-          class="material-icons">star</i><i class="material-icons">star</i> </span>
+        <span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i
+            class="material-icons">star</i><i class="material-icons">star</i> </span>
+      </div>
 
       <div class="location-right">
         <div class="location">
-          <a href="#"> <i class="fas fa-map-marker-alt"></i> <span class="areaname">Albufeira,
-              Portugal</span> </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> &nbsp <div class="areaname">Albufeira,
+              Portugal</div> </a>
         </div>
-
         <div class="overallratting">
           <div class="numberrate">8.6</div>
           <div class="allratting">429 VOTES</div>
@@ -126,29 +125,35 @@
 
         </div>
 
-        <div class="row">
+        <hr>
+
+        <div class="speciality">
           <div class="float-left">
             <i class="fal fa-angle-right"></i> &nbsp Close to beach <br>
+            <i class="fal fa-angle-right"></i> &nbsp Air conditioning<br>
             <i class="fal fa-angle-right"></i> &nbsp Free airport shuttle <br>
-            <i class="fal fa-angle-right"></i> &nbsp Air conditioning and heating <br>
             <i class="fal fa-angle-right"></i> &nbsp We speak all languages <br>
           </div>
           <div class="float-right">
-            <i class="fal fa-angle-right"></i> &nbsp Breakfast included <br>
-            <i class="fal fa-angle-right"></i> &nbsp Free wifi in all rooms <br>
             <i class="fal fa-angle-right"></i> &nbsp Pets allowed <br>
             <i class="fal fa-angle-right"></i> &nbsp Perfect for families <br>
+            <i class="fal fa-angle-right"></i> &nbsp Breakfast included <br>
+            <i class="fal fa-angle-right"></i> &nbsp Free wifi in all rooms <br>
           </div>
         </div>
 
+        <hr>
+
         <div class="row1">
           <div class="recommend">Lucy and 3 other friends recommend this hotel. </div>
+
           <div class="recommendimage">
             <img src="images/friend2.jpg" alt="f1">
             <img class="img1" src="images/friend1.png" alt="f2">
             <img class="img1" src="images/friend3.jpg" alt="f3">
             <img class="img1" src="images/friend4.jpg" alt="f4">
           </div>
+
         </div>
 
       </div>
@@ -192,10 +197,9 @@
   <!--_____________________Book now button____________________-->
   <footer class="indexfooter">
     <div class="foootertext">GOOD NEWS! WE HAVE 4 FREE ROOMS FOR YOUR SELECTED DATES!</div>
-    <a href="#" id="booknowbtn" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">BOOK NOW</a>
+    <button id="booknowbtn" class="btn btn-secondary" role="button" aria-pressed="true">BOOK NOW</button>
   </footer>
 
-  </div>
   <script>
     var preloader = document.getElementById('loader');
 

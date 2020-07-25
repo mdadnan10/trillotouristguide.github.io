@@ -59,19 +59,13 @@
 }
 
 .navicon {
-  margin: 10px 5px 0 20px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8rem;
+  cursor: pointer;
 }
-
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-
-    & a {
-      font-size: 18px;
-    }
-  }
-}
-
 
 /*-----index footer-------*/
 .index-copy-right {
@@ -81,4 +75,49 @@
   text-align: center;
   position: absolute;
   bottom: 7px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .navicon {
+    font-size: 2.4rem;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+
+  .sidenav {
+
+    & .closebtn {
+      font-size: 3rem;
+    }
+  }
+
+  .sideclose {
+    & a {
+      padding: 12px 0;
+      font-size: $size13;
+    }
+  }
+
+
+  .sidenavlink {
+    & a {
+      padding: 13px 13px 13px 30px;
+      font-size: $size13;
+    }
+  }
+
+  .navicon {
+    width: 30px;
+    height: 45px;
+    font-size: 2.2rem;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .index-copy-right {
+    /* import from variables.scss */
+    font-size: $size12;
+    bottom: 7px;
+  }
 }

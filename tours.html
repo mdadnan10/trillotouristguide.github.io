@@ -50,16 +50,13 @@
 
   <div id="loader"></div>
 
-
-  <div id="main">
-
     <!--_________________________start of navbar___________________________-->
     <nav>
-      <span class="navicon" id="navicon" style="font-size:28px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <span class="navicon" onclick="openNav()">&#9776;</span>
 
       <div class="navbar-conatiner">
-        <div class="logo-box">
-          <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="logo"></a>
         </div>
 
         <!--_________________________search bar___________________________-->
@@ -648,13 +645,22 @@
         ],
         responsive: {
           0: {
-            items: 1
+            items: 1.5
           },
-          600: {
+          400: {
+            items: 2.1
+          },
+          550: {
             items: 3
           },
-          1000: {
+          850: {
+            items: 4
+          },
+          1200: {
             items: 5
+          },
+          1500: {
+            items: 6
           }
         }
       })

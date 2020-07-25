@@ -172,7 +172,6 @@ $headingtext: 25px;
 
 /*---------reading post ------*/
 .readingcorner {
-	height: 350px;
 	width: 92%;
 	margin: 50px auto;
 
@@ -185,13 +184,13 @@ $headingtext: 25px;
 }
 
 .inlinereading {
-	padding-top: 10px;
-	display: flex;
-	justify-content: space-between;
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+	grid-gap: 30px;
 
 	& .readingpost {
 		height: 290px;
-		width: 31%;
 		border-bottom: 4px solid #cc5252;
 
 		& a {
@@ -204,6 +203,7 @@ $headingtext: 25px;
 			border-top-left-radius: 8px;
 			border-top-right-radius: 8px;
 		}
+
 		.reading-text {
 			/* import from variables.scss */
 			color: $textcolor;
@@ -217,7 +217,6 @@ $headingtext: 25px;
 /*---------why we all divs------*/
 .whywe {
 	width: 92%;
-	height: 350px;
 	margin: 50px auto;
 
 	& .whywe-heading {
@@ -230,11 +229,11 @@ $headingtext: 25px;
 }
 
 .whywe-box {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
 
 	& .whywe-inner-box {
-		width: 17%;
 		text-align: center;
 		height: 285px;
 
@@ -281,6 +280,7 @@ $headingtext: 25px;
 	font-size: $size14;
 	text-align: justify;
 }
+
 /*----end of why we all divs----*/
 
 /*-----contact form -------*/
