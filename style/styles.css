@@ -1173,6 +1173,9 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 
 @media (max-width: 549px) {
   /*---------slide show---------*/
+  .image-slider .carousel-item {
+    height: 50vh;
+  }
   .image-slider .carousel-indicators {
     opacity: 1;
     visibility: visible;
@@ -1185,7 +1188,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
   /*---------end slide show---------*/
   /*------all trending box and text------*/
   .trendingbox {
-    width: 90%;
+    width: 97%;
     margin: 15px auto;
   }
   .trendingbox .trendingheading {

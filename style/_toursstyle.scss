@@ -694,6 +694,10 @@ $headingtext: 2.5rem;
 	/*---------slide show---------*/
 	.image-slider {
 
+		.carousel-item {
+			height: 50vh;
+		}
+
 		.carousel-indicators {
 			opacity: 1;
 			visibility: visible;
@@ -710,7 +714,7 @@ $headingtext: 2.5rem;
 
 	/*------all trending box and text------*/
 	.trendingbox {
-		width: 90%;
+		width: 97%;
 		margin: 15px auto;
 
 		& .trendingheading {
