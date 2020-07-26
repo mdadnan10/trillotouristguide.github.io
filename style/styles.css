@@ -500,13 +500,34 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 /* end of different car model box design */
 /* trending box of international and indian in tours.html */
 /* page banner in tours.html */
-/*------all trending box and text------*/
-#main {
-  -webkit-transition: margin-left .5s;
-  transition: margin-left .5s;
+/*---------slide show---------*/
+.image-slider {
   margin-top: 5px;
 }
 
+.image-slider .carousel-item {
+  height: 60vh;
+  width: 100%;
+}
+
+.image-slider .carousel-item img {
+  height: 100%;
+  width: 100%;
+}
+
+.image-slider .carousel-indicators {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.image-slider .carousel-control-next-icon,
+.image-slider .carousel-control-prev-icon {
+  height: 30px;
+  width: 30px;
+}
+
+/*---------end slide show---------*/
+/*------all trending box and text------*/
 .trendingbox {
   width: 92%;
   margin: 25px auto;
@@ -514,7 +535,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 
 .trendingbox .trendingheading {
   /* import from top of this page */
-  font-size: 25px;
+  font-size: 2.5rem;
   /* import from variables.scss */
   color: #333;
   font-weight: bold;
@@ -563,7 +584,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
   height: 100%;
   position: absolute;
   border-radius: 6px;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .main-slider .slider-img-main .top-left {
@@ -711,7 +732,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 .readingcorner .readingtext {
   /* import from variables.scss */
   color: #333;
-  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
@@ -719,8 +740,8 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
   margin-top: 10px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(270px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  -ms-grid-columns: (minmax(260px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-gap: 30px;
 }
 
@@ -757,7 +778,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 .whywe .whywe-heading {
   /* import from variables.scss */
   color: #333;
-  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: 700;
   padding-bottom: 20px;
 }
@@ -830,11 +851,11 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 .contactform img {
   width: 100%;
   height: 100%;
-  opacity: .5;
+  opacity: .3;
   border-radius: 4px;
 }
 
-.contactform .ineer-contact-form {
+.contactform .inner-contact-form {
   position: absolute;
   top: 0;
   left: 0;
@@ -843,6 +864,8 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -851,7 +874,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
           justify-content: space-evenly;
 }
 
-.contactform .ineer-contact-form .planwithus {
+.contactform .inner-contact-form .planwithus {
   /* import from variables.scss */
   color: #ffffff;
   width: 60%;
@@ -860,15 +883,15 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
   font-weight: bold;
 }
 
-.contactform .ineer-contact-form .start {
+.contactform .inner-contact-form .start {
   border-top: 2px solid #ffffff;
 }
 
-.contactform .ineer-contact-form .yourdetails {
+.contactform .inner-contact-form .yourdetails {
   font-size: 35px;
 }
 
-.contactform .ineer-contact-form .end {
+.contactform .inner-contact-form .end {
   border-bottom: 2px solid #ffffff;
 }
 
@@ -882,6 +905,7 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
   /* import from variables.scss */
   color: #333;
   font-size: 15px;
+  border-radius: 4px;
 }
 
 .contactform .submitform .checkbox {
@@ -904,7 +928,6 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
   width: 120px;
   margin-top: 13px;
   height: 34px;
-  padding-top: 4.5px;
   /* import from variables.scss */
   color: #ffffff;
   font-size: 15px;
@@ -918,6 +941,427 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 #contactbtn:hover {
   background: -webkit-gradient(linear, right top, left top, from(#f85032), to(#e73827));
   background: linear-gradient(to left, #f85032, #e73827);
+}
+
+@media (min-width: 768px) and (max-width: 950px) {
+  /*---------slide show---------*/
+  .image-slider .carousel-item {
+    height: 50vh;
+  }
+  .image-slider .carousel-indicators {
+    opacity: 1;
+    visibility: visible;
+  }
+  .image-slider .carousel-control-next-icon,
+  .image-slider .carousel-control-prev-icon {
+    height: 0px;
+    width: 0px;
+    display: none;
+  }
+  /*---------end slide show---------*/
+  /*------all trending box and text------*/
+  .trendingbox {
+    width: 95%;
+    margin: 20px auto;
+  }
+  .trendingbox .trendingheading {
+    /* import from top of this page */
+    font-size: 2.2rem;
+    /* import from variables.scss */
+    color: #333;
+    font-weight: bold;
+  }
+  .main-slider {
+    height: 285px;
+  }
+  .main-slider .slider-img-main {
+    height: 280px;
+    width: 230px;
+    margin-right: 0px;
+  }
+  .main-slider .slider-img-main .top-left {
+    font-weight: 600;
+  }
+  .main-slider .owl-prev {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .main-slider .owl-next {
+    opacity: 0;
+    visibility: hidden;
+  }
+  /*----------auto slider page banner------*/
+  .page-banner {
+    width: 95%;
+    height: 200px;
+    margin: 30px auto;
+  }
+  .page-banner .display-left {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .page-banner .display-right {
+    opacity: 0;
+    visibility: hidden;
+  }
+  /* reading post */
+  .readingcorner {
+    width: 95%;
+    margin: 30px auto;
+  }
+  /*---------why we all divs------*/
+  .whywe {
+    width: 95%;
+    margin: 30px auto;
+  }
+  /*-----contact form -------*/
+  .contactform {
+    width: 95%;
+    height: 270px;
+  }
+  .contactform .inner-contact-form .planwithus {
+    font-size: 2.6rem;
+  }
+  .contactform .inner-contact-form .yourdetails {
+    font-size: 3.1rem;
+  }
+  .contactform .submitform {
+    width: 33%;
+  }
+  .contactform .submitform .textfield {
+    height: 3rem;
+    margin-bottom: 1.2rem;
+  }
+  #contactbtn {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 767px) {
+  /*---------slide show---------*/
+  .image-slider .carousel-item {
+    height: 45vh;
+  }
+  .image-slider .carousel-indicators {
+    opacity: 1;
+    visibility: visible;
+  }
+  .image-slider .carousel-control-next-icon,
+  .image-slider .carousel-control-prev-icon {
+    opacity: 0;
+    visibility: hidden;
+  }
+  /*---------end slide show---------*/
+  /*------all trending box and text------*/
+  .trendingbox {
+    width: 97%;
+    margin: 20px auto;
+  }
+  .trendingbox .trendingheading {
+    /* import from top of this page */
+    font-size: 2rem;
+  }
+  .main-slider {
+    height: 275px;
+  }
+  .main-slider .slider-img-main {
+    height: 275px;
+    width: 210px;
+  }
+  .main-slider .slider-img-main .top-left {
+    font-weight: 600;
+  }
+  .main-slider .owl-prev {
+    /* import from mixin.scss */
+    background-color: #efefef !important;
+    width: 33px;
+    height: 33px;
+    border-radius: 50px !important;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    outline: none;
+    left: 0px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .main-slider .owl-next {
+    /* import from mixin.scss */
+    background-color: #efefef !important;
+    width: 33px;
+    height: 33px;
+    border-radius: 50px !important;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    outline: none;
+    right: 0px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  /*----------auto slider page banner------*/
+  .page-banner {
+    width: 97%;
+    height: 160px;
+    margin: 25px auto;
+  }
+  .page-banner .page-banner-slide .display-left,
+  .page-banner .page-banner-slide .display-right {
+    opacity: 0;
+    visibility: hidden;
+  }
+  /*---------reading post ------*/
+  .readingcorner {
+    width: 97%;
+    margin: 20px auto;
+  }
+  /*---------why we all divs------*/
+  .whywe {
+    width: 95%;
+    margin: 25px auto;
+  }
+  .whywe-box .whywe-inner-box {
+    height: auto;
+  }
+  .whywe-paragraph {
+    padding-bottom: 0.8rem;
+  }
+  /*----end of why we all divs----*/
+  /*-----contact form -------*/
+  .contactform {
+    position: relative;
+    width: 97%;
+    height: 290px;
+  }
+  .contactform .inner-contact-form {
+    position: absolute;
+    height: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contactform .inner-contact-form .planwithus {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0.8rem 0;
+  }
+  .contactform .inner-contact-form .start,
+  .contactform .inner-contact-form .end {
+    border: none;
+  }
+  .contactform .inner-contact-form .yourdetails {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .contactform .submitform {
+    width: 300px;
+    text-align: center;
+  }
+  .contactform .submitform .textfield {
+    height: 3.2rem;
+    margin-bottom: 0.8rem;
+  }
+  #contactbtn {
+    margin: 0.8rem 0;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 549px) {
+  /*---------slide show---------*/
+  .image-slider .carousel-indicators {
+    opacity: 1;
+    visibility: visible;
+  }
+  .image-slider .carousel-control-next-icon,
+  .image-slider .carousel-control-prev-icon {
+    opacity: 0;
+    visibility: hidden;
+  }
+  /*---------end slide show---------*/
+  /*------all trending box and text------*/
+  .trendingbox {
+    width: 90%;
+    margin: 15px auto;
+  }
+  .trendingbox .trendingheading {
+    /* import from top of this page */
+    font-size: 1.7rem;
+  }
+  .trendingbox .trendingtext {
+    /* import from variables.scss */
+    font-size: 13px;
+  }
+  .main-slider {
+    height: 240px;
+  }
+  .main-slider .slider-img-main {
+    height: 240px;
+    width: 175px;
+    margin-right: 5px;
+  }
+  .main-slider .slider-img-main .top-left {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  .main-slider .slider-img-main .bottom-text {
+    font-size: 1.4rem;
+  }
+  .main-slider .slider-img-main .bottom-text .fa-rupee-sign {
+    font-size: 1.4rem;
+  }
+  .main-slider .slider-img-main .bottom-text .price {
+    font-size: 2rem;
+  }
+  .main-slider .owl-prev {
+    /* import from mixin.scss */
+    background-color: #efefef !important;
+    width: 33px;
+    height: 33px;
+    border-radius: 50px !important;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    outline: none;
+    left: 0px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .main-slider .owl-next {
+    /* import from mixin.scss */
+    background-color: #efefef !important;
+    width: 33px;
+    height: 33px;
+    border-radius: 50px !important;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    outline: none;
+    right: 0px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  /*----------auto slider page banner------*/
+  .page-banner {
+    width: 97%;
+    height: 125px;
+    margin: 20px auto;
+  }
+  .page-banner .page-banner-slide .display-left,
+  .page-banner .page-banner-slide .display-right {
+    display: none;
+  }
+  /*---------reading post ------*/
+  .readingcorner {
+    width: 95%;
+    margin: 20px auto;
+  }
+  .readingcorner .readingtext {
+    font-size: 1.7rem;
+  }
+  .inlinereading {
+    -ms-grid-columns: (minmax(220px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  .inlinereading .readingpost {
+    height: auto;
+    border-bottom: 2px solid #cc5252;
+  }
+  .inlinereading .readingpost img {
+    height: 150px;
+  }
+  .inlinereading .readingpost .reading-text {
+    padding: 5px 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  /*---------why we all divs------*/
+  .whywe {
+    margin: 20px auto;
+  }
+  .whywe .whywe-heading {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+  .whywe-box .whywe-inner-box {
+    height: auto;
+  }
+  .whywe-box .whywe-inner-box img {
+    height: 78px;
+    width: 80px;
+  }
+  .whywe-item-1 {
+    border-bottom: 2px solid #4e76b1;
+  }
+  .whywe-item-2 {
+    border-bottom: 2px solid #f1a75e;
+  }
+  .whywe-item-3 {
+    border-bottom: 2px solid #35bec4;
+  }
+  .whywe-item-4 {
+    border-bottom: 2px solid #898ac3;
+  }
+  .whywe-item-5 {
+    border-bottom: 2px solid #e395d7;
+  }
+  .whywe-heading-text {
+    padding: 10px 0;
+    font-size: 1.4rem;
+  }
+  .whywe-paragraph {
+    font-size: 13px;
+    padding-bottom: 7px;
+  }
+  /*----end of why we all divs----*/
+  /*-----contact form -------*/
+  .contactform {
+    width: 97%;
+    height: 325px;
+    margin: 25px auto;
+  }
+  .contactform .inner-contact-form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contactform .inner-contact-form .planwithus {
+    width: 100%;
+    height: auto;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .contactform .inner-contact-form .start,
+  .contactform .inner-contact-form .end {
+    border: none;
+  }
+  .contactform .inner-contact-form .yourdetails {
+    font-size: 2.2rem;
+  }
+  .contactform .submitform {
+    width: 80%;
+    text-align: center;
+  }
+  .contactform .submitform .textfield {
+    height: 3rem;
+    margin-bottom: 1rem;
+    font-size: 13px;
+  }
+  .contactform .submitform .checkbox {
+    font-size: 11px;
+  }
+  #contactbtn {
+    width: 110px;
+    margin: 1rem 0;
+    height: 3.2rem;
+    font-size: 14px;
+  }
 }
 
 /* flight booking button design */
@@ -3903,7 +4347,6 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 /* end of footer section of car rental page */
 /*--------tours and reavels foooter------*/
 .toursfooter {
-  height: 201px;
   position: relative;
   width: 100%;
   background-color: #515151;
@@ -3913,6 +4356,8 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -3957,36 +4402,21 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
   border-radius: 20px;
 }
 
-.subscribe .fa-phone-alt {
-  font-size: 20px;
-  /* import from variables.scss */
-  color: #ff0000;
-}
-
 #subsbtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: absolute;
   right: 12px;
-  top: 8px;
-  height: 23px;
+  top: 7px;
+  height: 26px;
   width: 90px;
+  padding: 0;
   /* import from variables.scss */
-  background: -webkit-gradient(linear, left top, right top, from(#f85032), to(#e73827));
-  background: linear-gradient(to right, #f85032, #e73827);
   color: #ffffff;
-  /* import from variables.scss */
   font-size: 13px;
   font-weight: 500;
   border-radius: 20px;
   outline: none;
+  background: -webkit-gradient(linear, left top, right top, from(#f85032), to(#e73827));
+  background: linear-gradient(to right, #f85032, #e73827);
 }
 
 #subsbtn:hover {
@@ -3995,16 +4425,15 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
 }
 
 .tourscopyright {
-  position: absolute;
   /* import from variables.scss */
   color: #e7e7e7;
   font-size: 12px;
-  left: 43%;
-  bottom: 0;
+  padding: 20px 0;
+  text-align: center;
 }
 
 .followus {
-  padding-top: 30px;
+  padding-top: 25px;
   text-align: center;
 }
 
@@ -4036,11 +4465,6 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
   color: white;
 }
 
-.followus .fa-linkedin-in {
-  background: #0e76a8;
-  color: white;
-}
-
 .followus .fa-twitter {
   background: #00acee;
   color: white;
@@ -4055,6 +4479,61 @@ nav .navbar-conatiner .profile-noti ul li a:hover {
   text-align: center;
   border-radius: 50%;
   margin-right: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 950px) {
+  .helpline {
+    padding-right: 0px;
+    border-right: 0px solid #bebebe;
+  }
+  .central {
+    padding-right: 70px;
+    border-right: 1px solid #bebebe;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 767px) {
+  .helpline {
+    padding-right: 0px;
+    border-right: 0px solid #bebebe;
+  }
+  .central {
+    padding-right: 15px;
+    border-right: 1px solid #bebebe;
+  }
+}
+
+@media (max-width: 550px) {
+  .helpline {
+    line-height: 25px;
+    font-size: 1.4rem;
+    padding: 0 15px;
+    text-align: center;
+    border-right: 0px solid #bebebe;
+  }
+  .helpline span {
+    /* import from variables.scss */
+    font-size: 1rem;
+  }
+  .helpline .fa-phone-alt {
+    font-size: 1.5rem;
+  }
+  .subscribe {
+    width: 80%;
+  }
+  .subscribe input {
+    height: 3.6rem;
+  }
+  #subsbtn {
+    top: 6.5px;
+    height: 2.4rem;
+    width: 80px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .sicon {
+    margin-right: 5px;
+  }
 }
 
 /* end of tours footer section */
@@ -4630,7 +5109,7 @@ html {
     padding: 0px 5px 20px 5px;
   }
   #booknowbtn {
-    height: 33px;
+    height: 36px;
     width: 150px;
     font-size: 12px;
   }

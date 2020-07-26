@@ -29,656 +29,681 @@
   <link rel="stylesheet" type="text/css" href="OwlCarousel/owl.carousel.min.css">
   <link rel="stylesheet" type="text/css" href="OwlCarousel/owl.theme.default.min.css">
 
-  <style type="text/css">
-    /*---------slide show---------*/
-    .carousel {
-      top: -5px;
-    }
-
-    .carousel-control-next-icon,
-    .carousel-control-prev-icon {
-      height: 30px;
-      width: 30px;
-    }
-
-    /*---------end slide show---------*/
-  </style>
-
 </head>
 
 <body onload="loadingfunction()">
 
   <div id="loader"></div>
 
-    <!--_________________________start of navbar___________________________-->
-    <nav>
-      <span class="navicon" onclick="openNav()">&#9776;</span>
+  <!--_________________________start of navbar___________________________-->
+  <nav>
+    <span class="navicon" onclick="openNav()">&#9776;</span>
 
-      <div class="navbar-conatiner">
-        <div class="logo">
-          <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-        </div>
-
-        <!--_________________________search bar___________________________-->
-
-        <div class="search">
-          <form class="searchbox">
-            <input class="form-control" type="search" placeholder="Search hotels">
-            <a href="#"><i class="fas fa-search"></i></a>
-          </form>
-        </div>
-        <!--_________________________end search bar___________________________-->
-
-        <!--_________________________navbar links___________________________-->
-        <div class="profile-noti">
-          <ul>
-            <li><a href="#"><i class="fas fa-bookmark"></i><span class="notification">7</span></a></li>
-            <li><a href="#"><i class="fas fa-comments-alt"></i><span class="notification">13</span></a></li>
-            <li><a href="#" style="text-decoration: none;"><img id="profile-img" src="images/profile.png"
-                  alt="profile">&nbsp
-                Jonas</a></li>
-          </ul>
-        </div>
-
+    <div class="navbar-conatiner">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
       </div>
-    </nav>
-    <!--_________________________end of navbar___________________________-->
 
-    <!--_________________________start side nav___________________________-->
+      <!--_________________________search bar___________________________-->
 
-    <div id="sidenav" class="sidenav">
-      <span class="sideclose"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></span>
-      <span class="sidenavlink"><a href="index.html"><i class="fas fa-home-lg-alt"></i> &nbsp HOTEL</a></span>
-      <span class="sidenavlink"><a href="flights.html"><i class="fad fa-plane-departure"></i> &nbsp fLIGHT</a></span>
-      <span class="sidenavlink"><a href="rental.html"><i class="fas fa-key"></i> &nbsp CAR RENTAL</a></span>
-      <span class="sidenavlink"><a class="active" href="tours.html"><i class="far fa-map"></i> &nbsp TOURS</a></span>
-      <div class="index-copy-right">&copy; 2020 by trillo. All rights reserved.</div>
-    </div>
+      <div class="search">
+        <form class="searchbox">
+          <input class="form-control" type="search" placeholder="Search hotels">
+          <a href="#"><i class="fas fa-search"></i></a>
+        </form>
+      </div>
+      <!--_________________________end search bar___________________________-->
 
-    <!--_________________________end side nav___________________________-->
-
-    <!--_________________________start of home page carousel_________________________-->
-    <div class="image-slider">
-      <div class="carousel slide" data-ride="carousel" data-interval="3000" id="web">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="#"><img src="images/goa.jpg" alt="goa images" style="width: 100%; height: 350px;"></a>
-          </div>
-
-          <div class="carousel-item">
-            <a href="#"><img src="images/Rajasthan.jpg" alt="rajasthan images" style="width: 100%; height: 350px;"></a>
-          </div>
-
-          <div class="carousel-item">
-            <a href="#"><img src="images/Uttarakhand.jpg" alt="uttarakhand images"
-                style="width: 100%; height: 350px;"></a>
-          </div>
-
-        </div>
-        <a href="#web" class="carousel-control-next" data-slide="next"><span
-            class="carousel-control-next-icon"></span></a>
-        <a href="#web" class="carousel-control-prev" data-slide="prev"><span
-            class="carousel-control-prev-icon"></span></a>
+      <!--_________________________navbar links___________________________-->
+      <div class="profile-noti">
+        <ul>
+          <li><a href="#"><i class="fas fa-bookmark"></i><span class="notification">7</span></a></li>
+          <li><a href="#"><i class="fas fa-comments-alt"></i><span class="notification">13</span></a></li>
+          <li><a href="#" style="text-decoration: none;"><img id="profile-img" src="images/profile.png"
+                alt="profile">&nbsp
+              Jonas</a></li>
+        </ul>
       </div>
 
     </div>
-    <!--_________________________end of home page carousel_________________________-->
+  </nav>
+  <!--_________________________end of navbar___________________________-->
 
+  <!--_________________________start side nav___________________________-->
 
-    <!--________________________start of trending box for international__________________-->
-    <div class="trendingbox">
-      <span class="trendingheading">Trending International Destinations</span>
-      <div class="trendingtext">
-        The world is now just a hop, skip and jump away and here’s how you can make your travel easier and better. <span
-          id="dots">...</span><span id="more">Our various vacation packages, trip packages and holiday packages offer a
-          kaleidoscopic range of international destinations that meet every interest, schedule and requirement. The best
-          part is, you won’t have to worry about all the planning details; just pack your bag, get set and go. <br>
-          Pick your destination and we will fulfill all your wishes. Whether you want to visit the United States or the
-          United Kingdom, South Africa or the Southeast, we will take you everywhere. Explore the deserts of Egypt where
-          you can see the marvellous pyramids and the mysterious Sphinx at Giza or the city of Alexandria with its
-          remnants of a long and forgotten time. Or the fabulous land of Europe. Our Europe tour packages cover each
-          corner of the continent. You name it and We will deliver it. You can choose from the countries ranging across
-          the Alps; France, Switzerland, Italy or Germany. And then you have the gems of the East. The charming cities
-          of Prague, Budapest or Vienna will give you some amazing memories to take away from your holiday. If you’re
-          looking for something closer to home, visit the enchanting island of Sri Lanka. The ancient city of Sigiriya
-          and the beautiful Yala National Park leave everyone mesmerized. And then there are the temples which are
-          nothing short of awe-inspiring. The Temple of Sacred Relic which is considered the most sacred Buddhist shrine
-          or the Dambulla Royal Cave Temple the largest cave temple of Sri Lanka should definitely feature on the
-          must-see list of every traveller. This is just a small glimpse of our international tour packages. There is
-          much more awaiting you.<br></span><button type="button" id="read" onclick="read()">Read more</button>
-      </div>
+  <div id="sidenav" class="sidenav">
+    <span class="sideclose"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></span>
+    <span class="sidenavlink"><a href="index.html"><i class="fas fa-home-lg-alt"></i> &nbsp HOTEL</a></span>
+    <span class="sidenavlink"><a href="flights.html"><i class="fad fa-plane-departure"></i> &nbsp fLIGHT</a></span>
+    <span class="sidenavlink"><a href="rental.html"><i class="fas fa-key"></i> &nbsp CAR RENTAL</a></span>
+    <span class="sidenavlink"><a class="active" href="tours.html"><i class="far fa-map"></i> &nbsp TOURS</a></span>
+    <div class="index-copy-right">&copy; 2020 by trillo. All rights reserved.</div>
+  </div>
 
-      <!----sliders-->
-      <div class="main-slider">
-        <div class="owl-carousel owl-theme">
+  <!--_________________________end side nav___________________________-->
 
-          <!----slider box 1---->
-          <div class="item">
-            <div class="slider-img-main">
-              <a href="#"><img src="images/USA-Trending-image.jpg" alt="america">
-                <div class="top-left">AMERICA</div>
-                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
-                    1,52,600/-</span></div>
-              </a>
-            </div>
-          </div>
-
-          <!----slider box 2---->
-          <div class="item">
-            <div class="slider-img-main">
-              <a href="#"><img src="images/South-Africa-Trnd.jpg" alt="South africa">
-                <div class="top-left">SOUTH AFRICA</div>
-                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
-                    1,35,000/-</span></div>
-              </a>
-            </div>
-          </div>
-
-          <!----slider box 3---->
-          <div class="item">
-            <div class="slider-img-main">
-              <a href="#"><img src="images/Europe-Trending-image.jpg" alt="Europe">
-                <div class="top-left">EUROPE</div>
-                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
-                    1,07,200/-</span></div>
-              </a>
-            </div>
-          </div>
-
-          <!----slider box 4---->
-          <div class="item">
-            <div class="slider-img-main">
-              <a href="#"><img src="images/Mauritius-new.jpg" alt="Mauritius">
-                <div class="top-left">MAURITIUS</div>
-                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                    68,000/-</span></div>
-              </a>
-            </div>
-          </div>
-
-          <!----slider box 5---->
-          <div class="item">
-            <div class="slider-img-main">
-              <a href="#"><img src="images/Jordan.jpg" alt="jordan">
-                <div class="top-left">JORDAN</div>
-                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
-                    85,100/-</span></div>
-              </a>
-            </div>
-          </div>
-
-          <!----slider box 6---->
-          <div class="item">
-            <div class="slider-img-main">
-              <a href="#"><img src="images/Great-Britain1.jpg" alt="Britain">
-                <div class="top-left">GREAT BRITAIN</div>
-                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
-                    1,49,700/-</span></div>
-              </a>
-            </div>
-          </div>
-
-          <!----slider box 7---->
-          <div class="item">
-            <div class="slider-img-main">
-              <a href="#"><img src="images/Egypt.jpg" alt="Egypt">
-                <div class="top-left">EGYPT</div>
-                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
-                    98,270/-</span></div>
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--_____________________________end trending box for international___________________________-->
-
-
-    <!--____________________________start of trending box for indian___________________________________-->
-    <div class="trendingbox">
-      <span class="trendingheading">Trending Indian Destinations</span>
-      <div class="trendingtext">
-        India’s diverse topography, history and culture offers enough experiences to fulfil any type of wanderlust.
-        <span id="indiandots">...</span><span id="indianmore">So do our India tour packages which cover the length and
-          breadth of the land. <br>
-          The Himalayas are one of the few sights capable of literally taking your breath away. And you can view them up
-          close in our own country. Ranging across the states of Jammu & Kashmir, Himachal Pradesh, Uttarakhand, Sikkim,
-          Arunachal Pradesh and West Bengal, crossing these mountainous terrains will give you an otherworldly sense of
-          joy. And as you move down, you will find the contrasting deserts of Rajasthan - a state with a culturally rich
-          heritage and magnificent structures like the Amber Palace, Hawa Mahal, and City Palace. The elegant
-          architecture is a showcase of our tremendous history. Along with this is the Ranthambore National Park - one
-          of the rare locations of this world which will amaze you with its wildlife in its natural habitat. The other
-          great thing about the country’s location is its proximity to the sea. With ten states along its coastline, you
-          can take your pick from any of them. There is the Arabian Sea whose waves crash against the states of
-          Maharashtra, Kerala and Goa. And Tamil Nadu and Andhra Pradesh are greeted by the waters of the Bay of Bengal.
-          Not to forget the spellbinding Andaman and Nicobar Islands.<br>
-          <br>
-          Go through more of our holiday packages in India to find your next great tour across the
-          country.<br></span><button type="button" id="indianread" onclick="indianread()">Read more</button>
-      </div>
-
-      <!----sliders-->
-      <div class="main-slider">
-        <div class="owl-carousel owl-theme">
-
-          <!----slider box 1---->
-          <div class="item">
-            <div class="slider-img-main">
-              <a href="#"><img src="images/Karnataka.jpg" alt="karnataka">
-                <div class="top-left">KARNATAKA</div>
-                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
-                    6,399/-</span></div>
-              </a>
-            </div>
-          </div>
-
-          <!----slider box 2---->
-          <div class="item">
-            <div class="slider-img-main">
-              <a href="#"><img src="images/Kolkata.jpg" alt="Kolkata">
-                <div class="top-left">KOLKATA</div>
-                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
-                    4,860/-</span></div>
-              </a>
-            </div>
-          </div>
-
-          <!----slider box 3---->
-          <div class="item">
-            <div class="slider-img-main">
-              <a href="#"><img src="images/Uttarakhand (1).jpg" alt="Uttarakhand">
-                <div class="top-left">UTTARAKHAND</div>
-                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                    7,900/-</span></div>
-              </a>
-            </div>
-          </div>
-
-          <!----slider box 4---->
-          <div class="item">
-            <div class="slider-img-main">
-              <a href="#"><img src="images/Himachal.jpg" alt="Himachal">
-                <div class="top-left">HIMACHAL</div>
-                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                    5,999/-</span></div>
-              </a>
-            </div>
-          </div>
-
-          <!----slider box 5---->
-          <div class="item">
-            <div class="slider-img-main">
-              <a href="#"><img src="images/Rajasthan (1).jpg" alt="Rajasthan">
-                <div class="top-left">RAJASTHAN</div>
-                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                    2,999/-</span></div>
-              </a>
-            </div>
-          </div>
-
-          <!----slider box 6---->
-          <div class="item">
-            <div class="slider-img-main">
-              <a href="#"><img src="images/Hyderabad.jpg" alt="Hyderabad">
-                <div class="top-left">HYDERABAD</div>
-                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                    2,199/-</span></div>
-              </a>
-            </div>
-          </div>
-
-          <!----slider box 7---->
-          <div class="item">
-            <div class="slider-img-main">
-              <a href="#"><img src="images/Kashmir.jpg" alt="Kashmir">
-                <div class="top-left">KASHMIR</div>
-                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                    5,999/-</span></div>
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--_________________________________end trending box for india__________________________________-->
-
-
-    <!--________________________________start of trending box for our special________________________-->
-    <div class="trendingbox">
-      <span class="trendingheading">Our Special Packages</span>
-
-      <!----sliders-->
-      <div class="main-slider">
-        <div class="owl-carousel owl-theme">
-
-          <!----slider box 1---->
-          <div class="item">
-            <div class="slider-img-main">
-              <a href="#"><img src="images/Taj-Our-Special.jpg" alt="karnataka">
-                <div class="top-left">TAJ SPECIAL <br> TOUR </div>
-                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                    3,499/-</span></div>
-              </a>
-            </div>
-          </div>
-
-          <!----slider box 2---->
-          <div class="item">
-            <div class="slider-img-main">
-              <a href="#"><img src="images/Wellness-Our Special.jpg" alt="Kolkata">
-                <div class="top-left">WELLNESS <br> TOUR</div>
-                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                    6,799/-</span></div>
-              </a>
-            </div>
-          </div>
-
-          <!----slider box 3---->
-          <div class="item">
-            <div class="slider-img-main">
-              <a href="#"><img src="images/Staycations-our-Special.jpg" alt="Uttarakhand">
-                <div class="top-left">STAYCATIONS <br> TOUR</div>
-                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                    2,999/-</span></div>
-              </a>
-            </div>
-          </div>
-
-          <!----slider box 4---->
-          <div class="item">
-            <div class="slider-img-main">
-              <a href="#"><img src="images/Afforable-Luxury-our-special.jpg" alt="Himachal">
-                <div class="top-left">AFFORABLE <br> LUXURY TOUR</div>
-                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                    3,499/-</span></div>
-              </a>
-            </div>
-          </div>
-
-          <!----slider box 5---->
-          <div class="item">
-            <div class="slider-img-main">
-              <a href="#"><img src="images/Experiential-Stays-our-Special.jpg" alt="Rajasthan">
-                <div class="top-left">EXPERIENTIAL <br> STAYS TOUR</div>
-                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                    8,999/-</span></div>
-              </a>
-            </div>
-          </div>
-
-          <!----slider box 6---->
-          <div class="item">
-            <div class="slider-img-main">
-              <a href="#"><img src="images/Romantic-Break-our-Special.jpg" alt="Hyderabad">
-                <div class="top-left">ROMANTIC <br> BREAK TOUR</div>
-                <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
-                    13,900/-</span></div>
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--_________________________end trending box for our special_______________________-->
-
-
-    <!--____________________________start of page banner_______________________________-->
-    <div class="page-banner">
-      <div class="page-banner-slide">
-        <a href="#"><img class="mySlides" src="images/New-Zealand-North-Scroller-Banner.jpg" alt="newsland north"></a>
-        <a href="#"><img class="mySlides" src="images/jordan-banner.jpg" alt="jordan banner"></a>
-        <a href="#"><img class="mySlides" src="images/Austria-Scroller-Banner.jpg" alt="austria"></a>
-        <a href="#"><img class="mySlides" src="images/New-Zealand-ROI-Scroller-Banner.jpg" alt="newsland roi"></a>
-        <a href="#"><img class="mySlides" src="images/Jamaica-Scroller-Banner-.jpg" alt="jamaice"></a>
-
-        <button class="display-left" onclick="plusDivs(-1)"><i id="button-angle-left"
-            class="far fa-angle-left tour-slide-icon"></i></button>
-        <button class="display-right" onclick="plusDivs(1)"><i id="button-angle-right"
-            class="far fa-angle-right tour-slide-icon"></i></button>
-
-      </div>
-    </div>
-
-    <script>
-      /*-----automatic------*/
-      var myIndex = 0;
-      carousel();
-
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        myIndex++;
-        if (myIndex > x.length) {
-          myIndex = 1
-        }
-        x[myIndex - 1].style.display = "block";
-        setTimeout(carousel, 4000);
-      }
-
-      /*------manual-------*/
-      var slideIndex = 1;
-      showDivs(slideIndex);
-
-      function plusDivs(n) {
-        showDivs(slideIndex += n);
-      }
-
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {
-          slideIndex = 1
-        }
-        if (n < 1) {
-          slideIndex = x.length
-        }
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        x[slideIndex - 1].style.display = "block";
-      }
-    </script>
-
-    <!--________________________________end page banner___________________________________-->
-
-
-    <!--_______________________________start of reading corner___________________________-->
-    <div class="readingcorner">
-      <div class="readingtext">Reading Corner</div>
-
-      <div class="inlinereading">
-        <div class="readingpost">
-          <a href="#"><img src="./images/queens-land.jpg" alt="queensland">
-            <div class="reading-text">The Most Incredible Bucket List Experiances In Queensland </div>
+  <!--_________________________start of home page carousel_________________________-->
+  <div class="image-slider">
+    <div class="carousel slide" data-ride="carousel" data-interval="3000" id="web">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="#">
+            <picture>
+              <source media="(min-width:768px)" type="image/jpeg" srcset="images/tours-home-1.jpg">
+              <source media="(max-width:767px)" type="image/jpeg" srcset="images/tours-home-mobile-1.jpg">
+              <img src="./images/tours-home-1.jpg" alt="home-image-1">
+            </picture>
           </a>
         </div>
 
-        <div class="readingpost">
-          <a href="#"><img src="./images/Bike-Trips-in-India.jpg" alt="bike trip india">
-            <div class="reading-text">Bike Tours in India </div>
+        <div class="carousel-item">
+          <a href="#">
+            <picture>
+              <source media="(min-width:768px)" type="image/jpeg" srcset="images/tours-home-2.jpg">
+              <source media="(max-width:767px)" type="image/jpeg" srcset="images/tours-home-mobile-2.jpg">
+              <img src="./images/tours-home-2.jpg" alt="home-image-2">
+            </picture>
           </a>
         </div>
 
-        <div class="readingpost">
-          <a href="#"><img src="./images/Honeymoon-Destinations.jpg" alt="honeymoon destination india">
-            <div class="reading-text">Best Honeymoon Destination to Visit in India</div>
+        <div class="carousel-item">
+          <a href="#">
+            <picture>
+              <source media="(min-width:768px)" type="image/jpeg" srcset="images/tours-home-3.jpg">
+              <source media="(max-width:767px)" type="image/jpeg" srcset="images/tours-home-mobile-3.jpg">
+              <img src="./images/tours-home-3.jpg" alt="home-image-3">
+            </picture>
           </a>
         </div>
 
       </div>
-    </div>
-    <!--______________________________________end reading corner___________________________________-->
-
-
-    <!--___________________________________start of why we conatiner_______________________________-->
-    <div class="whywe">
-      <div class="whywe-heading">Why We?</div>
-
-      <div class="whywe-box">
-
-        <div class="whywe-inner-box whywe-item-1">
-          <img src="images/trust.png" alt="trust advisor img">
-          <div class="whywe-heading-text">Trusted Advisor</div>
-          <div class="whywe-paragraph">Over 70 years of expertise within innivationat its core.We pioneered group travel in
-            india & are continuosly evolving and investing in leading edge technology.</div>
-        </div>
-
-        <div class="whywe-inner-box whywe-item-2">
-          <img src="images/responsive.png" alt="responsive img">
-          <div class="whywe-heading-text">Responsive</div>
-          <div class="whywe-paragraph">Our Holidays are co-created with our customers,ensuring suggestions and feedback are
-            the basis of creating magical holidays .</div>
-        </div>
-
-        <div class="whywe-inner-box whywe-item-3">
-          <img src="images/memory.png" alt="memorable img">
-          <div class="whywe-heading-text">Memorable Experiances</div>
-          <div class="whywe-paragraph">Join our family - Over 5 lac customers have created their most memorable Experiances
-            with us . </div>
-        </div>
-
-        <div class="whywe-inner-box whywe-item-4">
-          <img src="images/ease.png" alt="ease img">
-          <div class="whywe-heading-text">Ease</div>
-          <div class="whywe-paragraph">Choose from a wide range of over a thousand holidays and experiances. Special
-            holidays catering to the cultural diversity of india .</div>
-        </div>
-
-        <div class="whywe-inner-box whywe-item-5">
-          <img src="images/connect.png" alt="recognise img">
-          <div class="whywe-heading-text">Recognise & Connect</div>
-          <div class="whywe-paragraph">An experianced team of over 1000 travel professionals across 160+ touch points in
-            India & NRI markets to cater to your travel needs . </div>
-        </div>
-
-      </div>
-    </div>
-    <!--___________________________________end of why we conatiner_______________________________-->
-
-
-    <!--___________________________________start of contact form__________________________________-->
-    <div class="contactform">
-      <img src="images/contact-image.jpg" alt="image">
-      <div class="ineer-contact-form">
-        <div class="planwithus">
-          <span class="start">PLAN</span> YOUR HOLIDAYS WITH OUR ASSISTANCE,<br>
-          <span class="yourdetails">JUST FILL IN YOUR DE<span class="end">TAILS.</span></span>
-        </div>
-
-        <div class="submitform">
-          <form onSubmit="alert('Thank You For Resgistering. \nOne Of Our Executive Will Contact you Soon.');">
-            <input class="form-control textfield" type="text" name="name" placeholder="Name" required="required">
-            <input class="form-control textfield" type="text" name="mobile" placeholder="Mobile" required="required">
-            <input class="form-control textfield" type="email" name="email" placeholder="Email" required="required">
-            <div class="checkbox"><input type="checkbox"> I hereby accept the <U><a href="#">privacy policy </a></U>and
-              authorize blank and its representatives to contact me.</div>
-            <button id="contactbtn" class="btn btn-secondary btn-lg active" role="button"
-              aria-pressed="true">Submit</button>
-          </form>
-        </div>
-      </div>
+      <a href="#web" class="carousel-control-next" data-slide="next"><span
+          class="carousel-control-next-icon"></span></a>
+      <a href="#web" class="carousel-control-prev" data-slide="prev"><span
+          class="carousel-control-prev-icon"></span></a>
+      <ol class="carousel-indicators">
+        <li data-target="#web" data-slide-to="0" class="active"></li>
+        <li data-target="#web" data-slide-to="1"></li>
+        <li data-target="#web" data-slide-to="2"></li>
+      </ol>
 
     </div>
-    <!--______________________________contact form__________________________________-->
+  </div>
+  <!--_________________________end of home page carousel_________________________-->
 
 
-    <!--___________________________start of footer section__________________________-->
-    <footer class="toursfooter">
+  <!--________________________start of trending box for international__________________-->
+  <div class="trendingbox">
+    <span class="trendingheading">Trending International Destinations</span>
+    <div class="trendingtext">
+      The world is now just a hop, skip and jump away and here’s how you can make your travel easier and better.<span
+        id="dots">..</span><span id="more">Our various vacation packages, trip packages and holiday packages offer a
+        kaleidoscopic range of international destinations that meet every interest, schedule and requirement. The best
+        part is, you won’t have to worry about all the planning details; just pack your bag, get set and go. <br>
+        Pick your destination and we will fulfill all your wishes. Whether you want to visit the United States or the
+        United Kingdom, South Africa or the Southeast, we will take you everywhere. Explore the deserts of Egypt where
+        you can see the marvellous pyramids and the mysterious Sphinx at Giza or the city of Alexandria with its
+        remnants of a long and forgotten time. Or the fabulous land of Europe. Our Europe tour packages cover each
+        corner of the continent. You name it and We will deliver it. You can choose from the countries ranging across
+        the Alps; France, Switzerland, Italy or Germany. And then you have the gems of the East. The charming cities
+        of Prague, Budapest or Vienna will give you some amazing memories to take away from your holiday. If you’re
+        looking for something closer to home, visit the enchanting island of Sri Lanka. The ancient city of Sigiriya
+        and the beautiful Yala National Park leave everyone mesmerized. And then there are the temples which are
+        nothing short of awe-inspiring. The Temple of Sacred Relic which is considered the most sacred Buddhist shrine
+        or the Dambulla Royal Cave Temple the largest cave temple of Sri Lanka should definitely feature on the
+        must-see list of every traveller. This is just a small glimpse of our international tour packages. There is
+        much more awaiting you.<br></span><button type="button" id="read" onclick="read()">Read more</button>
+    </div>
 
-      <div class="footerrow">
-        <div class="helpline">
-          Contact Centralized Call Center <br>
-          <a href="tel:+1800 209 3344"><i class="fad fa-phone-alt"></i> 1800 209 3344 <span>(Toll Free No.)</span></a>
+    <!----sliders-->
+    <div class="main-slider">
+      <div class="owl-carousel owl-theme">
+
+        <!----slider box 1---->
+        <div class="item">
+          <div class="slider-img-main">
+            <a href="#"><img src="images/USA-Trending-image.jpg" alt="america">
+              <div class="top-left">AMERICA</div>
+              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
+                  1,52,600/-</span></div>
+            </a>
+          </div>
         </div>
 
-
-        <div class="helpline">
-          Service Desk for Booked Customers <br>
-          <a href="tel:+771-504-4444"><i class="fad fa-phone-alt"></i> 771-504-4444</a>
+        <!----slider box 2---->
+        <div class="item">
+          <div class="slider-img-main">
+            <a href="#"><img src="images/South-Africa-Trnd.jpg" alt="South africa">
+              <div class="top-left">SOUTH AFRICA</div>
+              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
+                  1,35,000/-</span></div>
+            </a>
+          </div>
         </div>
 
-        <div class="subscribe">
-          <form onSubmit="alert('Thank you for Subscibe us. \nYou will get notified for every offer.');">
-            <input type="email" class="form-control" name="subscribe" placeholder="Subscribe to our updates/offers"
-              required>
-            <button id="subsbtn" class="btn btn-secondary btn-lg active" role="button"
-              aria-pressed="true">Submit</button>
-          </form>
+        <!----slider box 3---->
+        <div class="item">
+          <div class="slider-img-main">
+            <a href="#"><img src="images/Europe-Trending-image.jpg" alt="Europe">
+              <div class="top-left">EUROPE</div>
+              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
+                  1,07,200/-</span></div>
+            </a>
+          </div>
         </div>
+
+        <!----slider box 4---->
+        <div class="item">
+          <div class="slider-img-main">
+            <a href="#"><img src="images/Mauritius-new.jpg" alt="Mauritius">
+              <div class="top-left">MAURITIUS</div>
+              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                  68,000/-</span></div>
+            </a>
+          </div>
+        </div>
+
+        <!----slider box 5---->
+        <div class="item">
+          <div class="slider-img-main">
+            <a href="#"><img src="images/Jordan.jpg" alt="jordan">
+              <div class="top-left">JORDAN</div>
+              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
+                  85,100/-</span></div>
+            </a>
+          </div>
+        </div>
+
+        <!----slider box 6---->
+        <div class="item">
+          <div class="slider-img-main">
+            <a href="#"><img src="images/Great-Britain1.jpg" alt="Britain">
+              <div class="top-left">GREAT BRITAIN</div>
+              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
+                  1,49,700/-</span></div>
+            </a>
+          </div>
+        </div>
+
+        <!----slider box 7---->
+        <div class="item">
+          <div class="slider-img-main">
+            <a href="#"><img src="images/Egypt.jpg" alt="Egypt">
+              <div class="top-left">EGYPT</div>
+              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
+                  98,270/-</span></div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--_____________________________end trending box for international___________________________-->
+
+
+  <!--____________________________start of trending box for indian___________________________________-->
+  <div class="trendingbox">
+    <span class="trendingheading">Trending Indian Destinations</span>
+    <div class="trendingtext">
+      India’s diverse topography, history and culture offers enough experiences to fulfil any type of wanderlust.<span
+        id="indiandots">..</span><span id="indianmore">So do our India tour packages which cover the length and
+        breadth of the land. <br>
+        The Himalayas are one of the few sights capable of literally taking your breath away. And you can view them up
+        close in our own country. Ranging across the states of Jammu & Kashmir, Himachal Pradesh, Uttarakhand, Sikkim,
+        Arunachal Pradesh and West Bengal, crossing these mountainous terrains will give you an otherworldly sense of
+        joy. And as you move down, you will find the contrasting deserts of Rajasthan - a state with a culturally rich
+        heritage and magnificent structures like the Amber Palace, Hawa Mahal, and City Palace. The elegant
+        architecture is a showcase of our tremendous history. Along with this is the Ranthambore National Park - one
+        of the rare locations of this world which will amaze you with its wildlife in its natural habitat. The other
+        great thing about the country’s location is its proximity to the sea. With ten states along its coastline, you
+        can take your pick from any of them. There is the Arabian Sea whose waves crash against the states of
+        Maharashtra, Kerala and Goa. And Tamil Nadu and Andhra Pradesh are greeted by the waters of the Bay of Bengal.
+        Not to forget the spellbinding Andaman and Nicobar Islands.<br>
+        <br>
+        Go through more of our holiday packages in India to find your next great tour across the
+        country.<br></span><button type="button" id="indianread" onclick="indianread()">Read more</button>
+    </div>
+
+    <!----sliders-->
+    <div class="main-slider">
+      <div class="owl-carousel owl-theme">
+
+        <!----slider box 1---->
+        <div class="item">
+          <div class="slider-img-main">
+            <a href="#"><img src="images/Karnataka.jpg" alt="karnataka">
+              <div class="top-left">KARNATAKA</div>
+              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
+                  6,399/-</span></div>
+            </a>
+          </div>
+        </div>
+
+        <!----slider box 2---->
+        <div class="item">
+          <div class="slider-img-main">
+            <a href="#"><img src="images/Kolkata.jpg" alt="Kolkata">
+              <div class="top-left">KOLKATA</div>
+              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i> <span class="price">
+                  4,860/-</span></div>
+            </a>
+          </div>
+        </div>
+
+        <!----slider box 3---->
+        <div class="item">
+          <div class="slider-img-main">
+            <a href="#"><img src="images/Uttarakhand (1).jpg" alt="Uttarakhand">
+              <div class="top-left">UTTARAKHAND</div>
+              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                  7,900/-</span></div>
+            </a>
+          </div>
+        </div>
+
+        <!----slider box 4---->
+        <div class="item">
+          <div class="slider-img-main">
+            <a href="#"><img src="images/Himachal.jpg" alt="Himachal">
+              <div class="top-left">HIMACHAL</div>
+              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                  5,999/-</span></div>
+            </a>
+          </div>
+        </div>
+
+        <!----slider box 5---->
+        <div class="item">
+          <div class="slider-img-main">
+            <a href="#"><img src="images/Rajasthan (1).jpg" alt="Rajasthan">
+              <div class="top-left">RAJASTHAN</div>
+              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                  2,999/-</span></div>
+            </a>
+          </div>
+        </div>
+
+        <!----slider box 6---->
+        <div class="item">
+          <div class="slider-img-main">
+            <a href="#"><img src="images/Hyderabad.jpg" alt="Hyderabad">
+              <div class="top-left">HYDERABAD</div>
+              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                  2,199/-</span></div>
+            </a>
+          </div>
+        </div>
+
+        <!----slider box 7---->
+        <div class="item">
+          <div class="slider-img-main">
+            <a href="#"><img src="images/Kashmir.jpg" alt="Kashmir">
+              <div class="top-left">KASHMIR</div>
+              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                  5,999/-</span></div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--_________________________________end trending box for india__________________________________-->
+
+
+  <!--________________________________start of trending box for our special________________________-->
+  <div class="trendingbox">
+    <span class="trendingheading">Our Special Packages</span>
+
+    <!----sliders-->
+    <div class="main-slider">
+      <div class="owl-carousel owl-theme">
+
+        <!----slider box 1---->
+        <div class="item">
+          <div class="slider-img-main">
+            <a href="#"><img src="images/Taj-Our-Special.jpg" alt="karnataka">
+              <div class="top-left">TAJ SPECIAL <br> TOUR </div>
+              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                  3,499/-</span></div>
+            </a>
+          </div>
+        </div>
+
+        <!----slider box 2---->
+        <div class="item">
+          <div class="slider-img-main">
+            <a href="#"><img src="images/Wellness-Our Special.jpg" alt="Kolkata">
+              <div class="top-left">WELLNESS <br> TOUR</div>
+              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                  6,799/-</span></div>
+            </a>
+          </div>
+        </div>
+
+        <!----slider box 3---->
+        <div class="item">
+          <div class="slider-img-main">
+            <a href="#"><img src="images/Staycations-our-Special.jpg" alt="Uttarakhand">
+              <div class="top-left">STAYCATIONS <br> TOUR</div>
+              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                  2,999/-</span></div>
+            </a>
+          </div>
+        </div>
+
+        <!----slider box 4---->
+        <div class="item">
+          <div class="slider-img-main">
+            <a href="#"><img src="images/Afforable-Luxury-our-special.jpg" alt="Himachal">
+              <div class="top-left">AFFORABLE <br> LUXURY TOUR</div>
+              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                  3,499/-</span></div>
+            </a>
+          </div>
+        </div>
+
+        <!----slider box 5---->
+        <div class="item">
+          <div class="slider-img-main">
+            <a href="#"><img src="images/Experiential-Stays-our-Special.jpg" alt="Rajasthan">
+              <div class="top-left">EXPERIENTIAL <br> STAYS TOUR</div>
+              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                  8,999/-</span></div>
+            </a>
+          </div>
+        </div>
+
+        <!----slider box 6---->
+        <div class="item">
+          <div class="slider-img-main">
+            <a href="#"><img src="images/Romantic-Break-our-Special.jpg" alt="Hyderabad">
+              <div class="top-left">ROMANTIC <br> BREAK TOUR</div>
+              <div class="bottom-text">Starting from <br><i class="far fa-rupee-sign"></i><span class="price">
+                  13,900/-</span></div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--_________________________end trending box for our special_______________________-->
+
+
+  <!--____________________________start of page banner_______________________________-->
+  <div class="page-banner">
+    <div class="page-banner-slide">
+      <a href="#"><img class="mySlides" src="images/New-Zealand-North-Scroller-Banner.jpg" alt="newsland north"></a>
+      <a href="#"><img class="mySlides" src="images/jordan-banner.jpg" alt="jordan banner"></a>
+      <a href="#"><img class="mySlides" src="images/Austria-Scroller-Banner.jpg" alt="austria"></a>
+      <a href="#"><img class="mySlides" src="images/New-Zealand-ROI-Scroller-Banner.jpg" alt="newsland roi"></a>
+      <a href="#"><img class="mySlides" src="images/Jamaica-Scroller-Banner-.jpg" alt="jamaice"></a>
+
+      <button class="display-left" onclick="plusDivs(-1)"><i id="button-angle-left"
+          class="far fa-angle-left tour-slide-icon"></i></button>
+      <button class="display-right" onclick="plusDivs(1)"><i id="button-angle-right"
+          class="far fa-angle-right tour-slide-icon"></i></button>
+
+    </div>
+  </div>
+
+  <script>
+    /*-----automatic------*/
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1
+      }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 4000);
+    }
+
+    /*------manual-------*/
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = x.length
+      }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+    }
+  </script>
+
+  <!--________________________________end page banner___________________________________-->
+
+
+  <!--_______________________________start of reading corner___________________________-->
+  <div class="readingcorner">
+    <div class="readingtext">Reading Corner</div>
+
+    <div class="inlinereading">
+      <div class="readingpost">
+        <a href="#"><img src="./images/queens-land.jpg" alt="queensland">
+          <div class="reading-text">The Most Incredible Bucket List Experiances In Queensland </div>
+        </a>
       </div>
 
-      <div class="followus">
-        <a href="#" class="fab fa-facebook-f sicon"></a>
-        <a href="#" class="fab fa-youtube sicon"></a>
-        <a href="#" class="fab fa-pinterest sicon"></a>
-        <a href="#" class="fab fa-instagram sicon"></a>
-        <a href="#" class="fab fa-linkedin-in sicon"></a>
-        <a href="#"><i class="fab fa-twitter sicon"></i></a>
+      <div class="readingpost">
+        <a href="#"><img src="./images/Bike-Trips-in-India.jpg" alt="bike trip india">
+          <div class="reading-text">Bike Tours in India </div>
+        </a>
       </div>
 
-      <div class="tourscopyright"> Copyright &copy; 2020 all rights reserved. </div>
+      <div class="readingpost">
+        <a href="#"><img src="./images/Honeymoon-Destinations.jpg" alt="honeymoon destination india">
+          <div class="reading-text">Best Honeymoon Destination to Visit in India</div>
+        </a>
+      </div>
 
-    </footer>
-    <!--___________________________end of footer section__________________________-->
+    </div>
+  </div>
+  <!--______________________________________end reading corner___________________________________-->
+
+
+  <!--___________________________________start of why we conatiner_______________________________-->
+  <div class="whywe">
+    <div class="whywe-heading">Why We?</div>
+
+    <div class="whywe-box">
+
+      <div class="whywe-inner-box whywe-item-1">
+        <img src="images/trust.png" alt="trust advisor img">
+        <div class="whywe-heading-text">Trusted Advisor</div>
+        <div class="whywe-paragraph">Over 70 years of expertise within innivationat its core.We pioneered group travel
+          in india & are continuosly evolving and investing in leading edge technology.</div>
+      </div>
+
+      <div class="whywe-inner-box whywe-item-2">
+        <img src="images/responsive.png" alt="responsive img">
+        <div class="whywe-heading-text">Responsive</div>
+        <div class="whywe-paragraph">Our Holidays are co-created with our beloved customers,ensuring suggestions and feedback
+          are the basis of creating magical holidays from your locality to every corner of the world.</div>
+      </div>
+
+      <div class="whywe-inner-box whywe-item-3">
+        <img src="images/memory.png" alt="memorable img">
+        <div class="whywe-heading-text">Memorable Experiances</div>
+        <div class="whywe-paragraph">Join our family - Over 5 lac customers have created their most memorable
+          Experiances with us come and join us for a friedly tour with our guide. </div>
+      </div>
+
+      <div class="whywe-inner-box whywe-item-4">
+        <img src="images/ease.png" alt="ease img">
+        <div class="whywe-heading-text">Ease</div>
+        <div class="whywe-paragraph">Choose from a wide range of over a thousand holidays and experiances. Special
+          holidays catering to the cultural diversity of india and other countries.</div>
+      </div>
+
+      <div class="whywe-inner-box whywe-item-5">
+        <img src="images/connect.png" alt="recognise img">
+        <div class="whywe-heading-text">Recognise & Connect</div>
+        <div class="whywe-paragraph">An experianced team of over 1000 travel professionals across 160+ touch points in
+          India & NRI markets to cater to your travel needs in your finger tip. </div>
+      </div>
+
+    </div>
+  </div>
+  <!--___________________________________end of why we conatiner_______________________________-->
+
+
+  <!--___________________________________start of contact form__________________________________-->
+  <div class="contactform">
+    <img src="images/contact-image.jpg" alt="image">
+    <div class="inner-contact-form">
+      <div class="planwithus">
+        <span class="start">PLAN</span> YOUR HOLIDAYS WITH OUR ASSISTANCE,<br>
+        <span class="yourdetails">JUST FILL IN YOUR DE<span class="end">TAILS.</span></span>
+      </div>
+
+      <div class="submitform">
+        <form onSubmit="alert('Thank You For Resgistering. \nOne Of Our Executive Will Contact you Soon.');">
+          <input class="form-control textfield" type="text" name="name" placeholder="Name" required="required">
+          <input class="form-control textfield" type="text" name="mobile" placeholder="Mobile" required="required">
+          <input class="form-control textfield" type="email" name="email" placeholder="Email" required="required">
+          <div class="checkbox"><input type="checkbox"> I hereby accept the <U><a href="#">privacy policy </a></U>and
+            authorize blank and its representatives to contact me.</div>
+          <button id="contactbtn" class="btn btn-secondary" role="button" aria-pressed="true">Submit</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <!--______________________________contact form__________________________________-->
+
+
+  <!--___________________________start of footer section__________________________-->
+  <footer class="toursfooter">
+
+    <div class="footerrow">
+      <div class="helpline central">
+        Contact Centralized Call Center <br>
+        <a href="tel:+1800 209 3344"><i class="fad fa-phone-alt"></i> 1800 209 3344 <span>(Toll Free No.)</span></a>
+      </div>
+
+
+      <div class="helpline">
+        Service Desk for Booked Customers <br>
+        <a href="tel:+771-504-4444"><i class="fad fa-phone-alt"></i> 771-504-4444</a>
+      </div>
+
+      <div class="subscribe">
+        <form onSubmit="alert('Thank you for Subscibe us. \nYou will get notified for every offer.');">
+          <input type="email" class="form-control" name="subscribe" placeholder="Subscribe to our updates/offers"
+            required>
+          <button id="subsbtn" class="btn btn-secondary" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="followus">
+      <a href="#" class="fab fa-facebook-f sicon"></a>
+      <a href="#" class="fab fa-youtube sicon"></a>
+      <a href="#" class="fab fa-pinterest sicon"></a>
+      <a href="#" class="fab fa-instagram sicon"></a>
+      <a href="#"><i class="fab fa-twitter sicon"></i></a>
+    </div>
+
+    <div class="tourscopyright"> Copyright &copy; 2020 all rights reserved. </div>
+
+  </footer>
+  <!--___________________________end of footer section__________________________-->
 
 
 
-    <!-----js files-->
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+  <!-----js files-->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 
-    <script type="text/javascript">
-      $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        navText: [
-          "<i class='far fa-angle-left tour-slide-icon'></i>",
-          "<i class='far fa-angle-right tour-slide-icon'></i>"
-        ],
-        responsive: {
-          0: {
-            items: 1.5
-          },
-          400: {
-            items: 2.1
-          },
-          550: {
-            items: 3
-          },
-          850: {
-            items: 4
-          },
-          1200: {
-            items: 5
-          },
-          1500: {
-            items: 6
-          }
+  <script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      navText: [
+        "<i class='far fa-angle-left tour-slide-icon'></i>",
+        "<i class='far fa-angle-right tour-slide-icon'></i>"
+      ],
+      responsive: {
+        0: {
+          items: 1.3
+        },
+        350: {
+          items: 1.8
+        },
+        400: {
+          items: 2.1
+        },
+        450: {
+          items: 2.3
+        },
+        500: {
+          items: 2.7
+        },
+        550: {
+          items: 2.5
+        },
+        640: {
+          items: 2.8
+        },
+        700: {
+          items: 3.1
+        },
+        768: {
+          items: 3.1
+        },
+        840: {
+          items: 3.4
+        },
+        950: {
+          items: 4
+        },
+        1200: {
+          items: 5
+        },
+        1500: {
+          items: 6
         }
-      })
-    </script>
+      }
+    })
+  </script>
 
-    <!-- my preloader java script -->
-    <script>
-      var preloader = document.getElementById('loader');
+  <!-- my preloader java script -->
+  <script>
+    var preloader = document.getElementById('loader');
 
-      function loadingfunction() {
-        preloader.style.display = 'none';
-      };
-    </script>
+    function loadingfunction() {
+      preloader.style.display = 'none';
+    };
+  </script>
 
-    <!-- bootstrap  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- bootstrap  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>

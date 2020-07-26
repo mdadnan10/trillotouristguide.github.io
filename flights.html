@@ -803,7 +803,6 @@
   <!--_____________________start ofcontact and send mesaage section_________________________-->
   <section>
     <div id="main-contact">
-      <!-- <img src="./images/flight-contact.jpg" alt="Flight Image contact box"> -->
 
       <div class="map">
         <iframe
@@ -886,7 +885,36 @@
       arrows: false,
       autoplay: true,
       autoplaySpeed: 4000,
-      infinite: true
+      infinite: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 780,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        }
+      ]
     });
   </script>
 

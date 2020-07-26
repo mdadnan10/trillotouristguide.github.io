@@ -104,6 +104,7 @@ $colormain: #ffd000;
                & a {
                     color: #e2afaf;
                     font-size: 26px;
+
                     &:hover {
                          color: rgb(131, 112, 112);
                     }
@@ -277,7 +278,6 @@ $colormain: #ffd000;
 /*--------tours and reavels foooter------*/
 
 .toursfooter {
-     height: 201px;
      position: relative;
      width: 100%;
      background-color: #515151;
@@ -285,6 +285,7 @@ $colormain: #ffd000;
 
 .footerrow {
      display: flex;
+     flex-wrap: wrap;
      justify-content: space-around;
 }
 
@@ -326,31 +327,22 @@ $colormain: #ffd000;
           font-size: $size13;
           border-radius: 20px;
      }
-
-     .fa-phone-alt {
-          font-size: 20px;
-          /* import from variables.scss */
-          color: $buttonscolor;
-     }
 }
 
 #subsbtn {
-     display: flex;
-     justify-content: center;
-     align-items: center;
      position: absolute;
      right: 12px;
-     top: 8px;
-     height: 23px;
+     top: 7px;
+     height: 26px;
      width: 90px;
+     padding: 0;
      /* import from variables.scss */
-     background: linear-gradient(to right, #f85032, #e73827);
      color: $fcolor;
-     /* import from variables.scss */
      font-size: $size13;
      font-weight: 500;
      border-radius: 20px;
      outline: none;
+     background: linear-gradient(to right, #f85032, #e73827);
 
      &:hover {
           background: linear-gradient(to left, #f85032, #e73827);
@@ -358,16 +350,15 @@ $colormain: #ffd000;
 }
 
 .tourscopyright {
-     position: absolute;
      /* import from variables.scss */
      color: $footertext;
      font-size: $size12;
-     left: 43%;
-     bottom: 0;
+     padding: 20px 0;
+     text-align: center;
 }
 
 .followus {
-     padding-top: 30px;
+     padding-top: 25px;
      text-align: center;
 
      & a {
@@ -398,11 +389,6 @@ $colormain: #ffd000;
           color: white;
      }
 
-     .fa-linkedin-in {
-          background: #0e76a8;
-          color: white;
-     }
-
      .fa-twitter {
           background: #00acee;
           color: white;
@@ -418,6 +404,72 @@ $colormain: #ffd000;
      text-align: center;
      border-radius: 50%;
      margin-right: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 950px) {
+
+     .helpline {
+          padding-right: 0px;
+          border-right: 0px solid rgb(190, 190, 190);
+     }
+
+     .central {
+          padding-right: 70px;
+          border-right: 1px solid rgb(190, 190, 190);
+     }
+}
+
+@media (min-width: 550px) and (max-width: 767px) {
+
+     .helpline {
+          padding-right: 0px;
+          border-right: 0px solid rgb(190, 190, 190);
+     }
+
+     .central {
+          padding-right: 15px;
+          border-right: 1px solid rgb(190, 190, 190);
+     }
+}
+
+@media (max-width: 550px) {
+
+     .helpline {
+          line-height: 25px;
+          font-size: 1.4rem;
+          padding: 0 15px;
+          text-align: center;
+          border-right: 0px solid rgb(190, 190, 190);
+
+          & span {
+               /* import from variables.scss */
+               font-size: 1rem;
+          }
+
+          .fa-phone-alt {
+               font-size: 1.5rem;
+          }
+     }
+
+     .subscribe {
+          width: 80%;
+
+          & input {
+               height: 3.6rem;
+          }
+     }
+
+     #subsbtn {
+          top: 6.5px;
+          height: 2.4rem;
+          width: 80px;
+          font-size: $size12;
+          font-weight: 500;
+     }
+
+     .sicon {
+          margin-right: 5px;
+     }
 }
 
 /* end of tours footer section */

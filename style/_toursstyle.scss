@@ -1,14 +1,38 @@
 @import "./variables";
 @import "./mixin";
 
-$headingtext: 25px;
+$headingtext: 2.5rem;
 
-/*------all trending box and text------*/
-#main {
-	transition: margin-left .5s;
+/*---------slide show---------*/
+.image-slider {
 	margin-top: 5px;
+
+	.carousel-item {
+		height: 60vh;
+		width: 100%;
+
+
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	.carousel-indicators {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.carousel-control-next-icon,
+	.carousel-control-prev-icon {
+		height: 30px;
+		width: 30px;
+	}
 }
 
+/*---------end slide show---------*/
+
+/*------all trending box and text------*/
 .trendingbox {
 	width: 92%;
 	margin: 25px auto;
@@ -63,7 +87,7 @@ $headingtext: 25px;
 			height: 100%;
 			position: absolute;
 			border-radius: 6px;
-			opacity: 0.5;
+			opacity: 0.4;
 		}
 
 		& .top-left {
@@ -186,7 +210,7 @@ $headingtext: 25px;
 .inlinereading {
 	margin-top: 10px;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 	grid-gap: 30px;
 
 	& .readingpost {
@@ -295,17 +319,18 @@ $headingtext: 25px;
 	& img {
 		width: 100%;
 		height: 100%;
-		opacity: .5;
+		opacity: .3;
 		border-radius: 4px;
 	}
 
-	& .ineer-contact-form {
+	& .inner-contact-form {
 		position: absolute;
 		top: 0;
 		left: 0;
 		height: 100%;
 		width: 100%;
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-evenly;
 
@@ -341,6 +366,7 @@ $headingtext: 25px;
 			/* import from variables.scss */
 			color: $textcolor;
 			font-size: $size15;
+			border-radius: 4px;
 		}
 
 		& .checkbox {
@@ -365,7 +391,6 @@ $headingtext: 25px;
 	width: 120px;
 	margin-top: 13px;
 	height: 34px;
-	padding-top: 4.5px;
 	/* import from variables.scss */
 	color: $fcolor;
 	font-size: $size15;
@@ -376,5 +401,520 @@ $headingtext: 25px;
 
 	&:hover {
 		background: linear-gradient(to left, #f85032, #e73827);
+	}
+}
+
+@media (min-width: 768px) and (max-width: 950px) {
+
+	$headingtext: 2.2rem;
+
+	/*---------slide show---------*/
+	.image-slider {
+
+		.carousel-item {
+			height: 50vh;
+		}
+
+		.carousel-indicators {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.carousel-control-next-icon,
+		.carousel-control-prev-icon {
+			height: 0px;
+			width: 0px;
+			display: none;
+		}
+	}
+
+	/*---------end slide show---------*/
+
+	/*------all trending box and text------*/
+
+	.trendingbox {
+		width: 95%;
+		margin: 20px auto;
+
+		& .trendingheading {
+			/* import from top of this page */
+			font-size: $headingtext;
+			/* import from variables.scss */
+			color: $textcolor;
+			font-weight: bold;
+		}
+	}
+
+	.main-slider {
+		height: 285px;
+
+		& .slider-img-main {
+			height: 280px;
+			width: 230px;
+			margin-right: 0px;
+
+			& .top-left {
+				font-weight: 600;
+			}
+		}
+
+		& .owl-prev {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		& .owl-next {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+	/*----------auto slider page banner------*/
+	.page-banner {
+		width: 95%;
+		height: 200px;
+		margin: 30px auto;
+
+
+		.display-left {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.display-right {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+	/* reading post */
+	.readingcorner {
+		width: 95%;
+		margin: 30px auto;
+	}
+
+	/*---------why we all divs------*/
+	.whywe {
+		width: 95%;
+		margin: 30px auto;
+	}
+
+	/*-----contact form -------*/
+	.contactform {
+		width: 95%;
+		height: 270px;
+
+		& .inner-contact-form {
+
+			& .planwithus {
+				font-size: 2.6rem;
+			}
+
+			& .yourdetails {
+				font-size: 3.1rem;
+			}
+		}
+
+
+		.submitform {
+			width: 33%;
+
+			& .textfield {
+				height: 3rem;
+				margin-bottom: 1.2rem;
+			}
+
+		}
+	}
+
+	#contactbtn {
+		margin-top: 1rem;
+	}
+}
+
+@media (min-width: 550px) and (max-width: 767px) {
+	$headingtext: 2rem;
+
+	/*---------slide show---------*/
+	.image-slider {
+
+		.carousel-item {
+			height: 45vh;
+		}
+
+		.carousel-indicators {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.carousel-control-next-icon,
+		.carousel-control-prev-icon {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+	/*---------end slide show---------*/
+
+	/*------all trending box and text------*/
+
+	.trendingbox {
+		width: 97%;
+		margin: 20px auto;
+
+		& .trendingheading {
+			/* import from top of this page */
+			font-size: $headingtext;
+		}
+	}
+
+	.main-slider {
+		height: 275px;
+
+		& .slider-img-main {
+			height: 275px;
+			width: 210px;
+
+			& .top-left {
+				font-weight: 600;
+			}
+		}
+
+		& .owl-prev {
+			/* import from mixin.scss */
+			@include trendingboxesnavigationicon;
+			left: 0px;
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		& .owl-next {
+			/* import from mixin.scss */
+			@include trendingboxesnavigationicon;
+			right: 0px;
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+	/*----------auto slider page banner------*/
+	.page-banner {
+		width: 97%;
+		height: 160px;
+		margin: 25px auto;
+
+		& .page-banner-slide {
+
+			.display-left,
+			.display-right {
+				opacity: 0;
+				visibility: hidden;
+			}
+		}
+	}
+
+	/*---------reading post ------*/
+	.readingcorner {
+		width: 97%;
+		margin: 20px auto;
+	}
+
+	/*---------why we all divs------*/
+	.whywe {
+		width: 95%;
+		margin: 25px auto;
+	}
+
+	.whywe-box {
+		& .whywe-inner-box {
+			height: auto;
+		}
+
+	}
+
+	.whywe-paragraph {
+		padding-bottom: 0.8rem;
+	}
+
+	/*----end of why we all divs----*/
+
+	/*-----contact form -------*/
+	.contactform {
+		position: relative;
+		width: 97%;
+		height: 290px;
+
+		& .inner-contact-form {
+			position: absolute;
+			height: 100%;
+			flex-wrap: wrap;
+
+			& .planwithus {
+				text-align: center;
+				width: 100%;
+				height: auto;
+				font-size: 2rem;
+				font-weight: 600;
+				margin: 0.8rem 0;
+			}
+
+			& .start,
+			.end {
+				border: none;
+			}
+
+			& .yourdetails {
+				font-size: 2rem;
+				font-weight: 700;
+			}
+		}
+
+
+		.submitform {
+			width: 300px;
+			text-align: center;
+
+			& .textfield {
+				height: 3.2rem;
+				margin-bottom: 0.8rem;
+			}
+		}
+	}
+
+	#contactbtn {
+		margin: 0.8rem 0;
+		font-weight: 500;
+	}
+
+}
+
+@media (max-width: 549px) {
+	$headingtext: 1.7rem;
+
+	/*---------slide show---------*/
+	.image-slider {
+
+		.carousel-indicators {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.carousel-control-next-icon,
+		.carousel-control-prev-icon {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+	/*---------end slide show---------*/
+
+	/*------all trending box and text------*/
+	.trendingbox {
+		width: 90%;
+		margin: 15px auto;
+
+		& .trendingheading {
+			/* import from top of this page */
+			font-size: $headingtext;
+		}
+
+		& .trendingtext {
+			/* import from variables.scss */
+			font-size: $size13;
+		}
+	}
+
+	.main-slider {
+		height: 240px;
+
+		& .slider-img-main {
+			height: 240px;
+			width: 175px;
+			margin-right: 5px;
+
+			& .top-left {
+				font-weight: 600;
+				font-size: 1.5rem;
+			}
+
+			& .bottom-text {
+				font-size: 1.4rem;
+
+				& .fa-rupee-sign {
+					font-size: 1.4rem;
+				}
+
+				& .price {
+					font-size: 2rem;
+				}
+			}
+		}
+
+		& .owl-prev {
+			/* import from mixin.scss */
+			@include trendingboxesnavigationicon;
+			left: 0px;
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		& .owl-next {
+			/* import from mixin.scss */
+			@include trendingboxesnavigationicon;
+			right: 0px;
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+	/*----------auto slider page banner------*/
+	.page-banner {
+		width: 97%;
+		height: 125px;
+		margin: 20px auto;
+
+		& .page-banner-slide {
+
+			.display-left,
+			.display-right {
+				display: none;
+			}
+		}
+	}
+
+	/*---------reading post ------*/
+	.readingcorner {
+		width: 95%;
+		margin: 20px auto;
+
+		& .readingtext {
+			font-size: $headingtext;
+		}
+	}
+
+	.inlinereading {
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+		& .readingpost {
+			height: auto;
+			border-bottom: 2px solid #cc5252;
+
+
+			& img {
+				height: 150px;
+			}
+
+			.reading-text {
+				padding: 5px 0;
+				font-size: 1.3rem;
+				font-weight: bold;
+			}
+		}
+	}
+
+	/*---------why we all divs------*/
+	.whywe {
+		margin: 20px auto;
+
+		& .whywe-heading {
+			font-size: $headingtext;
+			font-weight: 700;
+		}
+	}
+
+	.whywe-box {
+
+		& .whywe-inner-box {
+			height: auto;
+
+			& img {
+				height: 78px;
+				width: 80px;
+			}
+		}
+
+	}
+
+	.whywe-item-1 {
+		border-bottom: 2px solid #4e76b1;
+	}
+
+	.whywe-item-2 {
+		border-bottom: 2px solid #f1a75e;
+	}
+
+	.whywe-item-3 {
+		border-bottom: 2px solid #35bec4;
+	}
+
+	.whywe-item-4 {
+		border-bottom: 2px solid #898ac3;
+	}
+
+	.whywe-item-5 {
+		border-bottom: 2px solid #e395d7;
+	}
+
+	.whywe-heading-text {
+		padding: 10px 0;
+		font-size: 1.4rem;
+	}
+
+	.whywe-paragraph {
+		font-size: $size13;
+		padding-bottom: 7px;
+	}
+
+	/*----end of why we all divs----*/
+
+	/*-----contact form -------*/
+	.contactform {
+		width: 97%;
+		height: 325px;
+		margin: 25px auto;
+
+		& .inner-contact-form {
+			flex-wrap: wrap;
+
+			& .planwithus {
+				width: 100%;
+				height: auto;
+				font-size: 1.5rem;
+				font-weight: 600;
+				text-align: center;
+			}
+
+			& .start,
+			.end {
+				border: none;
+			}
+
+			& .yourdetails {
+				font-size: 2.2rem;
+			}
+		}
+
+
+		.submitform {
+			width: 80%;
+			text-align: center;
+
+			& .textfield {
+				height: 3rem;
+				margin-bottom: 1rem;
+				font-size: $size13;
+			}
+
+			& .checkbox {
+				font-size: $size11;
+			}
+		}
+	}
+
+	#contactbtn {
+		width: 110px;
+		margin: 1rem 0;
+		height: 3.2rem;
+		font-size: $size14;
 	}
 }
