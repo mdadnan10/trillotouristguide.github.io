@@ -25,8 +25,8 @@ $headingtext: 2.5rem;
 
 	.carousel-control-next-icon,
 	.carousel-control-prev-icon {
-		height: 30px;
-		width: 30px;
+		height: 3rem;
+		width: 3rem;
 	}
 }
 
@@ -35,7 +35,7 @@ $headingtext: 2.5rem;
 /*------all trending box and text------*/
 .trendingbox {
 	width: 94%;
-	margin: 25px auto;
+	margin: 2.5rem auto;
 
 	& .trendingheading {
 		/* import from top of this page */
@@ -74,7 +74,7 @@ $headingtext: 2.5rem;
 .main-slider {
 	width: 100%;
 	height: 300px;
-	margin: 20px 0;
+	margin: 2rem 0;
 
 	& .slider-img-main {
 		height: 291px;
@@ -94,10 +94,10 @@ $headingtext: 2.5rem;
 			/* import from variables.scss */
 			color: $fcolor;
 			position: absolute;
-			top: 12px;
-			left: 19px;
+			top: 1.2rem;
+			left: 1.9rem;
 			font-weight: bold;
-			font-size: 20px;
+			font-size: 2rem;
 		}
 
 		& .bottom-text {
@@ -105,15 +105,15 @@ $headingtext: 2.5rem;
 			color: $fcolor;
 			position: absolute;
 			bottom: 8px;
-			left: 19px;
-			font-size: 15px;
+			left: 1.9rem;
+			font-size: 1.5rem;
 
 			& .fa-rupee-sign {
-				font-size: 15px;
+				font-size: 1.5rem;
 			}
 
 			& .price {
-				font-size: 24px;
+				font-size: 2.4rem;
 			}
 		}
 	}
@@ -136,7 +136,7 @@ $headingtext: 2.5rem;
 }
 
 .tour-slide-icon {
-	font-size: 24px;
+	font-size: 2.4rem;
 	/* import from variable.scss */
 	color: $anglecolor;
 }
@@ -146,7 +146,7 @@ $headingtext: 2.5rem;
 	position: relative;
 	width: 94%;
 	height: 256px;
-	margin: 50px auto;
+	margin: 5rem auto;
 
 	& .page-banner-slide {
 		width: 100%;
@@ -163,13 +163,13 @@ $headingtext: 2.5rem;
 		.display-left {
 			/* import from mixin.scss */
 			@include autoslidernavigationicon;
-			left: 20px;
+			left: 2rem;
 		}
 
 		.display-right {
 			/* import from mixin.scss */
 			@include autoslidernavigationicon;
-			right: 20px;
+			right: 2rem;
 		}
 
 		button {
@@ -197,7 +197,7 @@ $headingtext: 2.5rem;
 /*---------reading post ------*/
 .readingcorner {
 	width: 94%;
-	margin: 50px auto;
+	margin: 5rem auto;
 
 	& .readingtext {
 		/* import from variables.scss */
@@ -211,7 +211,7 @@ $headingtext: 2.5rem;
 	margin-top: 10px;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-	grid-gap: 30px;
+	grid-gap: 3rem;
 
 	& .readingpost {
 		height: 290px;
@@ -232,7 +232,7 @@ $headingtext: 2.5rem;
 			/* import from variables.scss */
 			color: $textcolor;
 			padding-top: 5px;
-			font-size: 18px;
+			font-size: 1.8rem;
 			font-weight: bold;
 		}
 	}
@@ -241,7 +241,7 @@ $headingtext: 2.5rem;
 /*---------why we all divs------*/
 .whywe {
 	width: 94%;
-	margin: 50px auto;
+	margin: 5rem auto;
 
 	& .whywe-heading {
 		/* import from variables.scss */
@@ -254,7 +254,7 @@ $headingtext: 2.5rem;
 
 .whywe-box {
 	display: grid;
-	grid-gap: 30px;
+	grid-gap: 3rem;
 	grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
 
 	& .whywe-inner-box {
@@ -293,7 +293,7 @@ $headingtext: 2.5rem;
 	/* import from variables.scss */
 	color: $textcolor;
 	padding: 10px 0 10px 0;
-	font-size: 17px;
+	font-size: 1.7rem;
 	text-align: center;
 	font-weight: 700;
 }
@@ -312,7 +312,7 @@ $headingtext: 2.5rem;
 	position: relative;
 	width: 94%;
 	height: 300px;
-	margin: 30px auto;
+	margin: 3rem auto;
 	border-radius: 4px;
 	background: black;
 
@@ -339,7 +339,7 @@ $headingtext: 2.5rem;
 			color: $fcolor;
 			width: 60%;
 			height: 53%;
-			font-size: 28px;
+			font-size: 2.8rem;
 			font-weight: bold;
 		}
 
@@ -348,7 +348,7 @@ $headingtext: 2.5rem;
 		}
 
 		& .yourdetails {
-			font-size: 35px;
+			font-size: 3.5rem;
 		}
 
 		& .end {
@@ -686,7 +686,7 @@ $headingtext: 2.5rem;
 	.image-slider {
 
 		.carousel-item {
-			height: 50vh;
+			height: 47vh;
 		}
 
 		.carousel-indicators {
@@ -861,7 +861,7 @@ $headingtext: 2.5rem;
 
 	/*-----contact form -------*/
 	.contactform {
-		width: 95%;
+		width: 100%;
 		height: 325px;
 		margin: 25px auto;
 
